@@ -718,6 +718,11 @@ cursor:pointer;
 #datepicker{
 	display:inline-block;
 }
+.mainContent{
+	margin:5px;
+	text-align:center;
+	font-size:1.2em;
+}
 @media screen and (max-width: 1140px) { 
     .cb-slideshow li div h3 { font-size: 140px }
 }
@@ -764,6 +769,7 @@ cursor:pointer;
     height: 600px;
     display:inline-block;
   }
+  
   #internalRight {
     position:absolute;
     top:0;
