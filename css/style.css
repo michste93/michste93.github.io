@@ -375,7 +375,7 @@ Intro
 
 .summer::after {
   content: "";
-  background: transparent url(../img/summer.jpg) no-repeat;
+  background: transparent url(../img/summer1.JPG) no-repeat;
   background-size: cover;
   top: 0;
   left: 0;
@@ -720,7 +720,7 @@ cursor:pointer;
 }
 .mainContent{
 	margin:5px;
-	text-align:center;
+	text-align:left;
 	font-size:1.2em;
 }
 @media screen and (max-width: 1140px) { 
@@ -745,6 +745,14 @@ cursor:pointer;
 	 margin-left:40%;
     margin-right:0;
 	
+}
+.mainContent{
+	margin-left: 20%;
+	margin-top:20px;
+	margin-right:20px;
+	margin-bottom:20px;
+	text-align:left;
+	font-size:1.4em;
 }
 .form1{
 	float:left;
@@ -1175,7 +1183,7 @@ Placeholder Sections
 	background-image:url('../img/camera.jpg');
 }
 #cd-placeholder-4{
-	background-image:url('../img/summer.jpg');
+	background-image:url('../img/summer1.JPG');
 }
 #cd-placeholder-5{
 	background-image:url('../img/winter.jpg');
