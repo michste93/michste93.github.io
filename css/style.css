@@ -495,7 +495,7 @@ Intro
 .cb-slideshow li div { 
     z-index: 999;
     position: absolute;
-    bottom: 50px;
+    top: 300px;
     left: 0px;
     width: 100%;
     text-align: center;
@@ -677,10 +677,22 @@ Intro
 .no-cssanimations .cb-slideshow li span{
 	opacity: 1;
 }
+.booking{
+    position:absolute;
+	top:220px;
+	left:15%;
+	z-index: 1003 !important;
+	background-color:transparent;
+   height:50px;
+	width:100%;
+	
+	
+}
 .requestForm{
-	position:absolute;
-	top:200px;
-	z-index: 1000 !important;
+	position:relative;
+	top:0;
+	left:0;
+	z-index: 1001 !important;
 	height: 30px;
     line-height: 30px;
     margin-left:20px;
@@ -696,16 +708,14 @@ Intro
 	margin: 0 auto;
 }
 input[type=text]{
-margin-bottom: 20px;
-margin-top: 10px;
 width:150px;
 padding: 5px;
 border-radius:4px;
 border:1px solid #7ac9b7;
+margin-bottom:10px;
 }
 input[type=submit]
 {
-margin-bottom: 20px;
 width:110px;
 padding: 5px;
 border-radius:4px;
@@ -723,6 +733,7 @@ cursor:pointer;
 	text-align:left;
 	font-size:1.2em;
 }
+
 @media screen and (max-width: 1140px) { 
     .cb-slideshow li div h3 { font-size: 140px }
 }
@@ -737,14 +748,33 @@ cursor:pointer;
     left:0;
     height: 600px;
   }
-  .requestForm{
-   float:left;
-	position:absolute;
-	top:500px;
-	z-index: 1000 !important;
-	 margin-left:40%;
-    margin-right:0;
+  .form1{
+	width:30%;
 	
+}
+.form2{
+	width:30%;
+	margin: 10px auto;
+}
+.booking{
+	background-color:gray;
+}
+input[type=text]{
+	float:left;
+	margin-right:5px;
+}
+.booking{
+    position:absolute;
+	top:550px;
+	}
+  .requestForm{
+   
+	position:relative;
+	left:20%;
+	top:0;
+	z-index: 1000 !important;
+	width:100%
+	display:inline-block;
 }
 .mainContent{
 	margin-left: 20%;
@@ -1174,7 +1204,7 @@ Placeholder Sections
   opacity:1;	
 }
 #cd-placeholder-1{
-	background-image:url('../img/trekking.jpg');
+	background-image:url('../img/hiking.jpg');
 }
 #cd-placeholder-2{
 	background-image:url('../img/beauty.jpg');
