@@ -1,6 +1,6 @@
 .footer-distributed{
     
-    background-image:url(../img/wood2.jpg);
+    background-color:#AAAAAA;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	text-align: left;
@@ -72,7 +72,7 @@
 }
 
 .footer-distributed .footer-center i{
-	background-image:url(../img/wood2.jpg);
+	background-color:#AAAAAA;
 	color: #ffffff;
 	font-size: 25px;
 	width: 38px;

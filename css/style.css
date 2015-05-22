@@ -115,46 +115,20 @@ Navigation
     box-shadow: none;
   }
   .lang-switch{
-    position:relative;
+    position:absolute;
 	left:16%;
 	top:15px;
 	z-index: 1005 !important;
 	padding-left:10px;
 }
+.logo{
+	display:none;
+}
   
 }
 
-#cd-logo {
-  float: left;
-  margin: 13px 0 0 5%;
-}
-#cd-logo img {
-  display: block;
-}
-@media only screen and (min-width: 768px) {
-  #cd-logo {
-    margin: 23px 0 0 5%;
-  }
-}
-@media only screen and (min-width: 1170px) {
-  #cd-logo.is-hidden {
-    /* assign a position fixed and move outside the viewport (on the left) */
-    opacity: 0;
-    position: fixed;
-    left: -20%;
-    margin-left: 0;
-    -webkit-transition: left 0.3s, opacity 0.3s;
-    -moz-transition: left 0.3s, opacity 0.3s;
-    transition: left 0.3s, opacity 0.3s;
-    
-  }
-  #cd-logo.is-hidden.slide-in {
-    /* slide in when the secondary navigation gets fixed */
-    left: 5%;
-    opacity: 1;
-  }
-  
-}
+
+
 
 
 .cd-primary-nav {
@@ -275,7 +249,177 @@ Navigation
     display:block;
 	margin: 0 auto;
 }
+  #request{
+  	margin-top:70px;
+  	margin-left:auto;
+  	margin-right:auto;
+  	width:90%;
+  	background-color:gray;
+  	color:white;
+  	border-radius:2px;
+  }
+  #request1{
+  	margin-top:20px;
+  	margin-left:auto;
+  	margin-right:auto;
+  	width:90%;
+  	background-color:gray;
+  	color:white;
+  	border-radius:2px;
+  }
+  .requestForm{
+  	margin:10px;
+  	padding:5px;
+  }
+  .large-field{
+  	width:90%;
+  	border-radius:4px;
+    border:1px solid #7ac9b7;
+    margin-bottom:10px;
+    height: 2.5em;
+    line-height: 2.5em;
+  }
+  .child-field{
+  	width:100%;
+  	border-radius:4px;
+    border:1px solid #7ac9b7;
+    margin-bottom:10px;
+    height: 2.5em;
+    line-height: 2.5em;
+    float:left;
+    padding-right:5px;
+  }
+  #request h2{
+  	text-align:center;
+  	font-size:2em;
+  	font-weight:600;
+  	}
+  	#request h3{
+  	text-align:left;
+  	font-size:1.5em;
+  	font-weight:400;
+  	}
+  	#request1 h2{
+  	text-align:center;
+  	font-size:2em;
+  	font-weight:600;
+  	}
+  	#request1 h3{
+  	text-align:left;
+  	font-size:1.5em;
+  	font-weight:400;
+  	}
+  	.formLabel{
+	width: auto;
+	float: none;
+	display: block;
+	margin-top: 0px;
+  	}
+  	.child1{
+  	width:30%;
+  	padding-right:3%;
+  	clear: none;
+    float: left;
+    display: inline;
+  	}
+  	.med-field{
+  	width:67%;
+  	padding-right:3%;
+  	clear: none;
+    float: left;
+    display: inline;
+  	}
+  	.textarea{
+	
+	width: 100%;
+	height:80%;
+  	}
+  	.textarea-form{
+  		width:100%;
+  		height:120px;
+  	}
+  	.submit-button{
+	padding: 5px;
+	border-radius:4px;
+	border:1px solid #7ac9b7;
+	background-color: #4180C5;
+	color: white;
+	font-size:15px;
+	cursor:pointer;
+	margin-left:30%;
+  		
+  	}
+  	
 @media only screen and (min-width: 768px) {
+   .arrival-form, .departure-form, .board-form, .room-form, .address, .country, .phone-form, .med-field{
+  	width:50%;
+  	padding-right:3%;
+  	clear: none;
+    float: left;
+    display: inline;
+  	}
+  	.adults-form{
+  	clear:both;
+  	width:50%;
+  	}
+  	.title{
+  	width:20%;
+  	padding-right:3%;
+  	clear: none;
+    float: left;
+    display: inline;
+  	}
+  	.name, .surname{
+  	width:40%;
+  	padding-right:3%;
+  	clear: none;
+    float: left;
+    display: inline;
+  	}
+  	.check-field{
+	clear:both;
+  	}
+    .textarea{
+	width:75%;
+}
+.check-boxes{
+	width:80%;
+}
+} 	
+@media screen and (min-width: 1140px) {
+#request{
+  	margin-left:22%;
+  	margin-right:6%;
+  	width:72%;
+  	
+  }
+  #request1{
+  	margin-left:22%;
+  	margin-right:6%;
+  	width:72%;
+  	
+  }
+  .requestForm{
+  	margin:50px;
+  	 }
+  	 .arrival-form, .departure-form, .board-form, .room-form{
+  	width:33%;
+  	padding-right:4%;
+  	clear: none;
+    float: left;
+    display: inline;
+  	}
+  	.adults-form{
+  	
+  	width:40%;
+  	padding-right:4%;
+  	clear: none;
+    float: left;
+    display: inline;
+  	}
+  	.child1{
+  	width:30%;
+  }
   .sidebar{
     position:absolute;
     top:600px;
@@ -284,13 +428,22 @@ Navigation
 	width:16%;
 	background-image:url(../img/bg.png);
 }
+
+.textarea{
+	width:60%;
+}
+.not-active {
+   pointer-events: none;
+   cursor: default;
+}
   .fixed-menu{
   display: block; 
   position:fixed;
   width:16%;
+  top:0;
   z-index: 1002 !important;
   height: 400px;
-  background-image:url('../img/wood2.jpg') ;
+  background-color:#AAAAAA ;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
@@ -333,7 +486,7 @@ Navigation
     display:none;
     /* reset navigation values */
    }
-   
+  
   
 }
 
@@ -688,7 +841,7 @@ Intro
 	
 	
 }
-.requestForm{
+.bookingForm{
 	position:relative;
 	top:0;
 	left:0;
@@ -707,23 +860,24 @@ Intro
 	width:100%;
 	margin: 0 auto;
 }
-input[type=text]{
+.booking input[type=text]{
 width:150px;
 padding: 5px;
 border-radius:4px;
 border:1px solid #7ac9b7;
 margin-bottom:10px;
 }
-input[type=submit]
+.booking input[type=submit]
 {
 width:110px;
 padding: 5px;
 border-radius:4px;
 border:1px solid #7ac9b7;
 background-color: #4180C5;
-color: aliceblue;
+color: white;
 font-size:15px;
 cursor:pointer;
+text-align:center;
 }
 #datepicker{
 	display:inline-block;
@@ -759,14 +913,14 @@ cursor:pointer;
 	margin: 10px auto;
 }
 
-input[type=text]{
+.booking input[type=text]{
     position:relative;
     left:50%;
 	float:left;
 	margin-right:5px;
 }
 input[type=submit]{
-	
+	width:200px;
 }
 .booking{
 background-color:gray;
@@ -774,7 +928,7 @@ background-color:gray;
     position:absolute;
 	top:550px;
 	}
-  .requestForm{
+  .bookingForm{
     position:relative;
 	left:0;
 	top:0;
@@ -844,24 +998,15 @@ background-color:gray;
   }
 }
 
-.cd-btn {
-  display: inline-block;
-  padding: 1em 1.8em;
-  background-color: rgba(245, 72, 74, 0.9);
-  margin-top: 1em;
-  border-radius: 20em;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: white;
-}
+
 .cd-btn1{
     position:relative;
-    left:18%;
     top:20px;
-	display: inline-block;
+    left:20%;
+    width:60%;
+    display: inline-block;
     padding: 0.5em 1em;
+    text-align:center;
   background-color: rgba(245, 72, 74, 0.9);
   border-radius: 16em;
   -webkit-backface-visibility: hidden;
@@ -869,8 +1014,12 @@ background-color:gray;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white;
-	
-}
+  
+  }
+  a.button1{
+  	margin-bottom:10px;
+  }
+  
 .no-touch .cd-btn:hover {
   background-color: #f5484a;
 }
