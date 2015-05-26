@@ -17,8 +17,8 @@ body {
 }
 
 a {
-  color: #f5484a;
   text-decoration: none;
+  color:#030d18;
 }
 
 img {
@@ -84,19 +84,13 @@ Navigation
 	z-index: 1005 !important;
 	padding-left:10px;
 	width:200px;
+	color:white;
 }
 .lang-switch a{
-    width:25px;
-	height:50px;
-	opacity:0.8;
+	color:white;
+
 }
-.lang-switch a:hover{
-	opacity:1;
-}
-.lang-switch a img{
-	display:inline-block;
-	margin: 0 auto;
-}
+
 
 .cd-header {
   position: absolute;
@@ -108,24 +102,7 @@ Navigation
   background-color: #030d18;
   z-index: 3;
 }
-@media only screen and (min-width: 768px) {
-  .cd-header {
-    height: 70px;
-    background-color: transparent;
-    box-shadow: none;
-  }
-  .lang-switch{
-    position:absolute;
-	left:16%;
-	top:15px;
-	z-index: 1005 !important;
-	padding-left:10px;
-}
-.logo{
-	display:none;
-}
-  
-}
+
 
 
 
@@ -267,7 +244,11 @@ Navigation
   	color:white;
   	border-radius:2px;
   }
-  .requestForm{
+  #request1 fieldset{
+  	margin:10px;
+  	padding:5px;
+  }
+  #requestForm{
   	margin:10px;
   	padding:5px;
   }
@@ -349,6 +330,9 @@ Navigation
 	margin-left:30%;
   		
   	}
+  	.header-desktop{
+  		displaY:none;
+  	}
   	
 @media only screen and (min-width: 768px) {
    .arrival-form, .departure-form, .board-form, .room-form, .address, .country, .phone-form, .med-field{
@@ -387,11 +371,80 @@ Navigation
 }
 } 	
 @media screen and (min-width: 1140px) {
+.lang-switch{
+    position:absolute;
+	left:16%;
+	top:15px;
+	z-index: 1005 !important;
+	padding-left:10px;
+	color: #808080;
+}
+.lang-switch a{
+    width:25px;
+	height:50px;
+	
+}
+.lang-switch a:hover{
+	font-size:1.1em;
+	font-weight:400;
+}
+.logo{
+	display:none;
+}
 #request{
   	margin-left:22%;
   	margin-right:6%;
   	width:72%;
   	
+  }
+  #request1 fieldset{
+  	margin:50px;
+  	
+  }
+  .header-desktop{
+   display:block;
+  	text-align:center;
+  	margin: 20px 0px;
+  	
+  }
+  ul.header-menu{
+    position:absolute;
+    top:0;
+    left:16%;
+    width:84%;
+    vertical-align: top;
+    padding: 0px;
+}
+.header-menu li{
+	float:left;
+	position:relative;
+	left:35%;
+	top:27px;
+	border-radius:2px;
+	margin-right:3px;
+	padding:10px;
+	font-size:1.1em;
+	font-weight:300;
+}
+.header-menu a:hover{
+	font-size:1.2em;
+	font-weight:500;
+}
+.header-menu li.third{
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
+	
+}
+.header-menu li.first, .header-menu li.second{
+	border-left: 1px solid gray;
+	
+}
+
+  .cd-header {
+    height: 70px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px #999;
+    
   }
   #request1{
   	margin-left:22%;
@@ -399,7 +452,7 @@ Navigation
   	width:72%;
   	
   }
-  .requestForm{
+  #requestForm{
   	margin:50px;
   	 }
   	 .arrival-form, .departure-form, .board-form, .room-form{
@@ -426,7 +479,7 @@ Navigation
     left:0;
     height:100%;
 	width:16%;
-	background-image:url(../img/bg.png);
+/*	background-image:url(../img/bg.png);*/
 }
 
 .textarea{

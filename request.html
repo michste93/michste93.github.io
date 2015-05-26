@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="jquery/jquery-ui.css">
 	
 	<link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<!--	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">-->
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
 	
   	<title>Berghotel Miramonti - Val di Fiemme Dolomiti</title>
@@ -41,7 +41,7 @@
 <!--fixed menu desktop site-->
 <nav class="fixed-menu">
   <div class="logobox">
-  <a href="#"><img src="img/logo-berghotel.jpg" alt="Logo"></a>
+  <a href="index.html"><img src="img/logo-berghotel.jpg" alt="Logo"></a>
   <ul>
     <a href="hotel.html"><li>BERGHOTEL</li></a>
     <a href="winter.html"><li>WINTER</li></a>
@@ -53,24 +53,24 @@
   <a href="https://booking.ericsoft.com/BookingEngine/book.aspx?idh=980204DF7D786B42&dataInizio=2014/01/26&dataFine=2014/01/27&lingua=en" class="cd-btn1 button1">BOOK NOW</a>
   <a href="request.html" class="cd-btn1 button2">REQUEST</a>
   
-</nav>
 </div>
+</nav>
 <div id="request">
 	<h2>YOUR REQUEST</h2><br>
 	<h3>*Please fill out all required fields</h3>
-		<form class="requestForm">
+		<form id="requestForm" method="post">
     <fieldset>
         <div class="arrival-form"><label class="formLabel">ARRIVAL DATE*</label><input type="text" placeholder="Arrival Date" id="depart" class ="large-field" name="arrivalDate" required></div>
           <div class="departure-form"><label class="formLabel">DEPARTURE*</label><input type="text" placeholder="Departure Date" id="return" class ="large-field" name="departureDate" required></div>
           <div class="board-form"><label class="formLabel">BOARD*</label><select name="board" class ="large-field" required>
-           <option value="full board"default>Full Board</option>
-           <option value="half board" >Half Board</option>
-           <option value="bed">Bed & Breakfast</option>
+           <option value="Pensione completa" default>Full Board</option>
+           <option value="Mezza pensione" >Half Board</option>
+           <option value="B & B">Bed & Breakfast</option>
            </select></div>
            <div class="room-form"><label class="formLabel">ROOM TYPE*</label><select name="room" class="large-field" required>
-           <option value="family" class ="large-field" default>Standard</option>
-           <option value="famStandard" >Family Standard</option>
-           <option value="famSuite">Family Suite</option>
+           <option value="Standard" class ="large-field" default>Standard</option>
+           <option value="Family Standard" >Family Standard</option>
+           <option value="Family Suite">Family Suite</option>
            </select></div>
            <div class="adults-form"><label class="formLabel">ADULTS*</label><select name="adults" class ="large-field" required>
            <option value="1" default> 1 </option>
@@ -79,19 +79,19 @@
            <option value="4"> 4 </option>
            </select></div>
           <div class="child1"> <label class="formLabel">CHILDS AGE 1</label><select name="child1" class ="child-field">
-           <option value="no-child" default>No child</option>
+           <option value="no bambini" default>No child</option>
            <option value="0-1"> 0-1 </option>
            <option value="2-5" > 2-5 </option>
            <option value="6-12"> 6-12 </option>
            </select></div>
            <div class="child1"><label class="formLabel">CHILDS AGE 2</label><select name="child2" class ="child-field">
-           <option value="no-child" default>No child</option>
+           <option value="no bambini" default>No child</option>
            <option value="0-1"> 0-1 </option>
            <option value="2-5"> 2-5 </option>
            <option value="6-12"> 6-12 </option>
            </select></div>
            <div class="child1"><label class="formLabel">CHILDS AGE 3</label><select name="child3" class ="child-field">
-           <option value="no-child"default>No child</option>
+           <option value="no bambini"default>No child</option>
            <option value="0-1"> 0-1 </option>
            <option value="2-5"> 2-5 </option>
            <option value="6-12"> 6-12 </option>
@@ -99,27 +99,28 @@
         </fieldset>
            <div class="textarea-form"><label class="formLabel">ADDITIONAL INFORMATION AND MESSAGE REGARDING YOUR REQUEST</label><textarea class="textarea" name="textarea"></textarea></div>
         
-</form>
+
 </div>	<br>
 <div id="request1">
 	<h2>PERSONAL DATA</h2><br>
-		<form class="requestForm">
+		
     <fieldset>
-        <div class="title"><label class="formLabel">TITLE*</label><select name="board" class ="large-field" required>
-           <option value="mr">Mr.</option>
-           <option value="mrs" >Mrs.</option>
-           <option value="family">Family</option>
-           <option value="company">Company</option>
+        <div class="title"><label class="formLabel">TITLE*</label><select name="title" class ="large-field" required>
+           <option value="Mr">Mr.</option>
+           <option value="Mrs" >Mrs.</option>
+           <option value="Family">Family</option>
+           <option value="Company">Company</option>
            </select></div>
-        <div class="name"><label class="formLabel">NAME*</label><input type="text" placeholder="Name" class ="large-field" name="Name" required></div>
-          <div class="surname"><label class="formLabel">SURNAME*</label><input type="text" placeholder="Surname" class ="large-field" name="Surname"></div>
-          <div class="address"><label class="formLabel">ADDRESS</label><input type="text" placeholder="Address" class ="large-field" name="Address"></div>
-          <div class="child1"><label class="formLabel">ZIP</label><input type="text" placeholder="Zip" class ="child-field" name="Zip"></div>
-          <div class="med-field"><label class="formLabel">CITY</label><input type="text" placeholder="City" class ="child-field" name="City"></div>
-          <div class="country"><label class="formLabel">COUNTRY</label><input type="text" placeholder="Country" class ="large-field" name="Country"></div>
-          <div class="phone-form"><label class="formLabel">PHONE</label><input type="text" placeholder="Phone" class ="large-field" name="Phone"></div>
+        <div class="name"><label class="formLabel">NAME*</label><input type="text" placeholder="Name" class ="large-field" name="name" required></div>
+          <div class="surname"><label class="formLabel">SURNAME*</label><input type="text" placeholder="Surname" class ="large-field" name="surname" required></div>
+          <div class="surname"><label class="formLabel">EMAIL*</label><input type="text" placeholder="Email" class ="large-field" name="email" required></div>
+          <div class="address"><label class="formLabel">ADDRESS</label><input type="text" placeholder="Address" class ="large-field" name="address"></div>
+          <div class="child1"><label class="formLabel">ZIP</label><input type="text" placeholder="Zip" class ="child-field" name="zip"></div>
+          <div class="med-field"><label class="formLabel">CITY</label><input type="text" placeholder="City" class ="child-field" name="city"></div>
+          <div class="country"><label class="formLabel">COUNTRY</label><input type="text" placeholder="Country" class ="large-field" name="country"></div>
+          <div class="phone-form"><label class="formLabel">PHONE</label><input type="text" placeholder="Phone" class ="large-field" name="phone"></div>
           <div class="check-boxes"><label>NEWSLETTER</label><input type="checkbox" class ="check-field" name="news"><label>SUBSCRIBE</label>
-          <label>PRIVACY*</label><input type="checkbox" class ="check-field" name="news" required></div>
+          <label>PRIVACY*</label><input type="checkbox" class ="check-field" name="privacy" required></div>
           <div class="textarea"><textarea class ="textarea-form" cols="43" rows="8">INFORMATIVA RELATIVA AL TRATTAMENTO DEI DATI PERSONALI 
 (Art. 13 del D .Lgs.30 giugno 2003 n. 196) 
 
@@ -162,7 +163,7 @@ b) al trattamento di dati personali che lo riguardano a fini di invio di materia
 
 
 L'INTERESSATO, presa visione dell’informativa redatta ai sensi dell'art. 13 del D.Lgs. 30 giugno 2003 n. 196, rilascia espresso consenso al trattamento dei dati personali per le attività sopra descritte (si richiede di restituirci a mezzo fax  o posta (Berghotel Miramonti - Tesero 38038 - Località Stava - Telefono: 0462814177 - Fax: 0462814646).</textarea></div><br>
-        <button type="submit" class="submit-button" name="submit" onClick="validateForm">SUBMIT THE REQUEST</button>
+        <button type="submit" class="submit-button" name="submit" >SUBMIT THE REQUEST</button><div id="success" style="color:red;"></div>
     </fieldset>
 </form>
 </div>	
@@ -229,8 +230,8 @@ L'INTERESSATO, presa visione dell’informativa redatta ai sensi dell'art. 13 de
 
 		</footer>
 		
-<script src="js/jquery-2.1.1.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
-<script src="jquery/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="js/main.js"></script> <!-- Resource jQuery -->
+<script type="text/javascript" src="jquery/jquery-ui.js"></script>
 </body>
 </html>
