@@ -1,10 +1,10 @@
 <?php
-	echo "cityyyyyyyy";
-    $arrivo = $_POST["arrivalDate"];
-   $partenza = $_POST["departureDate"];
- $pensione = $_POST["board"];
+  echo "cityyyyyyyy";
+  $arrivo = $_POST["arrivalDate"];
+  $partenza = $_POST["departureDate"];
+  $pensione = $_POST["board"];
   $camera = $_POST["room"];
- $adulti = $_POST["adults"];
+  $adulti = $_POST["adults"];
   $bimbo1 = $_POST["child1"];
   $bimbo2 = $_POST["child2"];
   $bimbo3 = $_POST["child3"];

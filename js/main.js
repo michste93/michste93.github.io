@@ -7,12 +7,14 @@ $( "#return" ).datepicker( $.datepicker.regional[ "it" ] );
         $("#return").datepicker();
         });
         
-/*  $('.submit-button').on('click', function(event){
-    $.post("send.php", $("#requestForm").serialize(), function(response) {
+  $('.submit-button').on('click', function(event){
+    $.post("./send.php", $("#requestForm").serialize(), function(response) {
+      alert(response);
 	  $('#success').html(response);
 	  
 	//$('#success').html(response);
 	//$('#success').hide('slow');
+	});
 	});
 	
   

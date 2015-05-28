@@ -17,6 +17,7 @@ body {
 }
 
 a {
+	cursor: pointer;
   text-decoration: none;
   color:#030d18;
 }
@@ -330,10 +331,13 @@ Navigation
 	margin-left:30%;
   		
   	}
-  	.header-desktop{
-  		displaY:none;
-  	}
   	
+  	.header-desktop-bottom{
+  		display:none;
+  	}
+  	.walking-logo{
+  		display:none;
+  	}
 @media only screen and (min-width: 768px) {
    .arrival-form, .departure-form, .board-form, .room-form, .address, .country, .phone-form, .med-field{
   	width:50%;
@@ -373,8 +377,8 @@ Navigation
 @media screen and (min-width: 1140px) {
 .lang-switch{
     position:absolute;
-	left:16%;
-	top:15px;
+	left:0;
+	top:0;
 	z-index: 1005 !important;
 	padding-left:10px;
 	color: #808080;
@@ -397,51 +401,89 @@ Navigation
   	width:72%;
   	
   }
+  .walking-logo{
+  	text-align:center;
+  	display:block;
+  }
+ /* .walking-logo a{
+  	background-clip: border-box;
+	background-color: transparent;
+	background-image: url("../img/dolomiti_walking_hotel2.jpg");
+	background-origin: padding-box;
+	background-position: 40%;
+	background-repeat: no-repeat;
+	background-size: auto auto;
+  	color: #CACD32;
+  	cursor: pointer;
+  	display: block;
+  	font-family: "Lato",sans-serif;
+  	font-size: 16px;
+  	height: 50px;background
+  	line-height: 22px;
+  	text-align: center;
+  	text-decoration: none;
+  	-moz-text-decoration-color: #CACD32;
+  	-moz-text-decoration-line: none;
+  	-moz-text-decoration-style: solid;
+  	opacity:0.8;
+  }*/
+  .walking-logo a:hover{
+  	opacity:1;
+  }
+  
   #request1 fieldset{
   	margin:50px;
   	
   }
-  .header-desktop{
-   display:block;
-  	text-align:center;
-  	margin: 20px 0px;
+  .header-desktop-top{
+    margin: 2px 0px 0px;
+	padding: 0px 0px 10px;
+	position: relative;
+	border-bottom: 1px solid #E2E2E2;
   	
   }
-  ul.header-menu{
+  .header-desktop-bottom{
+    margin: 20px 0px;
+	text-align:center;
+	display:block;
+  }
+  .center-header{
     position:absolute;
-    top:0;
-    left:16%;
-    width:84%;
-    vertical-align: top;
+  	top:0;
+  	left:16%;
+  	margin-left:2%;
+  	margin-right:2%;
+  	width:80%;
+  }
+  ul.header-desktop-list{
+    display: inline-block;
+	vertical-align: top;
     padding: 0px;
 }
-.header-menu li{
+.header-desktop-list li{
 	float:left;
-	position:relative;
-	left:35%;
-	top:27px;
-	border-radius:2px;
-	margin-right:3px;
-	padding:10px;
+	display:inline;
 	font-size:1.1em;
 	font-weight:300;
+	padding-left:8px;
+	padding-right:8px;
 }
-.header-menu a:hover{
+.header-desktop-list a:hover{
 	font-size:1.2em;
 	font-weight:500;
 }
-.header-menu li.third{
-	border-left: 1px solid gray;
-	border-right: 1px solid gray;
+.header-desktop-list li.third{
+	border-left: 1px solid #AAA;
+	border-right: 1px solid #AAA;
 	
 }
-.header-menu li.first, .header-menu li.second{
-	border-left: 1px solid gray;
+.header-desktop-list li.first, .header-desktop-list li.second{
+	border-left: 1px solid #AAA;
 	
 }
 
   .cd-header {
-    height: 70px;
+    height: 120px;
     background-color: #fff;
     box-shadow: 0px 0px 10px 0px #999;
     
@@ -948,7 +990,14 @@ text-align:center;
     .cb-slideshow li div h3 { font-size: 80px }
 }
 
-@media only screen and (min-width: 1028px) {
+@media only screen and (min-width: 1170px) {
+.cb-slideshow{
+	position:absolute;
+	top:70px;
+	left:0;
+	width:100%;
+	height:600px;
+}
   #cd-intro {
     position:relative;
     top:0;
@@ -976,10 +1025,10 @@ text-align:center;
 	float:right;
 }
 .booking{
-background-color:gray;
+    background-color:gray;
 	width:100%
     position:absolute;
-	top:550px;
+	top:620px;
 	}
   .bookingForm{
     position:relative;
@@ -1373,7 +1422,7 @@ Placeholder Sections
 
 -------------------------------- */
 .cd-section {
-  margin: 0 auto;
+  
   padding: 2em 0;
   height: 300px;
   opacity:0.8;
@@ -1422,6 +1471,7 @@ Placeholder Sections
   opacity:1;	
 }
 #cd-placeholder-1{
+    margin-top:50px;
 	background-image:url('../img/hiking.jpg');
 }
 #cd-placeholder-2{
@@ -1439,7 +1489,7 @@ Placeholder Sections
 #cd-placeholder-6{
 	background-image:url('../img/well.jpg');
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1170px) {
   .cd-section {
   padding: 2em 0;
   display:inline-block;
@@ -1485,6 +1535,7 @@ Placeholder Sections
     background-repeat: none;
 }
 #cd-placeholder-3{
+    margin-top:50px;
     margin-left:16%;
     width: 28%;
     height: 250px;
