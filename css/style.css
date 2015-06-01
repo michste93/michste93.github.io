@@ -399,6 +399,9 @@ Navigation
   	text-align:center;
   	display:block;
   }
+  .header-logo{
+  	height:60px;
+  }
  /* .walking-logo a{
   	background-clip: border-box;
 	background-color: transparent;
@@ -444,10 +447,10 @@ Navigation
   .center-header{
     position:absolute;
   	top:0;
-  	left:16%;
+  	left:14%;
   	margin-left:2%;
   	margin-right:2%;
-  	width:80%;
+  	width:82%;
   }
   ul.header-desktop-list{
     display: inline-block;
@@ -528,12 +531,12 @@ Navigation
   .fixed-menu{
   display: block; 
   position:fixed;
-  width:16%;
+  width:14%;
   top:0;
   z-index: 1002 !important;
-  height: 400px;
-  background-color:#AAAAAA ;
+  height: 450px;
   -webkit-border-radius: 2px;
+  background-image:url('../img/grey.png') ;
   -moz-border-radius: 2px;
   border-radius: 2px;
 	
@@ -1058,7 +1061,7 @@ text-align:center;
   }
   #cd-intro-fix-intern {
     position:relative;
-    top:0;
+    top:120px;
     left:16%;
     width:72%;
     height: 600px;
@@ -1513,7 +1516,7 @@ Placeholder Sections
 
 #cd-placeholder-1{
     margin-top:120px;
-    margin-left:16%;
+    margin-left:14%;
     width: 56%;
     height: 250px;
     background-color: transparent;
@@ -1523,8 +1526,8 @@ Placeholder Sections
 }
 #cd-placeholder-2{
     margin-top:120px;
-    margin-left:-5px;
-    width: 28%;
+    margin-left:-3px;
+    width: 30%;
     height: 250px;
     background-color: transparent;
     background-size: cover;
@@ -1532,7 +1535,7 @@ Placeholder Sections
     background-repeat: none;
 }
 #cd-placeholder-3{
-    margin-left:16%;
+    margin-left:14%;
     width: 28%;
     height: 250px;
     background-color: transparent;
@@ -1543,8 +1546,8 @@ Placeholder Sections
     
 }
 #cd-placeholder-6{
-    margin-left:16%;
-    width: 84%;
+    margin-left:14%;
+    width: 86%;
     height: 250px;
     background-color: transparent;
     background-size: cover;
@@ -1554,8 +1557,8 @@ Placeholder Sections
     
 }
 
-#cd-placeholder-4, #cd-placeholder-5{
-margin-left:-5px;
+#cd-placeholder-4{
+	margin-left:-3px;
     width: 28%;
     height: 250px;
     background-color: transparent;
@@ -1563,6 +1566,15 @@ margin-left:-5px;
     background-position: 50% 50%;
     background-repeat: none;
     
+}
+#cd-placeholder-5{
+margin-left:-3px;
+    width: 30%;
+    height: 250px;
+    background-color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
     
 }
 

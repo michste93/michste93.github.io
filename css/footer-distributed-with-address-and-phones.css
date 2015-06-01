@@ -26,7 +26,17 @@
 .footer-distributed .footer-left{
 	width: 40%;
 }
-
+.link-img{
+	width:170px;
+	height:80px;
+}
+.trentino-img{
+	width:170px;
+	height:120px;
+}
+.footer-bottom{
+	width:100%;
+}
 /* The company logo */
 
 .footer-distributed h3{
@@ -197,12 +207,24 @@
 		opacity:1;
 		
 	}
+	.link-img{
+		display:block;
+		margin:auto;
+		padding-top:25px;
+	}
+	.trentino-img{
+		display:block;
+		margin:auto;
+		padding-top:-100px;
+	}
 
 }
-@media (min-width: 880px) {
+@media (min-width: 1140px) {
 
 	.footer-distributed{
-		margin-left:16%;
+		margin-left:14%;
 	}
+	
+
 
 }
