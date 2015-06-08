@@ -401,6 +401,10 @@ Navigation
   }
   .header-logo{
   	height:60px;
+  	opacity:0.8;
+  }
+  .header-logo-a::hover{
+  	opacity:1;
   }
  /* .walking-logo a{
   	background-clip: border-box;
@@ -536,7 +540,7 @@ Navigation
   z-index: 1002 !important;
   height: 450px;
   -webkit-border-radius: 2px;
-  background-image:url('../img/grey.png') ;
+  background-color:#AAA;
   -moz-border-radius: 2px;
   border-radius: 2px;
 	
@@ -1018,7 +1022,7 @@ text-align:center;
 	margin-right:5px;
 }
 .booking input[type=submit]{
-	width:160px;
+	width:175px;
 	float:right;
 }
 .booking{
