@@ -222,7 +222,7 @@ Navigation
 	margin: 0 auto;
 }
   #request{
-  	margin-top:70px;
+  	margin-top:150px;
   	margin-left:auto;
   	margin-right:auto;
   	width:90%;
@@ -230,6 +230,69 @@ Navigation
   	color:white;
   	border-radius:2px;
   }
+  .price_table{
+  	margin-top:80px;
+  	margin-bottom:100px;
+  	margin-left:3%;
+  	margin-left:3%;
+  	
+  	padding: 0px;
+    text-align: left;
+  	border-radius:5px;
+  	color: #615F59;
+    line-height: 25px;
+    font-size: 10px;
+}
+.price_table table{
+	text-align:center;
+	padding: 0px;
+    margin: 0px;
+    border: 1px solid white;
+    text-align: center;
+    width:94%;
+}
+.price_table td {
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid white;
+}
+.price_table tr.rigachiara {
+    background-color: #E3E3E3;
+    margin: 10px 0px 0px;
+    padding: 10px 0px 0px;
+}
+.price_table tr.rigascura {
+    background-color: #C8C8C8;
+    margin: 10px 0px 0px;
+    padding: 10px 0px 0px;
+}
+.price_table th{
+	color: #FFF;
+	font-weight: bold;
+	background-color: #998980;
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid white;
+	
+  }
+  
+  .price_table h2{
+  	color: #776A62;
+  	font-size: 15px;
+  	font-weight:800;
+  }
+  .price_table h3{
+  	font-size: 13px;
+  	font-weight:600;
+  }
+  .notes{
+  	font-size: 12px;
+  }
+  .price_table th.intestazioneprezzi {
+    background-color: #776A62;
+    margin: 0px;
+    padding: 2px 0px;
+}
   #request1{
   	margin-top:20px;
   	margin-left:auto;
@@ -332,6 +395,7 @@ Navigation
   	.walking-logo{
   		display:none;
   	}
+  	
 @media only screen and (min-width: 768px) {
    .arrival-form, .departure-form, .board-form, .room-form, .address, .country, .phone-form, .med-field{
   	width:50%;
@@ -369,6 +433,15 @@ Navigation
 }
 } 	
 @media screen and (min-width: 1140px) {
+.price_table{
+    margin-top:150px;
+  	margin-left:19%;
+  	margin-right:5%;
+  	width:76%;
+  }
+  .price_table table{
+  	width:100%;
+  }
 .lang-switch{
     position:absolute;
 	left:0;
@@ -956,23 +1029,22 @@ Intro
 	margin: 0 auto;
 }
 .booking input[type=text]{
-width:150px;
-padding: 5px;
-border-radius:4px;
-border:1px solid #7ac9b7;
-margin-bottom:10px;
+	width:150px;
+	padding: 5px;
+	border-radius:4px;
+	border:1px solid #7ac9b7;
+	margin-bottom:10px;
 }
-.booking input[type=submit]
-{
-padding: 5px;
-width:180px;
-border-radius:4px;
-border:1px solid #7ac9b7;
-background-color: #4180C5;
-color: white;
-font-size:15px;
-cursor:pointer;
-text-align:center;
+.booking input[type=submit]{
+	padding: 5px;
+	width:180px;
+	border-radius:4px;
+	border:1px solid #7ac9b7;
+	background-color: #4180C5;
+	color: white;
+	font-size:15px;
+	cursor:pointer;
+	text-align:center;
 }
 #datepicker{
 	display:inline-block;
@@ -1007,12 +1079,12 @@ text-align:center;
   }
   .form1{
     width:50%;
-	
-}
+	}
 .form2{
-    
-	width:50%;
+    width:50%;
 	margin: 10px auto;
+	position:relative;
+	right:0;
 }
 
 .booking input[type=text]{
@@ -1024,6 +1096,7 @@ text-align:center;
 .booking input[type=submit]{
 	width:175px;
 	float:right;
+	
 }
 .booking{
     background-color:gray;
