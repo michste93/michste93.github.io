@@ -726,17 +726,17 @@ Intro
 }
 #cd-intro-fix-intern {
   position: relative;
-  top:0px;
+  top:50px;
   left:0;
   height: 300px;
   z-index: 2;
 }
 #internalRight{
 	position: relative;
-  top:0;
-  left:0;
-  height: 300px;
-  z-index: 2;
+    top:30px;
+    left:0;
+    height: 300px;
+    z-index: 2;
 	background-color:pink;
 }
 .innerElement{
@@ -1050,9 +1050,20 @@ Intro
 	display:inline-block;
 }
 .mainContent{
-	margin:5px;
+    margin-top:40px;
+	margin-left:5px;
+	margin-right:5px;
+	margin-bottom:10px;
 	text-align:left;
 	font-size:1.2em;
+	color: #615F59;
+}
+
+
+.mainContent h2{
+	font-size:1.5em;
+	color: #776A62;
+	
 }
 
 @media screen and (max-width: 1140px) { 
@@ -1113,12 +1124,20 @@ Intro
 	display:inline-block;
 }
 .mainContent{
+    background-color:white;
+    height:100px;
 	margin-left: 20%;
 	margin-top:20px;
 	margin-right:20px;
 	margin-bottom:20px;
 	text-align:left;
-	font-size:1.4em;
+	font-size:1.3em;
+	color: #615F59;
+}
+.mainContent h2{
+	font-size:1.5em;
+	color: #776A62;
+	
 }
 .form1{
     
@@ -1139,8 +1158,8 @@ Intro
   #cd-intro-fix-intern {
     position:relative;
     top:120px;
-    left:16%;
-    width:72%;
+    left:14%;
+    width:74%;
     height: 600px;
     display:inline-block;
   }
