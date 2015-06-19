@@ -25,19 +25,62 @@ a {
 img {
   max-width: 100%;
 }
+h2{
+  	font-size: 18px;
+  	font-weight:800;
+  }
+h3{
+  	font-size: 13px;
+  	font-weight:600;
+  }
+
 
 /* -------------------------------- 
 
 Modules - reusable parts of our design
 
 -------------------------------- */
-
+.cd-main-content-intern{
+     margin-top:45px;
+     margin-left:8px;
+     margin-right:5px;
+     margin-bottom:5px;
+     font-size:15px;
+     
+  	 }
+ .cd-main-content-intern li{
+ list-style-type:initial;
+ list-style-position: inside;
+ padding-top:2px;
+ }
+ .cd-main-content-intern h2{
+ 	color: #776A62;
+ 	padding-bottom:3px;
+ }  	
 
 
 
 @media only screen and (min-width: 1170px) {
-  .cd-main-content{
+  
+   .cd-main-content-intern{
+     margin-top:125px;
+     margin-left:15%;
+     margin-right:1%;
+     list-style-type:initial;
+     font-size:18px;
   	 }
+  	 .cd-main-content-intern li{
+ 
+ padding-top:4px;
+ }
+ .cd-main-content-intern h2{
+ 	color: #776A62;
+ 	padding-bottom:6px;
+ 	font-size: 25px;
+ }
+ .cd-main-content-intern h3{
+ 	font-size: 22px;
+ }  	  	   	  	 
 }
 
 @-webkit-keyframes animate-margin-top {
@@ -706,6 +749,17 @@ Intro
   position: absolute;
   z-index: -1;  
 }
+.beauty::after {
+  content: "";
+  background: transparent url(../img/well.jpg) no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;  
+}
 .hiking::after {
   content: "";
   background: transparent url(../img/hiking.jpg) no-repeat;
@@ -1086,6 +1140,7 @@ Intro
     position:relative;
     top:0;
     left:0;
+    margin-right:1%;
     height: 600px;
   }
   .form1{
@@ -1153,6 +1208,7 @@ Intro
     left:0;
     width:72%;
     height: 600px;
+    margin-right:1%;
     display:inline-block;
   }
   #cd-intro-fix-intern {
@@ -1168,6 +1224,7 @@ Intro
     position:absolute;
     top:120px;
     left:72%;
+    margin-right:1%;
     width:28%;
     height: 600px;
     display:inline-block;
@@ -1517,9 +1574,14 @@ Placeholder Sections
 .cd-section {
   position:relative;
   top:0;
-  padding: 2em 0;
-  height: 300px;
+  padding: 0;
+  
   opacity:0.8;
+    height: 250px;
+    background-color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
 }
 .cd-section h2 {
   font-size: 20px;
@@ -1550,6 +1612,15 @@ Placeholder Sections
    padding: 5px; 
 
 }
+.cd-section p .smaller{
+   color: white; 
+   font: bold 24px/38px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 5px; 
+
+}
 #cd-placeholder-1, #cd-placeholder-2,#cd-placeholder-3,#cd-placeholder-4,#cd-placeholder-5,#cd-placeholder-6{
   width: 100%;
     height: 300px;
@@ -1564,30 +1635,51 @@ Placeholder Sections
 .cd-section:active{
   opacity:1;	
 }
-#cd-placeholder-1{
-    
+#hike-back{
+    margin-top:30px;
 	background-image:url('../img/hiking.jpg');
 }
-#cd-placeholder-2{
+#beauty-back{
 	background-image:url('../img/beauty.jpg');
 }
-#cd-placeholder-3{
+#walk-back{
+    
+	background-image:url('../img/walking.JPG');
+}
+#room-back{
 	background-image:url('../img/camera.jpg');
 }
-#cd-placeholder-4{
+#eventi-back{
+	background-image:url('../img/suoni.jpg');
+}
+#summer-back{
 	background-image:url('../img/summer1.jpg');
 }
-#cd-placeholder-5{
+#winter-back{
 	background-image:url('../img/winter.jpg');
 }
-#cd-placeholder-6{
+#family-back{
+   
+	background-image:url('../img/kids.jpg');
+}
+#attività-back{
+    
+	background-image:url('../img/rafting.jpg');
+}
+#bici-back{
+   
+	background-image:url('../img/bici.jpg');
+}
+#well-back{
 	background-image:url('../img/well.jpg');
 }
 @media only screen and (min-width: 1170px) {
   .cd-section {
-  padding: 2em 0;
   display:inline-block;
   vertical-align: top;
+  -webkit-box-sizing: border-box ;
+     -moz-box-sizing: border-box ;
+          box-sizing: border-box ;
   
 }
 .cd-section p span{
@@ -1608,7 +1700,48 @@ Placeholder Sections
 .cd-section p {
   line-height: 1.6;
 }
-
+#hike-back{
+    margin-top:120px;
+    margin-left:14%;
+    width: 56%;
+	
+}
+#beauty-back{
+	background-image:url('../img/beauty.jpg');
+}
+#walk-back{
+    margin-top:120px;
+    margin-left:-3px;
+    width: 30%;
+	
+}
+#room-back{
+	background-image:url('../img/camera.jpg');
+}
+#summer-back{
+	background-image:url('../img/summer1.jpg');
+}
+#winter-back{
+	background-image:url('../img/winter.jpg');
+}
+#family-back{
+   margin-left:14%;
+    width: 28%;
+	
+}
+#attività-back{
+    margin-left:-3px;
+    width: 30%;
+	
+}
+#bici-back{
+   margin-left:-3px;
+    width: 28%;
+	
+}
+#well-back{
+	background-image:url('../img/well.jpg');
+}
 
 #cd-placeholder-1{
     margin-top:120px;
@@ -1619,6 +1752,7 @@ Placeholder Sections
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: none;
+    position:relative;
 }
 #cd-placeholder-2{
     margin-top:120px;
@@ -1629,6 +1763,7 @@ Placeholder Sections
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: none;
+    position:relative;
 }
 #cd-placeholder-3{
     margin-left:14%;
@@ -1664,8 +1799,8 @@ Placeholder Sections
     
 }
 #cd-placeholder-5{
-margin-left:-3px;
-    width: 30%;
+   margin-left:-3px;
+    width: 29%;
     height: 250px;
     background-color: transparent;
     background-size: cover;
