@@ -25,6 +25,10 @@ a {
 img {
   max-width: 100%;
 }
+h1{
+  	font-size: 22px;
+  	font-weight:900;
+  }
 h2{
   	font-size: 18px;
   	font-weight:800;
@@ -57,7 +61,11 @@ Modules - reusable parts of our design
  	color: #776A62;
  	padding-bottom:3px;
  }  	
-
+.title{
+	text-align:center;
+	margin-left:45%;
+	
+}
 
 
 @media only screen and (min-width: 1170px) {
@@ -117,7 +125,7 @@ Navigation
 -------------------------------- */
 .lang-switch{
     position:relative;
-	left: 100px;
+	left: 180px;
 	top:-30px;
 	z-index: 1005 !important;
 	padding-left:10px;
@@ -199,7 +207,7 @@ Navigation
 	opacity:0.8;
 	position:absolute;
 	top:0;
-	left:60px;
+	left:120px;
 }
 .phone a{
 	background-clip: border-box;
@@ -231,14 +239,14 @@ Navigation
 	margin: 0 auto;
 }
 .logo{
-    width:50px;
+    width:115px;
     height:50px;
-	opacity:0.8;
+	
 }
 .logo a{
 	background-clip: border-box;
 	background-color: transparent;
-	background-image: url(../img/logoMobile.png);
+	background-image: url(../img/piccolopiccolo.jpg);
 	background-origin: padding-box;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
@@ -257,9 +265,7 @@ Navigation
   	-moz-text-decoration-style: solid;
  
 }
-.logo:hover{
-	opacity: 1;
-}
+
 .logo img{
     display:block;
 	margin: 0 auto;
@@ -482,6 +488,16 @@ Navigation
   	margin-right:5%;
   	width:76%;
   }
+  .logo-desktop{
+  	width:100%;
+  	height:120px;
+  	}
+  	.logobox{
+  		opacity:0.7;
+  	}
+  	.logobox:hover{
+  		opacity:1;
+  	}
   .price_table table{
   	width:100%;
   }
@@ -519,7 +535,7 @@ Navigation
   	height:60px;
   	opacity:0.8;
   }
-  .header-logo-a::hover{
+  .header-logo-a::visited{
   	opacity:1;
   }
  /* .walking-logo a{
@@ -571,6 +587,7 @@ Navigation
   	margin-left:2%;
   	margin-right:2%;
   	width:82%;
+  	height:100px;
   }
   ul.header-desktop-list{
     display: inline-block;
@@ -584,6 +601,7 @@ Navigation
 	font-weight:300;
 	padding-left:8px;
 	padding-right:8px;
+	color: #030d18;
 }
 .header-desktop-list a:hover{
 	font-size:1.2em;
@@ -1571,6 +1589,42 @@ Secondary Fixed Navigation
 Placeholder Sections
 
 -------------------------------- */
+.page-pictures{
+	position:relative;
+    top:120px;
+    left:14%;
+    width:86%;
+    height: 1200px;
+    
+}
+.page-pictures div{
+	white-space: nowrap;
+	float:left;
+	width:50%;
+	height:300px;
+	display:inline;
+}
+.page-pictures .2{
+    margin-top:-100px;
+	white-space: nowrap;
+	float:left;
+	width:50%;
+	height:300px;
+	display:inline;
+}
+.page-pictures p{
+	color:gray;
+  opacity:1;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 25px;
+  position: relative;
+  top:50%;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  margin: 0 auto;
+}
 .cd-section {
   position:relative;
   top:0;
@@ -1636,11 +1690,11 @@ Placeholder Sections
   opacity:1;	
 }
 #hike-back{
-    margin-top:30px;
+    margin-top:50px;
 	background-image:url('../img/hiking.jpg');
 }
-#beauty-back{
-	background-image:url('../img/beauty.jpg');
+#spawelness-back{
+	background-image:url('../img/well.jpg');
 }
 #walk-back{
     
@@ -1654,6 +1708,9 @@ Placeholder Sections
 }
 #summer-back{
 	background-image:url('../img/summer1.jpg');
+}
+#offerte-back{
+	background-image:url('../img/offerte.jpeg');
 }
 #winter-back{
 	background-image:url('../img/winter.jpg');
@@ -1672,6 +1729,19 @@ Placeholder Sections
 }
 #well-back{
 	background-image:url('../img/well.jpg');
+}
+
+#spa-back{
+	background-image:url('../img/sauna.jpg');
+}
+#beauty-back{
+	background-image:url('../img/massaggi.jpg');
+}
+#acqua-back{
+	background-image:url('../img/acqua.jpeg');
+}
+#fitness-back{
+	background-image:url('../img/fitness.jpg');
 }
 @media only screen and (min-width: 1170px) {
   .cd-section {
@@ -1706,8 +1776,33 @@ Placeholder Sections
     width: 56%;
 	
 }
+#spa-back{
+    margin-top:120px;
+    margin-left:14%;
+    width: 43%;
+	background-image:url('../img/sauna.jpg');
+}
+#acqua-back{
+margin-left:14%;
+    width: 43%;
+	background-image:url('../img/acqua.jpeg');
+}
+#fitness-back{
+    margin-left:-3px;
+    width: 43%;
+	background-image:url('../img/fitness.jpg');
+}
+#spawelness-back{
+	background-image:url('../img/well.jpg');
+	margin-top:120px;
+    margin-left:-3px;
+    width: 30%;
+}
 #beauty-back{
-	background-image:url('../img/beauty.jpg');
+margin-top:120px;
+    margin-left:-3px;
+    width: 43%;
+	background-image:url('../img/massaggi.jpg');
 }
 #walk-back{
     margin-top:120px;
@@ -1723,6 +1818,17 @@ Placeholder Sections
 }
 #winter-back{
 	background-image:url('../img/winter.jpg');
+	margin-left:-3px;
+    width: 30%;
+}
+#offerte-back{
+	margin-left:-3px;
+    width: 28%;
+}
+#eventi-back{
+margin-left:14%;
+    width: 28%;
+	
 }
 #family-back{
    margin-left:14%;
