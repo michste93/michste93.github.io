@@ -217,7 +217,7 @@ Navigation
 .phone a{
 	background-clip: border-box;
 	background-color: transparent;
-	background-image: url(../img/phone.png);
+	background-image: url(../img/phone1.png);
 	background-origin: padding-box;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
@@ -251,7 +251,7 @@ Navigation
 .logo a{
 	background-clip: border-box;
 	background-color: transparent;
-	background-image: url(../img/piccolopiccolo.jpg);
+	background-image: url(../img/piccolo1.jpg);
 	background-origin: padding-box;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
@@ -451,6 +451,46 @@ Navigation
   	}
   	
 @media only screen and (min-width: 768px) {
+
+	.cd-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  background-color: #030d18;
+  z-index: 3;
+}
+.lang-switch{
+    position:relative;
+	left: 300px;
+	top:-27px;
+	width:280px;
+	font-size:23px;
+	
+}
+.phone{
+    width:70px;
+    height:70px;
+	opacity:0.8;
+	position:absolute;
+	top:0;
+	left:210px;
+}
+.logo a{
+	
+  	height: 70px;
+  	width:200px;
+ 
+}
+.phone a{
+	height: 70px;
+  	width: 70px;
+ 
+}
+
+
    .arrival-form, .departure-form, .board-form, .room-form, .address, .country, .phone-form, .med-field{
   	width:50%;
   	padding-right:3%;
@@ -518,6 +558,7 @@ Navigation
     width:25px;
 	height:50px;
 	color:#030d18;
+	font-size:0.9em;
 }
 .lang-switch a:hover{
 	font-size:1.1em;
@@ -795,7 +836,8 @@ Intro
   bottom: 0;
   right: 0;
   position: absolute;
-  z-index: -1;  
+  z-index: -1;
+  max-width: 100%;  
 }
 #cd-intro-fix {
   position: relative;
@@ -1801,13 +1843,10 @@ Placeholder Sections
 }
 @media only screen and (min-width: 768px) {
   #hike-back{
-    margin-top:0px;
+    margin-top:30px;
 	background-image:url('../img/hiking.jpg');
 }
-#hike-back{
-    margin-top:0px;
-	background-image:url('../img/hiking.jpg');
-}
+
 #spa-back{
     margin-top:30px;
 	background-image:url('../img/sauna.jpg');
