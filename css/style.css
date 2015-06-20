@@ -1205,6 +1205,13 @@ Intro
     left:0;
      height: 400px;
   }
+  #internalRight {
+    position: relative;
+    top:51px;
+    left:0;
+    height: 200px;
+    z-index: 2;
+  }
   #cd-intro-fix {
     position:relative;
     top:70px;
@@ -1856,7 +1863,7 @@ Placeholder Sections
 }
 @media only screen and (min-width: 768px) {
   #hike-back{
-    margin-top:70px;
+    margin-top:51px;
 	background-image:url('../img/hiking.jpg');
 }
 
