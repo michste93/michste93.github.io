@@ -251,7 +251,7 @@ Navigation
 .logo a{
 	background-clip: border-box;
 	background-color: transparent;
-	background-image: url(../img/piccolo1.jpg);
+	background-image: url(../img/piccolopiccolo.jpg);
 	background-origin: padding-box;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
@@ -479,7 +479,7 @@ Navigation
 	left:210px;
 }
 .logo a{
-	
+	background-image: url(../img/piccolo1.jpg);
   	height: 70px;
   	width:200px;
  
@@ -1225,14 +1225,18 @@ Intro
      height: 400px;
   }
   .form1{
-    width:100%;
+    position:absolute;
+    left:80px;
+    top:10px;
+    width:50%;
 	}
 .form2{
     padding: 0 auto;
-	position:relative;
+	position:absolute;
 	margin: 10px auto;
-	right:0;
+	left:50%;
 	color:white;
+	width:50%;
 }
 
 .booking input[type=text]{
