@@ -774,6 +774,7 @@ Navigation
 Intro
 
 -------------------------------- */
+
 #cd-intro {
   position: relative;
   top:50px;
@@ -1200,7 +1201,19 @@ Intro
 @media only screen and (min-width: 768px) {
 #cd-intro {
     position:relative;
-    top:0;
+    top:70px;
+    left:0;
+     height: 400px;
+  }
+  #cd-intro-fix {
+    position:relative;
+    top:70px;
+    left:0;
+     height: 400px;
+  }
+  #cd-intro-fix-intern {
+    position:relative;
+    top:70px;
     left:0;
      height: 400px;
   }
@@ -1843,12 +1856,12 @@ Placeholder Sections
 }
 @media only screen and (min-width: 768px) {
   #hike-back{
-    margin-top:30px;
+    margin-top:70px;
 	background-image:url('../img/hiking.jpg');
 }
 
 #spa-back{
-    margin-top:30px;
+    margin-top:70px;
 	background-image:url('../img/sauna.jpg');
 }
 .cd-section {
