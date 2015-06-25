@@ -12,7 +12,7 @@ Primary style
 body {
   font-size: 100%;
   font-family: "Lato", sans-serif;
-  color: #030d18;
+  color: #3D3D29;
   background-color: #f0eee1;
 }
 
@@ -78,9 +78,10 @@ Modules - reusable parts of our design
    .cd-main-content-intern{
      margin-top:125px;
      margin-left:15%;
-     margin-right:1%;
+     width:55%;
      list-style-type:initial;
-     font-size:18px;
+     font-size:20px;
+     line-height:1.1em;
   	 }
   	 .cd-main-content-intern li{
  
@@ -165,6 +166,7 @@ Navigation
   margin-right: 5%;
   width: 44px;
   height: 100%;
+  z-index:1005 !important;
   background: url("../img/cd-icon-menu.svg") no-repeat center center;
   background-size: 44px 44px;
   
@@ -449,6 +451,22 @@ Navigation
   	.walking-logo{
   		display:none;
   	}
+  	iframe{
+	width:100%; 
+	height:300px;
+	frameborder:0;
+    border:0;
+}
+.right-text{
+    font-size:18px;
+	width:100%; 
+	word-wrap: break-word;
+	padding-top:2px;
+	line-height:1.2em;
+	}
+	.right-text h3{
+		font-size:18px;
+	}
   	
 @media only screen and (min-width: 768px) {
 
@@ -723,10 +741,18 @@ Navigation
   z-index: 1002 !important;
   height: 450px;
   -webkit-border-radius: 3px;
-  background-color:#66A3FF;
+  background-color:#BBAA86;
+  /*#1975FF;*/
   -moz-border-radius: 3px;
   border-radius: 3px;
 	
+}
+.menu-bottom{
+	position:relative;
+	width:100%;
+	top:1px;
+	height:150px;
+	background-color:#FFFFCC;
 }
 .menuFooter{
 	position:relative;
@@ -738,9 +764,10 @@ Navigation
 .menuFooter1{
 	position:absolute;
 	width:100%;
-	top:445px;
+	top:145px;
 	height:5px;
-	background-color:white;
+	background-color:#BBAA86;
+	z-index: 1002 !important;
 }
 .phone{
 	display:none;
@@ -773,7 +800,26 @@ Navigation
     display:none;
     /* reset navigation values */
    }
-  
+  iframe{
+	width:50%; 
+	height:450px;
+	
+	frameborder:0;
+    border:0;
+}
+.right-text{
+    position:absolute;
+    top:0px;
+    left:50%;
+    
+	width:50%; 
+	height:450px;
+	word-wrap: break-word;
+	padding-top:2px;
+	
+	}
+	
+}
   
 }
 
@@ -836,6 +882,17 @@ Intro
   position: absolute;
   z-index: -1;  
 }
+.hotel::after {
+  content: "";
+  background: transparent url(../img/principali/berghotel_miramonti-1a.jpg) no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;  
+}
 .hiking::after {
   content: "";
   background: transparent url(../img/hiking.jpg) no-repeat;
@@ -847,6 +904,19 @@ Intro
   position: absolute;
   z-index: -1;
   max-width: 100%;  
+}
+.fam::after {
+  content: "";
+  background: transparent url(../img/famiglia.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  max-width: 100%;
+  max-height: 100%;  
 }
 #cd-intro-fix {
   position: relative;
@@ -868,7 +938,7 @@ Intro
     left:0;
     height: 200px;
     z-index: 2;
-	background-color:pink;
+	background-color:#FF94DB;
 }
 .innerElement{
 	margin:20px;
@@ -1172,7 +1242,7 @@ Intro
 	width:180px;
 	border-radius:4px;
 	border:1px solid #7ac9b7;
-	background-color: #66A3FF;
+	background-color: #1975FF;
 	color: white;
 	font-size:15px;
 	cursor:pointer;
@@ -1321,16 +1391,17 @@ Intro
 }
 .booking{
     background-color:#AAAAAA;;
-	width:99%
-    position:absolute;
+	width:85%
+    position:relative;
 	top:670px;
+	z-index: 800 !important;
 	}
   .bookingForm{
     position:relative;
-	left:0;
+	left:14%;
 	top:0;
 	z-index: 1000 !important;
-	width:100%
+	width:85%
 	display:inline-block;
 }
 .mainContent{
@@ -1367,7 +1438,7 @@ Intro
     position:relative;
     top:100px;
     left:14%;
-    width:74%;
+    width:58%;
     height: 600px;
     display:inline-block;
   }
@@ -1714,27 +1785,20 @@ Secondary Fixed Navigation
   -o-transform: rotate(225deg);
   transform: rotate(225deg);
 }
-@media only screen and (min-width: 1170px) {
-  .cd-secondary-nav-trigger {
-    display: none;
-  }
-}
-
-/* -------------------------------- 
-
-Placeholder Sections
-
--------------------------------- */
 .page-pictures{
 	position:relative;
-    top:120px;
-    left:14%;
-    width:86%;
-    height: 1200px;
-    
+    top:60px;
+    left:1%;
+    right:1%;
+    width:98%;
+    margin-top:15px;
+    margin-bottom:65px;
+    font-size:18px;
+   line-height:1.2em;
 }
-.page-pictures div{
-	white-space: nowrap;
+
+.page-pictures di{
+	
 	float:left;
 	width:50%;
 	height:300px;
@@ -1742,7 +1806,7 @@ Placeholder Sections
 }
 .page-pictures .2{
     margin-top:-100px;
-	white-space: nowrap;
+	
 	float:left;
 	width:50%;
 	height:300px;
@@ -1761,6 +1825,32 @@ Placeholder Sections
   vertical-align: middle;
   margin: 0 auto;
 }
+
+}
+.page-pictures h3{
+		font-size:18px;
+		
+	}
+@media only screen and (min-width: 1170px) {
+  .cd-secondary-nav-trigger {
+    display: none;
+  }
+  .page-pictures{
+	position:relative;
+    top:100px;
+    left:15%;
+    width:85%;
+    height: 1200px;
+    margin-top:15px;
+    }
+}
+
+/* -------------------------------- 
+
+Placeholder Sections
+
+-------------------------------- */
+
 .cd-section {
   position:relative;
   top:0;
@@ -1825,11 +1915,30 @@ Placeholder Sections
   opacity:1;	
 }
 #hike-back{
-    margin-top:50px;
+    margin-top:247px;
 	background-image:url('../img/hiking.jpg');
 }
+
 #spawelness-back{
+   
 	background-image:url('../img/well.jpg');
+}
+#map-back{
+    margin-top:50px;
+	background-image:url('../img/map.png');
+}
+#fam-back{
+    margin-top:50px;
+	background-image:url('../img/famiglia.jpg');
+}
+#gourmet-back{
+	background-image:url('../img/gourmet.jpg');
+}
+#think-back{
+	background-image:url('../img/certificato.jpg');
+}
+#filosofia-back{
+	background-image:url('../img/energia.jpg');
 }
 #walk-back{
     
@@ -1838,6 +1947,7 @@ Placeholder Sections
 #room-back{
 	background-image:url('../img/camera.jpg');
 }
+
 #eventi-back{
 	background-image:url('../img/suoni.jpg');
 }
@@ -2005,9 +2115,29 @@ margin-left:14%;
     width: 28%;
 	
 }
-#well-back{
-	background-image:url('../img/well.jpg');
+#map-back{
+    margin-left:14%;
+    margin-top:98px;
+	 width: 42%;
 }
+#fam-back{
+    margin-top:98px;
+	 width: 43%;
+	 margin-left:-3px;
+}
+#gourmet-back{
+    margin-left:14%;
+	 width: 28%;
+}
+#think-back{
+	 width: 28%;
+	 margin-left:-3px;
+}
+#filosofia-back{
+	 width: 29%;
+	 margin-left:-3px;
+}
+
 
 #cd-placeholder-1{
     margin-top:120px;

@@ -1,12 +1,12 @@
 jQuery(document).ready(function($){
       $(function() {
       
-$.datepicker.regional['it'] = {
-	                closeText: 'Chiudi',
-	                prevText: '&#x3c;Prec',
-	                nextText: 'Succ&#x3e;',
-	                currentText: 'Oggi',
-	                monthNames:['Gennaio','Febbraio','Marzo','Aprile','Maggio','Giugno','Luglio','Agosto','Settembre','Ottobre','Novembre','Dicembre'],
+$.datepicker.regional['de'] = {
+	                closeText: 'Schliessen',
+	                prevText: '&#x3c;Zur',
+	                nextText: 'Weit&#x3e;',
+	                currentText: 'Heute',
+	                monthNames:['Januar','Febraur','Marz','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember'],
 	                monthNamesShort:['Gen','Feb','Mar','Apr','Mag','Giu','Lug','Ago','Set','Ott','Nov','Dic'],
 	                dayNames: ['Domenica','Luned&#236','Marted&#236','Mercoled&#236','Gioved&#236','Venerd&#236','Sabato'],
 	                dayNamesShort: ['Dom','Lun','Mar','Mer','Gio','Ven','Sab'],
@@ -17,7 +17,7 @@ $.datepicker.regional['it'] = {
 	                isRTL: false,
 	                showMonthAfterYear: false,
 	                yearSuffix: ''};
-	        $.datepicker.setDefaults($.datepicker.regional['it']);
+	        $.datepicker.setDefaults($.datepicker.regional['de']);
         
         $("#depart").datepicker();
         $("#return").datepicker();
