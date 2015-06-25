@@ -57,6 +57,13 @@ Modules - reusable parts of our design
  	padding-bottom:3px;
  	font-size:23px;
  }  
+ #cd-intro {
+  position: relative;
+  top:50px;
+  left:0;
+  height: 300px;
+  z-index: 2;
+}
  .cd-main-content-intern li{
  list-style-type:initial;
  list-style-position: inside;
@@ -81,7 +88,7 @@ Modules - reusable parts of our design
      width:55%;
      list-style-type:initial;
      font-size:20px;
-     line-height:1.1em;
+     line-height:1.2em;
   	 }
   	 .cd-main-content-intern li{
  
@@ -131,11 +138,11 @@ Navigation
 -------------------------------- */
 .lang-switch{
     position:relative;
-	left: 180px;
+	left: 170px;
 	top:-30px;
 	z-index: 1005 !important;
 	padding-left:10px;
-	width:200px;
+	width:120px;
 	color:white;
 }
 .lang-switch a{
@@ -166,9 +173,9 @@ Navigation
   margin-right: 5%;
   width: 44px;
   height: 100%;
-  z-index:1005 !important;
   background: url("../img/cd-icon-menu.svg") no-repeat center center;
   background-size: 44px 44px;
+  z-index: 1019 !important;
   
 }
 .cd-primary-nav ul {
@@ -189,6 +196,7 @@ Navigation
   -ms-transform: translateY(50px);
   -o-transform: translateY(50px);
   transform: translateY(50px);
+  
 }
 .cd-primary-nav a {
   display: block;
@@ -469,7 +477,13 @@ Navigation
 	}
   	
 @media only screen and (min-width: 768px) {
-
+.cd-primary-nav ul.is-visible {
+  -webkit-transform: translateY(70px);
+  -moz-transform: translateY(70px);
+  -ms-transform: translateY(70px);
+  -o-transform: translateY(70px);
+  transform: translateY(70px);
+}
 	.cd-header {
   position: absolute;
   top: 0;
@@ -545,6 +559,13 @@ Navigation
 }
 } 	
 @media screen and (min-width: 1140px) {
+#cd-intro-tagline{
+    position: relative;
+    top:50px;
+    padding-left:auto;
+    padding-right:auto;
+	z-index: 1000 !important;
+}
 .price_table{
     margin-top:150px;
   	margin-left:19%;
@@ -829,28 +850,12 @@ Intro
 
 -------------------------------- */
 
-#cd-intro {
-  position: relative;
-  top:50px;
-  left:0;
-  height: 300px;
-  z-index: 2;
-}
-#cd-intro::after {
-  content: "";
-  background: transparent repeat top left;
-  background-size: cover;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;   
-}
+
+
 
 .winter::after {
   content: "";
-  background: transparent url(../img/winter1.jpg) no-repeat;
+  background: transparent url(../img/winter1.jpg) 50% 50% no-repeat;
   background-size: cover;
   top: 0;
   left: 0;
@@ -862,7 +867,7 @@ Intro
 
 .summer::after {
   content: "";
-  background: transparent url(../img/summer1.JPG) no-repeat;
+  background: transparent url(../img/summer1.JPG) 50% 50% no-repeat;
   background-size: cover;
   top: 0;
   left: 0;
@@ -873,7 +878,7 @@ Intro
 }
 .beauty::after {
   content: "";
-  background: transparent url(../img/well.jpg) no-repeat;
+  background: transparent url(../img/well.jpg) 50% 50% no-repeat;
   background-size: cover;
   top: 0;
   left: 0;
@@ -884,7 +889,7 @@ Intro
 }
 .hotel::after {
   content: "";
-  background: transparent url(../img/principali/berghotel_miramonti-1a.jpg) no-repeat;
+  background: transparent url(../img/principali/berghotel_miramonti-1a.jpg) 50% 50% no-repeat;
   background-size: cover;
   top: 0;
   left: 0;
@@ -895,7 +900,31 @@ Intro
 }
 .hiking::after {
   content: "";
-  background: transparent url(../img/hiking.jpg) no-repeat;
+  background: transparent url(../img/hiking.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  max-width: 100%;  
+}
+.gourmet::after {
+  content: "";
+  background: transparent url(../img/gourmet.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  max-width: 100%;  
+}
+.pensa::after {
+  content: "";
+  background: transparent url(../img/certificato.jpg) 50% 50% no-repeat;
   background-size: cover;
   top: 0;
   left: 0;
@@ -908,6 +937,78 @@ Intro
 .fam::after {
   content: "";
   background: transparent url(../img/famiglia.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  max-width: 100%;
+  max-height: 100%;  
+}
+.page-pictures p{
+	color: #808080;
+opacity: 1;
+font-size: 20px;
+font-weight: 900;
+line-height: 25px;
+position: relative;
+top: 50%;
+text-align: center;
+text-transform: uppercase;
+vertical-align: middle;
+margin: 0px auto;
+}
+.page-pictures p span{
+	color: #FFF;
+font: bold 24px/45px Helvetica,sans-serif;
+letter-spacing: -1px;
+background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.7);
+padding: 10px;
+}
+.bike::after {
+  content: "";
+  background: transparent url(../img/bici.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  max-width: 100%;
+  max-height: 100%;  
+}
+.family::after {
+  content: "";
+  background: transparent url(../img/family.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  max-width: 100%;
+  max-height: 100%;  
+}
+.trek::after {
+  content: "";
+  background: transparent url(../img/trek.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  max-width: 100%;
+  max-height: 100%;  
+}
+.filo::after {
+  content: "";
+  background: transparent url(../img/energia.jpg) 50% 50% no-repeat;
   background-size: cover;
   top: 0;
   left: 0;
@@ -966,13 +1067,7 @@ Intro
 }
 
 
-#cd-intro-tagline{
-    position: relative;
-    top:50px;
-    padding-left:auto;
-    padding-right:auto;
-	z-index: 1000 !important;
-}
+
 #cd-intro #cd-intro-tagline {
   width: 90%;
   max-width: 1170px;
@@ -1204,7 +1299,7 @@ Intro
     position:absolute;
 	top:220px;
 	left:0;
-	z-index: 1003 !important;
+	z-index: 1 !important;
 	background-color:transparent;
    height:50px;
 	width:100%;
@@ -1327,7 +1422,7 @@ Intro
 	
 }
 .booking input[type=submit]{
-	width:165px;
+	width:180px;
 	
 	
 }
@@ -1797,21 +1892,11 @@ Secondary Fixed Navigation
    line-height:1.2em;
 }
 
-.page-pictures di{
+.page-pictures img{
 	
-	float:left;
-	width:50%;
-	height:300px;
-	display:inline;
+	width:100%;
 }
-.page-pictures .2{
-    margin-top:-100px;
-	
-	float:left;
-	width:50%;
-	height:300px;
-	display:inline;
-}
+
 .page-pictures p{
 	color:gray;
   opacity:1;
@@ -1823,7 +1908,7 @@ Secondary Fixed Navigation
   text-align: center;
   text-transform: uppercase;
   vertical-align: middle;
-  margin: 0 auto;
+  margin-bottom:20px;
 }
 
 }
@@ -1838,9 +1923,10 @@ Secondary Fixed Navigation
   .page-pictures{
 	position:relative;
     top:100px;
-    left:15%;
-    width:85%;
-    height: 1200px;
+    left:19%;
+    right:5%;
+    width:76%;
+    
     margin-top:15px;
     }
 }
@@ -1915,7 +2001,7 @@ Placeholder Sections
   opacity:1;	
 }
 #hike-back{
-    margin-top:247px;
+    margin-top:50px;
 	background-image:url('../img/hiking.jpg');
 }
 
