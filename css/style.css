@@ -1445,9 +1445,9 @@ padding: 10px;
 
 .form1{
     position:absolute;
-    left:25%;
+    left:20%;
     top:10px;
-    width:25%;
+    width:45%;
 	}
 .form2{
     padding: 0 auto;
@@ -1480,7 +1480,7 @@ padding: 10px;
 	margin-right:5px;
 }
 .booking input[type=submit]{
-	width:175px;
+	width:185px;
 	
 	
 }
