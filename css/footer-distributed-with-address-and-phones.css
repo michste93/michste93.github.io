@@ -1,5 +1,5 @@
 .footer-distributed{
-     background-color:#BBAA86;
+     background-color:#A9A9A9;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	text-align: left;
@@ -27,7 +27,7 @@
 	width: 40%;
 }
 .link-img{
-	width:170px;
+	width:20%;
 	height:80px;
 	padding-right:30px;
 }
@@ -82,7 +82,7 @@
 }
 
 .footer-distributed .footer-center i{
-	background-color:#BBAA86;
+	background-color:#A9A9A9;
 	color: #ffffff;
 	font-size: 25px;
 	width: 38px;
@@ -218,6 +218,7 @@
 
 	.footer-distributed{
 		margin-left:14%;
+		
 		
 		
 		
