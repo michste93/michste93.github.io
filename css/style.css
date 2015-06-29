@@ -14,6 +14,7 @@ body {
   font-family: "Lato", sans-serif;
   color: #3D3D29;
   background-color: #f0eee1;
+  overflow-x: hidden;
 }
 
 a {
@@ -887,9 +888,48 @@ Intro
   position: absolute;
   z-index: -1;  
 }
+.spa::after {
+  content: "";
+  background: transparent url(../img/sauna.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;  
+}
+.ega::after {
+  content: "";
+  background: transparent url(../img/acqua.jpeg) 50% 50% no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;  
+}
+.cd-main-content-intern a{
+	opacity:0.8;
+}
+.cd-main-content-intern a:hover{
+	opacity:1;
+}
+.beau::after {
+  content: "";
+  background: transparent url(../img/massaggi.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;  
+}
 .hotel::after {
   content: "";
-  background: transparent url(../img/principali/berghotel_miramonti-1a.jpg) 50% 50% no-repeat;
+  background: transparent url(../img/principali/berghotel_miramonti-1.jpg) 50% 50% no-repeat;
   background-size: cover;
   top: 0;
   left: 0;
@@ -901,6 +941,18 @@ Intro
 .hiking::after {
   content: "";
   background: transparent url(../img/hiking.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  max-width: 100%;  
+}
+.fit::after {
+  content: "";
+  background: transparent url(../img/fitness.jpg) 50% 50% no-repeat;
   background-size: cover;
   top: 0;
   left: 0;
@@ -1037,7 +1089,6 @@ padding: 10px;
 	position: relative;
     top:30px;
     left:0;
-    height: 200px;
     z-index: 2;
 	background-color:#FF94DB;
 }
@@ -1052,7 +1103,7 @@ padding: 10px;
 }
 .content{
     padding-top:20px;
-	font-size:1.4em;
+	font-size:1.8em;
 	text-align:left;
 }
 #cd-intro-fix::after {
@@ -1468,7 +1519,6 @@ padding: 10px;
     position:relative;
     top:0;
     left:0;
-    margin-right:1%;
     height: 600px;
   }
   
@@ -2001,7 +2051,7 @@ Placeholder Sections
   opacity:1;	
 }
 #hike-back{
-    margin-top:50px;
+    margin-top:00px;
 	background-image:url('../img/hiking.jpg');
 }
 
@@ -2010,11 +2060,11 @@ Placeholder Sections
 	background-image:url('../img/well.jpg');
 }
 #map-back{
-    margin-top:50px;
+    margin-top:30px;
 	background-image:url('../img/map.png');
 }
 #fam-back{
-    margin-top:50px;
+    
 	background-image:url('../img/famiglia.jpg');
 }
 #gourmet-back{
@@ -2081,7 +2131,7 @@ Placeholder Sections
 }
 
 #spa-back{
-    margin-top:70px;
+    margin-top:51px;
 	background-image:url('../img/sauna.jpg');
 }
 .cd-section {
@@ -2152,7 +2202,7 @@ margin-left:14%;
 	background-image:url('../img/well.jpg');
 	margin-top:98px;
     margin-left:-3px;
-    width: 29%;
+    width: 29.9%;
 }
 #beauty-back{
 margin-top:98px;
@@ -2175,7 +2225,7 @@ margin-top:98px;
 #winter-back{
 	background-image:url('../img/winter.jpg');
 	margin-left:-3px;
-    width: 29%;
+    width: 29.9%;
 }
 #offerte-back{
 	margin-left:-3px;
