@@ -19,7 +19,7 @@ body {
   font-family: "Lato", sans-serif;
   color: #3D3D29;
   background-color: #f0eee1;
-  overflow: hidden;
+  overflow-x: hidden;
   
 }
 
@@ -2330,9 +2330,22 @@ Placeholder Sections
 #fitness-back{
 	background-image:url('../img/fitness.jpg');
 }
+.trentino-img{
+	width:170px;
+	height:60px;
+}
+.link-img{
+	width:60%;
+	height:90px;
+}
 @media only screen and (min-width: 768px) {
   .link-img{
-	width:70%;
+	width:40%;
+	height:120px;
+	
+}
+.trentino-img{
+	width:40%;
 	height:90px;
 	
 }
@@ -2364,6 +2377,16 @@ Placeholder Sections
   
 }
 @media only screen and (min-width: 1170px) {
+.link-img{
+	width:19%;
+	height:80px;
+	padding-right:5px;
+}
+.trentino-img{
+	width:19%;
+	height:80px;
+	padding-right:5px;
+}
   .cd-section {
   display:inline-block;
   vertical-align: top;
@@ -2614,15 +2637,8 @@ margin-left:14%;
 .footer-distributed .footer-left{
 	width: 40%;
 }
-.link-img{
-	width:20%;
-	height:80px;
-	padding-right:30px;
-}
-.trentino-img{
-	width:170px;
-	height:60px;
-}
+
+
 .footer-bottom{
 	width:100%;
 }
