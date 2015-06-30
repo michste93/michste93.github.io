@@ -84,7 +84,7 @@ Modules - reusable parts of our design
 .title{
     position:relative;
     top: 80px;
-	
+	width:100%;
 	
 }
 .logo-inside{
@@ -2332,7 +2332,7 @@ Placeholder Sections
 }
 @media only screen and (min-width: 768px) {
   .link-img{
-	width:40%;
+	width:70%;
 	height:90px;
 	
 }
