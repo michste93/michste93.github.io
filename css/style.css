@@ -27,15 +27,15 @@ img {
   max-width: 100%;
 }
 h1{
-  	font-size: 22px;
+  	font-size: 27px;
   	font-weight:900;
   }
 h2{
-  	font-size: 18px;
+  	font-size: 24px;
   	font-weight:800;
   }
 h3{
-  	font-size: 13px;
+  	font-size: 21px;
   	font-weight:600;
   }
 
@@ -76,12 +76,56 @@ Modules - reusable parts of our design
  	font-size:25px;
  }  	
 .title{
+    position:relative;
+    top: 80px;
 	text-align:center;
 	margin-left:45%;
 	
 }
-
+.logo-inside{
+	width:100%;
+}
+.logo-inside img{
+	width:100%;
+	height:200px;
+}
+.infos-inside{
+	width:100%;
+	text-align:left;
+	font-size:22px;
+}
+.camere-img{
+	width:100%;
+	height:250px;
+}
+.camere-text{
+	width:100%;
+	height:250px;
+}
 @media only screen and (min-width: 1170px) {
+
+.title{
+    position:relative;
+    top: 150px;}
+.page-pictures h2{
+	font-size:25px;
+}
+.logo-inside{
+	width:50%;
+	float:left;
+	margin-bottom:120px;
+}
+.logo-inside img{
+	width:100%;
+	height:200px;
+}
+.infos-inside{
+	width:40%;
+	text-align:left;
+	float:left;
+	margin-left:10px;
+	
+}
   
    .cd-main-content-intern{
      margin-top:125px;
@@ -296,7 +340,7 @@ Navigation
   	border-radius:2px;
   }
   .price_table{
-  	margin-top:80px;
+  	margin-top:90px;
   	margin-bottom:100px;
   	margin-left:3%;
   	margin-left:3%;
@@ -320,6 +364,7 @@ Navigation
     margin: 0px;
     padding: 0px;
     border: 1px solid white;
+    font-size:16px;
 }
 .price_table tr.rigachiara {
     background-color: #E3E3E3;
@@ -338,20 +383,21 @@ Navigation
 	margin: 0px;
 	padding: 0px;
 	border: 1px solid white;
+	font-size:18px;
 	
   }
   
   .price_table h2{
   	color: #776A62;
-  	font-size: 15px;
+  	font-size: 22px;
   	font-weight:800;
   }
   .price_table h3{
-  	font-size: 13px;
+  	font-size: 20px;
   	font-weight:600;
   }
   .notes{
-  	font-size: 12px;
+  	font-size: 18px;
   }
   .price_table th.intestazioneprezzi {
     background-color: #776A62;
@@ -478,6 +524,16 @@ Navigation
 	}
   	
 @media only screen and (min-width: 768px) {
+.camere-img{
+	width:50%;
+	height:250px;
+	float:left;
+}
+.camere-text{
+	width:40%;
+	height:250px;
+	float:left;
+}
 .cd-primary-nav ul.is-visible {
   -webkit-transform: translateY(70px);
   -moz-transform: translateY(70px);
@@ -536,7 +592,7 @@ Navigation
   	width:50%;
   	}
   	.title{
-  	width:20%;
+  	width:25%;
   	padding-right:3%;
   	clear: none;
     float: left;
