@@ -130,7 +130,7 @@ Modules - reusable parts of our design
    .cd-main-content-intern{
      margin-top:125px;
      margin-left:15%;
-     width:55%;
+     width:75%;
      list-style-type:initial;
      font-size:20px;
      line-height:1.2em;
@@ -182,6 +182,7 @@ Navigation
 
 -------------------------------- */
 .lang-switch{
+    display:none;
     position:relative;
 	left: 170px;
 	top:-30px;
@@ -522,17 +523,63 @@ Navigation
 	.right-text h3{
 		font-size:18px;
 	}
+	.camere{
+		width:100%;
+		margin-bottom:20px;
+	}
+	.media-img{
+	width:100%;
+	height:280px;
+	margin-bottom:25px;
+}
+.media-img3{
+	width:100%;
+	height:280px;
+	margin-bottom:25px;
+}
+.media-img2{
+	width:100%;
+	height:280px;
+	
+}
   	
 @media only screen and (min-width: 768px) {
 .camere-img{
 	width:50%;
-	height:250px;
+	height:280px;
 	float:left;
+	
 }
+.media-img{
+	width:48%;
+	height:280px;
+	float:left;
+	margin-right:4%;
+	margin-bottom:25px;
+}
+.media-img3{
+	width:48%;
+	height:120px;
+	float:left;
+	margin-right:4%;
+	margin-bottom:250px;
+}
+.media-img2{
+	width:47.9%;
+	height:280px;
+	float:left;
+	
+}
+.camere{
+		width:100%;
+		margin-bottom:300px;
+		clear:both;
+	}
 .camere-text{
-	width:40%;
+	width:45%;
 	height:250px;
 	float:left;
+	margin-left:25px;
 }
 .cd-primary-nav ul.is-visible {
   -webkit-transform: translateY(70px);
@@ -552,6 +599,7 @@ Navigation
   z-index: 3;
 }
 .lang-switch{
+    display:none;
     position:relative;
 	left: 300px;
 	top:-27px;
@@ -643,6 +691,7 @@ Navigation
   	width:100%;
   }
 .lang-switch{
+display:none;
     position:absolute;
 	left:0;
 	top:0;
@@ -651,6 +700,7 @@ Navigation
 	color: #808080;
 }
 .lang-switch a{
+    
     width:25px;
 	height:50px;
 	color:#030d18;
@@ -1026,6 +1076,19 @@ Intro
 .hiking::after {
   content: "";
   background: transparent url(../img/hiking.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  max-width: 100%;
+  max-height: 100%;  
+}
+.camere-intern::after {
+  content: "";
+  background: transparent url(../img/cielo.jpg) 50% 50% no-repeat;
   background-size: cover;
   top: 0;
   left: 0;
@@ -2071,10 +2134,6 @@ Secondary Fixed Navigation
    line-height:1.2em;
 }
 
-.page-pictures img{
-	
-	width:100%;
-}
 
 .page-pictures p{
 	color:gray;
@@ -2095,6 +2154,12 @@ Secondary Fixed Navigation
 		font-size:18px;
 		
 	}
+.attività-img{
+	width:100%;
+}
+.camere h3{
+	clear:both;
+}
 @media only screen and (min-width: 1170px) {
   .cd-secondary-nav-trigger {
     display: none;
@@ -2368,7 +2433,7 @@ margin-left:14%;
 }
 #fitness-back{
     margin-left:-3px;
-    width: 43%;
+    width: 42.9%;
 	background-image:url('../img/fitness.jpg');
 }
 #spawelness-back{
@@ -2380,7 +2445,7 @@ margin-left:14%;
 #beauty-back{
 margin-top:98px;
     margin-left:-3px;
-    width: 43%;
+    width: 42.9%;
 	background-image:url('../img/massaggi.jpg');
 }
 #walk-back{
@@ -2738,8 +2803,9 @@ margin-left:14%;
 
 	.footer-distributed{
 		margin-left:14%;
-	
-		
+	}
+	#more-margin{
+		margin-top:150px;
 	}
 	
 
