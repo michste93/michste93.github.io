@@ -9,12 +9,17 @@ Primary style
   box-sizing: border-box;
 }
 
+html, body{
+	height:100%;
+	width:100%;
+}
 body {
   font-size: 100%;
   font-family: "Lato", sans-serif;
   color: #3D3D29;
   background-color: #f0eee1;
   overflow-x: hidden;
+  
 }
 
 a {
@@ -846,12 +851,11 @@ display:none;
   	width:30%;
   }
   .sidebar{
-    position:absolute;
-    top:0;
-    left:0;
-    height:100%;
-	width:14%;
-	background-color:#C0C0C0;
+    display:none;
+    width: 14%;
+     height: 100%;
+     float: left;
+     background: url(../img/bg2.png) repeat left top;
 }
 
 .textarea{
