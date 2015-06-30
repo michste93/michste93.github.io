@@ -12,6 +12,7 @@ Primary style
 html, body{
 	height:100%;
 	width:100%;
+	-webkit-transform: translate3d(0,0,0);
 }
 body {
   font-size: 100%;
@@ -850,13 +851,7 @@ display:none;
   	.child1{
   	width:30%;
   }
-  .sidebar{
-    display:none;
-    width: 14%;
-     height: 100%;
-     float: left;
-     background: url(../img/bg2.png) repeat left top;
-}
+  
 
 .textarea{
 	width:60%;
@@ -1668,7 +1663,7 @@ padding: 10px;
 	
 }
 .booking input[type=submit]{
-	width:180px;
+	width:200px;
 	
 	
 }
@@ -2337,6 +2332,11 @@ Placeholder Sections
 	background-image:url('../img/fitness.jpg');
 }
 @media only screen and (min-width: 768px) {
+  .link-img{
+	width:40%;
+	height:90px;
+	
+}
   #hike-back{
     margin-top:51px;
 	background-image:url('../img/hiking.jpg');
