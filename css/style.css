@@ -2698,7 +2698,7 @@ margin-left:14%;
 	width: 35%;
 }
 
-.footer-distributed .footer-center i{
+.footer-distributed .footer-center img{
 	background-color:#A9A9A9;
 	color: #ffffff;
 	font-size: 25px;
@@ -2711,7 +2711,7 @@ margin-left:14%;
 	vertical-align: middle;
 }
 
-.footer-distributed .footer-center i.fa-envelope{
+.footer-distributed{
 	font-size: 17px;
 	line-height: 38px;
 }
@@ -2767,10 +2767,8 @@ margin-left:14%;
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
-	background-image:url(../img/wood2.jpg);
 	border-radius: 2px;
-
-	font-size: 20px;
+    font-size: 20px;
 	color: #ffffff;
 	text-align: center;
 	line-height: 35px;
@@ -2808,7 +2806,7 @@ margin-left:14%;
 		text-align: center;
 	}
 
-	.footer-distributed .footer-center i{
+	.footer-distributed .footer-center img{
 		margin-left: 0;
 	}
 	.footer-social{
