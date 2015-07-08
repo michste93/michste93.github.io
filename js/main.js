@@ -33,7 +33,14 @@ $.datepicker.regional['it'] = {
 	});
 	});
 	
-  
+    $('#requestForm').on('submit', function(event){
+       var data= $('#requestForm').serialize();
+       $.post("../php/php.php",data,function(x){
+       	//su php con echo ritorna x e poi da qui alert(x)
+       })
+       
+       return false;
+    }
  
 	 
 	$('.cd-primary-nav').on('click', function(event){

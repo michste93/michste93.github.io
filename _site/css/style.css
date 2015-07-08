@@ -105,7 +105,7 @@ Modules - reusable parts of our design
 }
 .camere-text{
 	width:100%;
-	height:250px;
+	height:150px;
 }
 @media only screen and (min-width: 1170px) {
 
@@ -553,7 +553,7 @@ Navigation
 	width:50%;
 	height:280px;
 	float:left;
-	
+	margin-bottom:55px;
 }
 .media-img{
 	width:48%;
@@ -578,6 +578,11 @@ Navigation
 .camere{
 		width:100%;
 		margin-bottom:300px;
+		clear:both;
+	}
+	.piscine{
+		width:100%;
+		
 		clear:both;
 	}
 .camere-text{
@@ -670,6 +675,14 @@ Navigation
 }
 } 	
 @media screen and (min-width: 1140px) {
+.half-page{
+	width:60%;
+	float:left;
+}
+.half2-page{
+	width:35%;
+}
+
 #cd-intro-tagline{
     position: relative;
     top:50px;
@@ -697,7 +710,7 @@ Navigation
   	width:100%;
   }
 .lang-switch{
-display:none;
+    display:none;
     position:absolute;
 	left:0;
 	top:0;
@@ -1126,7 +1139,7 @@ Intro
 }
 .pensa::after {
   content: "";
-  background: transparent url(../img/certificato.jpg) 50% 50% no-repeat;
+  background: transparent url(../img/certificato.jpg) 50% 70% no-repeat;
   background-size: cover;
   top: 0;
   left: 0;
@@ -1178,7 +1191,7 @@ Intro
 }
 .nord::after {
   content: "";
-  background: transparent url(../img/sci_nordico.jpg) 50% 50% no-repeat;
+  background: transparent url(../img/sci_nordico2.jpg) 50% 50% no-repeat;
   background-size: cover;
   top: 0;
   left: 0;
@@ -1238,6 +1251,19 @@ padding: 10px;
 .family::after {
   content: "";
   background: transparent url(../img/family.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  max-width: 100%;
+  max-height: 100%;  
+}
+.mini::after {
+  content: "";
+  background: transparent url(../img/miniclub.jpg) 50% 50% no-repeat;
   background-size: cover;
   top: 0;
   left: 0;
@@ -2145,7 +2171,20 @@ Secondary Fixed Navigation
     font-size:18px;
    line-height:1.2em;
 }
-
+.page-offers{
+	position:relative;
+    top:60px;
+    left:1%;
+    right:1%;
+    width:98%;
+    margin-top:15px;
+    margin-bottom:65px;
+    font-size:18px;
+   line-height:1.2em;
+}
+.page-offers h2{
+	text-align:center;
+}
 
 .page-pictures p{
 	color:gray;
@@ -2184,6 +2223,16 @@ Secondary Fixed Navigation
     width:76%;
     
     margin-top:15px;
+    }
+    .page-offers{
+	position:relative;
+    top:100px;
+    left:19%;
+    right:5%;
+    width:76%;
+    
+    margin-top:15px;
+    margin-bottom:55px;
     }
 }
 
@@ -2290,6 +2339,9 @@ Placeholder Sections
 #scuola-back{
 	background-image:url('../img/sci_scuola.jpg');
 }
+#miniclub-back{
+	background-image:url('../img/miniclub.jpg');
+}
 #think-back{
 	background-image:url('../img/certificato.jpg');
 }
@@ -2310,7 +2362,25 @@ Placeholder Sections
 #summer-back{
 	background-image:url('../img/summer1.jpg');
 }
+#offerta1-back{
+	background-image:url('../img/offerte.jpeg');
+}
 #offerte-back{
+	background-image:url('../img/offerte.jpeg');
+}
+#offerta2-back{
+	background-image:url('../img/offerte.jpeg');
+}
+#offerta3-back{
+	background-image:url('../img/offerte.jpeg');
+}
+#offerta4-back{
+	background-image:url('../img/offerte.jpeg');
+}
+#offerta5-back{
+	background-image:url('../img/offerte.jpeg');
+}
+#offerta6-back{
 	background-image:url('../img/offerte.jpeg');
 }
 #winter-back{
@@ -2318,7 +2388,7 @@ Placeholder Sections
 }
 #family-back{
    
-	background-image:url('../img/kids.jpg');
+	background-image:url('../img/family.jpg');
 }
 #attività-back{
     
@@ -2376,7 +2446,7 @@ Placeholder Sections
     margin-top:51px;
 	}
 #nordic-back{
-	margin-top:51px;
+	background-position: 50% 10%;
 	}
 #notonly-back{
 	background-image:url('../img/non_solo_sci.jpg');
@@ -2504,14 +2574,36 @@ margin-top:98px;
 	margin-left:-3px;
     width: 29.8%;
 }
-#offerte-back{
+#offerta1-back{
+	width: 50%;
+}
+#offerta2-back{
 	margin-left:-3px;
-    width: 28%;
+    width: 49.8%;
+}
+#offerta3-back{
+	width: 50%;
+}
+#offerta4-back{
+	margin-left:-3px;
+    width: 49.8%;
+}
+#offerta5-back{
+	width: 50%;
+}
+#offerta6-back{
+	margin-left:-3px;
+    width: 49.8%;
 }
 #eventi-back{
-margin-left:14%;
+margin-left:-3px;
     width: 28%;
 	
+}
+#miniclub-back{
+margin-left:14%;
+    width: 28%;
+	background-position: 50% 10%;
 }
 #family-back{
    margin-left:14%;
@@ -2524,6 +2616,11 @@ margin-left:14%;
 	
 }
 #bici-back{
+   margin-left:-3px;
+    width: 28%;
+	
+}
+#offerte-back{
    margin-left:-3px;
     width: 28%;
 	
@@ -2547,6 +2644,7 @@ margin-left:14%;
      margin-top:0px;
 	 width: 27.9%;
 	 margin-left:-3px;
+	 background-position: 50% 60%;
 }
 #filosofia-back{
 	 width: 30%;
@@ -2698,7 +2796,7 @@ margin-left:14%;
 	width: 35%;
 }
 
-.footer-distributed .footer-center img{
+.footer-distributed .icon-img{
 	background-color:#A9A9A9;
 	color: #ffffff;
 	font-size: 25px;
@@ -2806,7 +2904,7 @@ margin-left:14%;
 		text-align: center;
 	}
 
-	.footer-distributed .footer-center img{
+	.footer-distributed .footer-center .icon-img{
 		margin-left: 0;
 	}
 	.footer-social{
