@@ -23,25 +23,42 @@ $.datepicker.regional['it'] = {
         $("#return").datepicker();
         });
         
-  $('.submit-button').on('click', function(event){
-    $.post("./send.php", $("#requestForm").serialize(), function(response) {
-      alert(response);
-	  $('#success').html(response);
-	  
-	//$('#success').html(response);
-	//$('#success').hide('slow');
-	});
-	});
-	
+  	
     $('#requestForm').on('submit', function(event){
+       alert("you are in");
        var data= $('#requestForm').serialize();
-       $.post("../php/php.php",data,function(x){
-       	//su php con echo ritorna x e poi da qui alert(x)
-       })
+       alert(data);
+ //      $.ajax({
+ //       type: "POST",
+ //       url: "../php/send.php",
+ //       data: data,
+ //       success: function(){
+ //       alert("success")
+ //      }
+ //      });
+       $.post('../php/send.php',data,function(response) {
+         if (response == "1"){
+         	alert("win");
+         }
+         else{
+         	alert("no win");
+         }		
        
-       return false;
-    }
- 
+       
+       });
+       //,function(x){
+ //      alert("in the function");
+       	//su php con echo ritorna x e poi da qui alert(x)
+ //      	if(x=="1"){
+       		
+ //      	}
+ //      	else{
+ //      		alert("nooooo");
+ //      	}
+ //      })
+       
+       
+    }); 
 	 
 	$('.cd-primary-nav').on('click', function(event){
 		if($(event.target).is('.cd-primary-nav')) 

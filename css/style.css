@@ -187,7 +187,6 @@ Navigation
 
 -------------------------------- */
 .lang-switch{
-    display:none;
     position:relative;
 	left: 170px;
 	top:-30px;
@@ -609,7 +608,6 @@ Navigation
   z-index: 3;
 }
 .lang-switch{
-    display:none;
     position:relative;
 	left: 300px;
 	top:-27px;
@@ -710,7 +708,6 @@ Navigation
   	width:100%;
   }
 .lang-switch{
-    display:none;
     position:absolute;
 	left:0;
 	top:0;
@@ -1098,6 +1095,59 @@ Intro
   max-width: 100%;
   max-height: 100%;  
 }
+.offe1::after {
+  content: "";
+  background: transparent url(../img/estate-2015.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  max-width: 100%;
+  max-height: 100%;  
+}
+.offe2::after {
+  content: "";
+  background: transparent url(../img/PRIMA-NEVE-BERGHOTEL.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  max-width: 100%;
+  max-height: 100%;  
+}
+.offe3::after {
+  content: "";
+  background: transparent url(../img/NEVE-AL-TOP-BERGHOTEL.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  max-width: 100%;
+  max-height: 100%;  
+}
+.offe4::after {
+  content: "";
+  background: transparent url(../img/supersun.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  max-width: 100%;
+  max-height: 100%;  
+}
+
 .camere-intern::after {
   content: "";
   background: transparent url(../img/cielo.jpg) 50% 50% no-repeat;
@@ -1165,7 +1215,7 @@ Intro
 }
 .wint::after {
   content: "";
-  background: transparent url(../img/winter.jpg) 50% 50% no-repeat;
+  background: transparent url(../img/alpine-ski.jpeg) 50% 50% no-repeat;
   background-size: cover;
   top: 0;
   left: 0;
@@ -1191,7 +1241,7 @@ Intro
 }
 .nord::after {
   content: "";
-  background: transparent url(../img/sci_nordico2.jpg) 50% 50% no-repeat;
+  background: transparent url(../img/sci_nordico.jpg) 50% 50% no-repeat;
   background-size: cover;
   top: 0;
   left: 0;
@@ -1300,6 +1350,7 @@ padding: 10px;
   max-width: 100%;
   max-height: 100%;  
 }
+
 #cd-intro-fix {
   position: relative;
   top:50px;
@@ -2328,7 +2379,7 @@ Placeholder Sections
 	background-image:url('../img/gourmet.jpg');
 }
 #alpine-back{
-	background-image:url('../img/sci_alpino.jpg');
+	background-image:url('../img/alpine-ski.jpeg');
 }
 #nordic-back{
 	background-image:url('../img/sci_nordico.jpg');
@@ -2363,19 +2414,19 @@ Placeholder Sections
 	background-image:url('../img/summer1.jpg');
 }
 #offerta1-back{
-	background-image:url('../img/offerte.jpeg');
+	background-image:url('../img/estate-2015.jpg');
 }
 #offerte-back{
 	background-image:url('../img/offerte.jpeg');
 }
 #offerta2-back{
-	background-image:url('../img/offerte.jpeg');
+	background-image:url('../img/PRIMA-NEVE-BERGHOTEL.jpg');
 }
 #offerta3-back{
-	background-image:url('../img/offerte.jpeg');
+	background-image:url('../img/NEVE-AL-TOP-BERGHOTEL.jpg');
 }
 #offerta4-back{
-	background-image:url('../img/offerte.jpeg');
+	background-image:url('../img/supersun.jpg');
 }
 #offerta5-back{
 	background-image:url('../img/offerte.jpeg');
