@@ -8,7 +8,9 @@ Primary style
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+section{
+	margin-bottom:0;
+}
 html, body{
 	height:100%;
 	width:100%;
@@ -107,8 +109,97 @@ Modules - reusable parts of our design
 	width:100%;
 	height:150px;
 }
+.small-button{
+    position:relative;
+    top:135px;
+    left:30%;
+    width:40%;
+    display: inline-block;
+    padding: 0.7em 1em;
+    text-align:center;
+    background-color: #B8E62E;
+    border-radius: 16em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: white;
+    
+    
+  
+  }
+.logo-img{
+	display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius:10px;
+}
+#close{
+	width:100px;
+	height:100px;
+	position:absolute;
+	top:20px;
+	right:120px;
+	background-image:url(../img/close.png);
+}
+#contact{
+	display:none;
+	z-index: 99999;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0.9;
+	text-align: center;
+	font-size: 32px;
+	color: #333;
+	background: #FAFBFA none repeat scroll 0% 0%;
+	overflow: scroll;
+	padding: 150px 10px 0px 10px;
+}
+#contact textarea{
+	width:350px;
+	padding: 25px;
+	border-radius:4px;
+	border:1px solid #7ac9b7;
+	margin-bottom:10px;
+}
+#contact input[type=text]{
+	width:250px;
+	padding: 10px;
+	border-radius:4px;
+	border:1px solid #7ac9b7;
+	
+	margin-bottom:25px;
+}
+#contact input[type=email]{
+	margin-bottom:25px;
+	border:1px solid #7ac9b7;
+}
+#contact input[type=submit]{
+	width:150px;
+	padding: 5px;
+}
+.contact{
+	text-align: center;
+}
+#contact h2{
+    
+	margin-bottom:25px;
+}
 @media only screen and (min-width: 1170px) {
-
+#contact textarea{
+	width:650px;
+	padding: 45px;
+	
+}
+.logo-img{
+	border-radius:0px;
+}  
+.small-button{
+	display:none;
+}
 .title{
     position:relative;
     top: 150px;}
@@ -191,9 +282,10 @@ Navigation
 	left: 170px;
 	top:-30px;
 	z-index: 1005 !important;
-	padding-left:10px;
-	width:120px;
+	padding-left:8px;
+	width:110px;
 	color:white;
+	font-size:14px;
 }
 .lang-switch a{
 	color:white;
@@ -311,7 +403,6 @@ Navigation
 .logo a{
 	background-clip: border-box;
 	background-color: transparent;
-	background-image: url(../img/piccolopiccolo.jpg);
 	background-origin: padding-box;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
@@ -331,10 +422,7 @@ Navigation
  
 }
 
-.logo img{
-    display:block;
-	margin: 0 auto;
-}
+
   #request{
   	margin-top:150px;
   	margin-left:auto;
@@ -548,6 +636,23 @@ Navigation
 }
   	
 @media only screen and (min-width: 768px) {
+.logo-img{
+	border-radius:20px;
+} 
+.cd-primary-nav {
+  
+  float: right;
+  margin-right: 5%;
+  width: 94px;
+  height: 100%;
+  background: url("../img/cd-icon-menu.svg") no-repeat center center;
+  background-size: 74px 74px;
+  z-index: 1019 !important;
+  
+}
+.small-button{
+	display:none;
+}
 .camere-img{
 	width:50%;
 	height:280px;
@@ -591,18 +696,18 @@ Navigation
 	margin-left:25px;
 }
 .cd-primary-nav ul.is-visible {
-  -webkit-transform: translateY(70px);
-  -moz-transform: translateY(70px);
-  -ms-transform: translateY(70px);
-  -o-transform: translateY(70px);
-  transform: translateY(70px);
+  -webkit-transform: translateY(87px);
+  -moz-transform: translateY(87px);
+  -ms-transform: translateY(87px);
+  -o-transform: translateY(87px);
+  transform: translateY(87px);
 }
 	.cd-header {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 70px;
+  height: 87px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   background-color: #030d18;
   z-index: 3;
@@ -610,28 +715,28 @@ Navigation
 .lang-switch{
     position:relative;
 	left: 300px;
-	top:-27px;
+	top:-18px;
 	width:280px;
 	font-size:23px;
 	
 }
 .phone{
-    width:70px;
-    height:70px;
+    width:87px;
+    height:87px;
 	opacity:0.8;
 	position:absolute;
 	top:0;
 	left:210px;
 }
 .logo a{
-	background-image: url(../img/piccolo1.jpg);
-  	height: 70px;
+	
+  	height: 87px;
   	width:200px;
  
 }
 .phone a{
-	height: 70px;
-  	width: 70px;
+	height: 87px;
+  	width: 87px;
  
 }
 
@@ -1627,6 +1732,7 @@ padding: 10px;
 	opacity: 1;
 }
 .booking{
+    display:none;
     position:absolute;
 	top:220px;
 	left:0;
@@ -1758,6 +1864,7 @@ padding: 10px;
 	
 }
 .booking{
+    display:block;
     background-color: #AAAAAA;;
 	position:absolute;
 	top:350px;
@@ -1815,6 +1922,7 @@ padding: 10px;
 	
 }
 .booking{
+   display:block;
     background-color:#AAAAAA;;
 	width:85%
     position:relative;
@@ -2359,7 +2467,11 @@ Placeholder Sections
   opacity:1;	
 }
 #hike-back{
-    margin-top:00px;
+    margin-top:50px;
+	background-image:url('../img/hiking.jpg');
+}
+#hike-back2{
+    margin-top:30px;
 	background-image:url('../img/hiking.jpg');
 }
 
@@ -2467,26 +2579,30 @@ Placeholder Sections
 }
 .trentino-img{
 	width:170px;
-	height:60px;
+	
 }
 .link-img{
 	width:60%;
-	height:90px;
+	
 }
 @media only screen and (min-width: 768px) {
   .link-img{
 	width:40%;
-	height:120px;
+	
 	
 }
 .trentino-img{
 	width:40%;
-	height:90px;
+	
 	
 }
   #hike-back{
     margin-top:51px;
-	background-image:url('../img/hiking.jpg');
+	
+}
+#hike-back2{
+    margin-top:51px;
+	
 }
 
 #spa-back{
@@ -2512,12 +2628,12 @@ Placeholder Sections
 @media only screen and (min-width: 1170px) {
 .link-img{
 	width:19%;
-	height:80px;
+	
 	padding-right:5px;
 }
 .trentino-img{
 	width:19%;
-	height:80px;
+	
 	padding-right:5px;
 }
   .cd-section {
@@ -2575,6 +2691,12 @@ Placeholder Sections
     width: 43%;
 }
 #hike-back{
+    margin-top:98px;
+    margin-left:14%;
+    width: 56%;
+	
+}
+#hike-back2{
     margin-top:98px;
     margin-left:14%;
     width: 56%;

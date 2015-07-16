@@ -10,7 +10,7 @@ $.datepicker.regional['de'] = {
 	                monthNamesShort:['Gen','Feb','Mar','Apr','Mag','Giu','Lug','Ago','Set','Ott','Nov','Dic'],
 	                dayNames: ['Domenica','Luned&#236','Marted&#236','Mercoled&#236','Gioved&#236','Venerd&#236','Sabato'],
 	                dayNamesShort: ['Dom','Lun','Mar','Mer','Gio','Ven','Sab'],
-	                dayNamesMin: ['Do','Lu','Ma','Me','Gi','Ve','Sa'],
+	                dayNamesMin: ['So','Mo','Di','Mi','Do','Fr','Sa'],
 	                weekHeader: 'Sm',
 	                dateFormat: 'dd/mm/yy',
 	                firstDay: 1,
@@ -23,23 +23,11 @@ $.datepicker.regional['de'] = {
         $("#return").datepicker();
         });
         
-  $('.submit-button').on('click', function(event){
-    $.post("./send.php", $("#requestForm").serialize(), function(response) {
-      alert(response);
-	  $('#success').html(response);
-	  
-	//$('#success').html(response);
-	//$('#success').hide('slow');
-	});
-	});
+  
 	
   
  
 	 
-	$('.cd-primary-nav').on('click', function(event){
-		if($(event.target).is('.cd-primary-nav')) 
-		   $(this).children('ul').toggleClass('is-visible');
-		   
-	});
+	
 });
 

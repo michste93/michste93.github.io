@@ -23,23 +23,11 @@ $.datepicker.regional['it'] = {
         $("#return").datepicker();
         });
         
-  $('.submit-button').on('click', function(event){
-    $.post("./send.php", $("#requestForm").serialize(), function(response) {
-      alert(response);
-	  $('#success').html(response);
-	  
-	//$('#success').html(response);
-	//$('#success').hide('slow');
-	});
-	});
+  
 	
   
  
 	 
-	$('.cd-primary-nav').on('click', function(event){
-		if($(event.target).is('.cd-primary-nav')) 
-		   $(this).children('ul').toggleClass('is-visible');
-		   
-	});
+	
 });
 

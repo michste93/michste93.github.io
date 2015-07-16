@@ -50,8 +50,25 @@
 				
 			</ul>
 		</nav>
+		
+<div id="contact">
+    <form class="contact">
+        <h2>Contatta Dolomites Labs se interessato a lavori di Web Design, Design grafico e sviluppo web. </h2><br>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="object">Oggetto</label><br><br>
+        <input type="text" id="object" name="object" required><br><br>
+        <label for="message">Messaggio</label><br><br>
+        <textarea required></textarea><br>
+        <input type="submit" name="submit" value="Invia" id="submit">
+        <div id="close"></div>
+    </form>
+</div>
+
 		<!--header with flags and telephone--> 
-		<div class="logo"><a href="#"></a></div>
+		<div class="logo"><a href="#"><img class="logo-img" src="img/logo3.jpg"/></a></div>
 		<div class="phone"><a href="tel:0462814177"></a></div>
 	<div class="center-header">	
 		<div class="header-desktop-top">
@@ -99,7 +116,7 @@
             <li><span>Image 04</span><div><h3>re·la·x</h3></div></li>
             <li><span>Image 05</span><div><h3>se·re·ni·tà</h3></div></li>
             <li><span>Image 06</span><div><h3>na·tu·ra</h3></div></li>    </ul>
-            <div class="booking"><form class="bookingForm"  action="https://booking.ericsoft.com/BookingEngine/book.aspx?" method="get">
+           <div class="booking"><form class="bookingForm"  action="https://booking.ericsoft.com/BookingEngine/book.aspx?" method="get">
             <input type="hidden" name="idh" value="980204DF7D786B42" />
            <div class="form1"><input type="text" placeholder="Arrivo" id="depart" name="arrival">
           <input type="text" placeholder="Partenza" id="return" name="departure"></div>
@@ -110,7 +127,7 @@
          </form></div>
         
 		 <!-- #cd-intro-tagline -->
-		 
+		 <a href="https://booking.ericsoft.com/BookingEngine/book.aspx?idh=980204DF7D786B42" class="small-button">PRENOTA ORA</a>
 	</section> <!-- #cd-intro -->
 	
 
@@ -166,7 +183,7 @@
 					
 				</p>
 
-				<p class="footer-company-name"> Berghotel Miramonti&copy; 2015 produced by <a href="https://dolomiteslabs.com">Dolomites Labs</a></p>
+				<p class="footer-company-name"> Berghotel Miramonti&copy; 2015 produced by <a id="contact_l">Dolomites Labs</a></p>
 			</div>
 
 			<div class="footer-center">
@@ -209,9 +226,12 @@
             	<a href="http://www.tripadvisor.it/Hotel_Review-g1183488-d1189483-Reviews-Berghotel_Miramonti-Tesero_Province_of_Trento_Trentino_Alto_Adige.html"><img class="link-img" alt="TripAdvisor" src="img/tripadvisor.png"></img></a>
             </div>
 		</footer>
-		
+
+
+
 <script src="js/jquery-2.1.1.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="js/cal-it.js"></script> <!-- Resource jQuery -->
 <script src="jquery/jquery-ui.js"></script> <!-- Resource jQuery -->
 </body>
 </html>

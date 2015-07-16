@@ -1,27 +1,20 @@
 jQuery(document).ready(function($){
-      $(function() {
-      
-$.datepicker.regional['it'] = {
-	                closeText: 'Chiudi',
-	                prevText: '&#x3c;Prec',
-	                nextText: 'Succ&#x3e;',
-	                currentText: 'Oggi',
-	                monthNames:['Gennaio','Febbraio','Marzo','Aprile','Maggio','Giugno','Luglio','Agosto','Settembre','Ottobre','Novembre','Dicembre'],
-	                monthNamesShort:['Gen','Feb','Mar','Apr','Mag','Giu','Lug','Ago','Set','Ott','Nov','Dic'],
-	                dayNames: ['Domenica','Luned&#236','Marted&#236','Mercoled&#236','Gioved&#236','Venerd&#236','Sabato'],
-	                dayNamesShort: ['Dom','Lun','Mar','Mer','Gio','Ven','Sab'],
-	                dayNamesMin: ['Do','Lu','Ma','Me','Gi','Ve','Sa'],
-	                weekHeader: 'Sm',
-	                dateFormat: 'dd/mm/yy',
-	                firstDay: 1,
-	                isRTL: false,
-	                showMonthAfterYear: false,
-	                yearSuffix: ''};
-	        $.datepicker.setDefaults($.datepicker.regional['it']);
-        
-        $("#depart").datepicker();
-        $("#return").datepicker();
-        });
+    $(document).on('touchmove',function(e){
+  e.preventDefault();
+});
+//uses body because jquery on events are called off of the element they are
+//added to, so bubbling would not work if we used document instead.
+$('body').on('touchstart','.scrollable',function(e) {
+  if (e.currentTarget.scrollTop === 0) {
+    e.currentTarget.scrollTop = 1;
+  } else if (e.currentTarget.scrollHeight === e.currentTarget.scrollTop + e.currentTarget.offsetHeight) {
+    e.currentTarget.scrollTop -= 1;
+  }
+});
+//prevents preventDefault from being called on document if it sees a scrollable div
+$('body').on('touchmove','.scrollable',function(e) {
+  e.stopPropagation();
+});  
         
   	
     $('#requestForm').on('submit', function(event){
@@ -59,6 +52,31 @@ $.datepicker.regional['it'] = {
        
        
     }); 
+    
+    $("#contact_l").click(function(){
+        $("#contact").show(300,function(){
+           
+        });
+        $("#close").click(function(){
+            $("#contact").hide(300);
+        });
+    });
+    
+    $("#contact form").submit(function(){
+        var name = $("#name").val();
+        var email = $("#email").val();
+        var object = $("#object").val();
+        var mex = $("textarea").val();
+        var file = "name="+name+"&email="+email+"&object="+object+"&mex="+mex;
+        $.post("../php/contact.php",file,function(e){
+	        alert(e);
+        	$("#contact").hide(300);
+        	email="";
+        	object="";
+        	mex="";
+        });
+        return false;
+    });
 	 
 	$('.cd-primary-nav').on('click', function(event){
 		if($(event.target).is('.cd-primary-nav')) 
