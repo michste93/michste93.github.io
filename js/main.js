@@ -1,7 +1,5 @@
 jQuery(document).ready(function($){
-    $(document).on('touchmove',function(e){
-  e.preventDefault();
-});
+    
 //uses body because jquery on events are called off of the element they are
 //added to, so bubbling would not work if we used document instead.
 $('body').on('touchstart','.scrollable',function(e) {
