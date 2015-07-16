@@ -1,22 +1,20 @@
 jQuery(document).ready(function($){
     
-//uses body because jquery on events are called off of the element they are
-//added to, so bubbling would not work if we used document instead.
-$('body').on('touchstart','.scrollable',function(e) {
+
+$('body').on('touchstart',function(e) {
   if (e.currentTarget.scrollTop === 0) {
-    e.currentTarget.scrollTop = 1;
-  } else if (e.currentTarget.scrollHeight === e.currentTarget.scrollTop + e.currentTarget.offsetHeight) {
-    e.currentTarget.scrollTop -= 1;
+    e.stopPropagation();
+  
   }
 });
-//prevents preventDefault from being called on document if it sees a scrollable div
-if(document.body.scrollTop === 0){
-	alert("you are at the top");
-}
-var top = $('body').scrollTop()
-$('body').on('touchmove','.scrollable',function(e) {
-  e.stopPropagation();
-});  
+$('body').on('touchmove',function(e) {
+  if (e.currentTarget.scrollTop === 0) {
+    e.stopPropagation();
+  
+  }
+});
+
+
         
   	
     $('#requestForm').on('submit', function(event){
