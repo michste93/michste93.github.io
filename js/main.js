@@ -10,6 +10,10 @@ $('body').on('touchstart','.scrollable',function(e) {
   }
 });
 //prevents preventDefault from being called on document if it sees a scrollable div
+if(document.body.scrollTop === 0){
+	alert("you are at the top");
+}
+var top = $('body').scrollTop()
 $('body').on('touchmove','.scrollable',function(e) {
   e.stopPropagation();
 });  
