@@ -1,7 +1,7 @@
 jQuery(document).ready(function($){
   var userLang = navigator.language || navigator.userLanguage; 
   if (userLang=="en-US") {
-  	window.location.replace("http://berghotelmiramonti.it/en/index.html");
+  	window.location.replace("http://michste93.github.io/en/index.html");
   }  
 
 $('body').on('touchstart',function(e) {
