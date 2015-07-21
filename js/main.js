@@ -14,7 +14,11 @@ $('body').on('touchmove',function(e) {
   }
 });
 
-
+   
+   	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
         
   	
     
