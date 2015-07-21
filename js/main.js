@@ -1,5 +1,8 @@
 jQuery(document).ready(function($){
-    
+  var userLang = navigator.language || navigator.userLanguage; 
+  if (userLang=="en-US") {
+  	window.location.replace("http://berghotelmiramonti.it/en/index.html");
+  }  
 
 $('body').on('touchstart',function(e) {
   if (e.currentTarget.scrollTop === 0) {
