@@ -20,7 +20,12 @@ $('body').on('touchmove',function(e) {
 		$(".se-pre-con").fadeOut("slow");;
 	});
         
+  	$('.footer-distributed').load('footer-it.html',function(){
   	
+  	});
+  	$('head').load('head-it.html',function(){
+  	
+  	});
     
     
     $("#contact_l").click(function(){
