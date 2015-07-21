@@ -1,5 +1,19 @@
 jQuery(document).ready(function($){
-      $(function() {
+     if (!sessionStorage.alreadyClicked) {
+     alert("yes");
+    var userLang = navigator.language || navigator.userLanguage; 
+   if(userLang=="it-IT"){
+   }
+   else if(userLang=="de-DE"){
+     window.location="../de/index.html";
+   }
+   else{
+   	window.location="../eng/index.html";
+   }
+    sessionStorage.alreadyClicked = 1;
+}
+     
+     $(function() {
       
 $.datepicker.regional['it'] = {
 	                closeText: 'Chiudi',

@@ -1,0 +1,1558 @@
+
+@media only screen and (min-width: 1140px) {
+#contact textarea{
+	width:650px;
+	padding: 45px;
+	
+}
+.logo-img{
+	border-radius:0px;
+}  
+.small-button{
+	display:none;
+}
+.title{
+    position:relative;
+    top: 150px;
+    }
+.page-pictures h2{
+	font-size:25px;
+}
+.logo-inside{
+	width:50%;
+	float:left;
+	margin-bottom:120px;
+}
+.logo-inside img{
+	width:100%;
+	height:200px;
+}
+.infos-inside{
+	width:40%;
+	text-align:left;
+	float:left;
+	margin-left:10px;
+	}
+.cd-main-content-intern{
+     margin-top:125px;
+     margin-left:15%;
+     width:75%;
+     list-style-type:initial;
+     font-size:22px;
+     line-height:1.2em;
+  	 }
+  	 .cd-main-content-intern li{
+ 
+ padding-top:4px;
+ }
+ .cd-main-content-intern h2{
+ 	color: #776A62;
+ 	padding-bottom:6px;
+ 	font-size: 25px;
+ }
+ .cd-main-content-intern h3{
+ 	font-size: 22px;
+ }  	  	   	  	 
+
+.half-page{
+	width:60%;
+	float:left;
+}
+.half2-page{
+	width:35%;
+}
+
+#cd-intro-tagline{
+    position: relative;
+    top:50px;
+    padding-left:auto;
+    padding-right:auto;
+	z-index: 1000 !important;
+}
+.price_table{
+    margin-top:150px;
+  	margin-left:19%;
+  	margin-right:5%;
+  	width:76%;
+  }
+  .logo-desktop{
+  	width:100%;
+  	height:100px;
+  	}
+  	.logobox{
+  		opacity:0.9;
+  	}
+  	.logobox:hover{
+  		opacity:1;
+  	}
+  .price_table table{
+  	width:100%;
+  }
+.lang-switch{
+    position:absolute;
+	left:0;
+	top:0;
+	z-index: 1005 !important;
+	padding-left:10px;
+	color: #808080;
+}
+.lang-switch a{
+    
+    width:25px;
+	height:50px;
+	color:#030d18;
+	font-size:0.9em;
+}
+.lang-switch a:hover{
+	font-size:1.1em;
+	font-weight:400;
+}
+.logo{
+	display:none;
+}
+#request{
+  	margin-left:22%;
+  	margin-right:6%;
+  	width:72%;
+  	
+  }
+  .walking-logo{
+  	text-align:center;
+  	display:block;
+  	
+  }
+  .header-logo{
+  	height:60px;
+  	opacity:0.8;
+  }
+  .header-logo-a::visited{
+  	opacity:1;
+  }
+ 
+  .walking-logo a:hover{
+  	opacity:1;
+  }
+  
+  #request1 fieldset{
+  	margin:50px;
+  	
+  }
+  .header-desktop-top{
+    margin: 2px 0px 0px;
+	padding: 0px 0px 10px;
+	position: relative;
+	border-bottom: 1px solid #E2E2E2;
+	height:65px;
+  	
+  }
+  .header-desktop-bottom{
+    margin-top:10px;
+	text-align:center;
+	display:block;
+	height:35px;
+  }
+  .center-header{
+    position:absolute;
+  	top:0;
+  	left:14%;
+  	margin-left:2%;
+  	margin-right:2%;
+  	width:82%;
+  	
+  }
+  ul.header-desktop-list{
+    display: inline-block;
+	vertical-align: top;
+    padding: 0px;
+}
+.header-desktop-list li{
+	float:left;
+	display:inline;
+	font-size:1.1em;
+	font-weight:300;
+	padding-left:8px;
+	padding-right:8px;
+	color: #030d18;
+}
+.header-desktop-list a:hover{
+	font-size:1.2em;
+	font-weight:500;
+}
+.header-desktop-list li.third{
+	border-left: 1px solid #AAA;
+	border-right: 1px solid #AAA;
+	
+}
+.header-desktop-list li.first, .header-desktop-list li.second{
+	border-left: 1px solid #AAA;
+	
+}
+
+  .cd-header {
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px #999;
+    
+  }
+  #request1{
+  	margin-left:22%;
+  	margin-right:6%;
+  	width:72%;
+  	
+  }
+  #requestForm{
+  	margin:50px;
+  	 }
+  	 .arrival-form, .departure-form, .board-form, .room-form{
+  	width:33%;
+  	padding-right:4%;
+  	clear: none;
+    float: left;
+    display: inline;
+  	}
+  	.adults-form{
+  	
+  	width:40%;
+  	padding-right:4%;
+  	clear: none;
+    float: left;
+    display: inline;
+  	}
+  	.child1{
+  	width:30%;
+  }
+  
+
+.textarea{
+	width:60%;
+}
+.not-active {
+   pointer-events: none;
+   cursor: default;
+}
+  .fixed-menu{
+  display: block; 
+  position:fixed;
+  width:14%;
+  top:0;
+  z-index: 1002 !important;
+  height: 450px;
+  -webkit-border-radius: 3px;
+  background-color:#A9A9A9;
+  /*#1975FF;*/
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+	
+}
+.menu-bottom{
+	position:relative;
+	width:100%;
+	top:1px;
+	height:150px;
+	background-color:#FFFFFF;
+	opacity:0.9;
+}
+.menuFooter{
+	position:relative;
+	width:100%;
+	bottom:0;
+	height:4px;
+	background-color:white;
+}
+.menuFooter1{
+	position: relative;
+	width:100%;
+	top:145px;
+	height:5px;
+	background-color:#A9A9A9;
+	z-index: 1002 !important;
+}
+.phone{
+	display:none;
+}
+.fixed-menu ul{
+ text-align: center;
+ padding-top: 25px;
+ font-size: 1.2em;
+ 
+	
+}
+.fixed-menu ul li{
+	opacity:0.6;
+	padding-top:10px;
+	border-bottom:1px solid white;
+	height:35px;
+	width:100%;
+}
+.fixed-menu a{
+	color:#fff;
+	
+	vertical-align:center;
+	margin:0 auto;
+}
+.fixed-menu ul li:hover{
+	opacity:1;
+	color:#F5F5F0;
+}
+  .cd-primary-nav {
+    display:none;
+    /* reset navigation values */
+   }
+  iframe{
+	width:50%; 
+	height:450px;
+	
+	frameborder:0;
+    border:0;
+}
+.right-text{
+    position:absolute;
+    top:0px;
+    left:50%;
+    
+	width:50%; 
+	height:450px;
+	word-wrap: break-word;
+	padding-top:2px;
+	
+	}
+	
+    .cb-slideshow li h3{
+		display:none;
+	}
+
+
+
+.form1{
+    position:absolute;
+    left:20%;
+    top:10px;
+    width:45%;
+	}
+.form2{
+    padding: 0 auto;
+	position:absolute;
+	margin: 10px auto;
+	left:50%;
+	color:white;
+	width:50%;
+}
+.cb-slideshow{
+	position:absolute;
+	top:100px;
+	left:0;
+	width:100%;
+	height:600px;
+}
+  #cd-intro {
+    position:relative;
+    top:0;
+    left:0;
+    height: 600px;
+  }
+  
+
+
+.booking input[type=text]{
+   padding:5px;
+	
+	margin-right:5px;
+}
+.booking input[type=submit]{
+	width:185px;
+	
+	
+}
+.booking{
+   display:block;
+    background-color:#AAAAAA;;
+	width:85%
+    position:relative;
+	top:670px;
+	z-index: 800 !important;
+	}
+  .bookingForm{
+    position:relative;
+	left:14%;
+	top:0;
+	z-index: 1000 !important;
+	width:85%
+	display:inline-block;
+}
+.mainContent{
+    background-color:white;
+    height:100px;
+	margin-left: 20%;
+	margin-top:20px;
+	margin-right:20px;
+	margin-bottom:20px;
+	text-align:left;
+	font-size:1.3em;
+	color: #615F59;
+}
+.mainContent h2{
+	font-size:1.5em;
+	color: #776A62;
+	
+}
+
+  #cd-intro-tagline{
+  	position:relative;
+  	top:170px;
+  }
+  #cd-intro-fix {
+    position:relative;
+    top:100px;
+    left:0;
+    width:72%;
+    height: 600px;
+    margin-right:1%;
+    display:inline-block;
+  }
+  #cd-intro-fix-intern {
+    position:relative;
+    top:100px;
+    left:14%;
+    width:58%;
+    height: 600px;
+    display:inline-block;
+  }
+  
+  #internalRight {
+    position:absolute;
+    top:100px;
+    left:72%;
+    margin-right:1%;
+    width:28%;
+    height: 600px;
+    display:inline-block;
+  }
+  #cd-intro #cd-intro-tagline {
+    padding-top: 160px;
+  }
+  #cd-intro-fix #cd-intro-tagline {
+    padding-top: 160px;
+  }
+  #cd-intro h1, #cd-intro-fix h1{
+    font-size: 32px;
+    font-size: 2rem;
+  }
+
+  
+  #cd-intro #cd-intro-tagline {
+    padding-top: 250px;
+  }
+  #cd-intro-fix #cd-intro-tagline {
+    padding-top: 250px;
+  }
+
+
+
+
+
+  .cd-btn.is-hidden {
+    /* assign a position fixed and move outside the viewport (on the right) */
+    opacity: 0;
+    position: fixed;
+    right: -20%;
+    top: 0;
+    padding: .8em 1.2em;
+    margin: 14px 0 0;
+    -webkit-transition: right 0.3s, opacity 0.3s;
+    -moz-transition: right 0.3s, opacity 0.3s;
+    transition: right 0.3s, opacity 0.3s;
+  }
+  .cd-btn.is-hidden.slide-in {
+    /* slide in when the secondary nav gets fixed */
+    right: 5%;
+    opacity: 1;
+  }
+  .cd-btn1{
+    position:relative;
+    top:20px;
+    left:20%;
+    width:65%;
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-align:center;
+    background-color: #B8E62E;
+    border-radius: 16em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: white;
+    
+    
+  
+  }
+  a.button1{
+  	margin-bottom:10px;
+  	margin-left:-5px;
+  }
+  
+.no-touch .cd-btn:hover {
+  background-color: #f5484a;
+}
+.cd-btn1:hover {
+  opacity:0.9;
+}
+
+
+/* -------------------------------- 
+
+Secondary Fixed Navigation
+
+-------------------------------- */
+
+.cd-btn1{
+    position:relative;
+    top:5px;
+    left:30%;
+    width:40%;
+    border-radius:12em;}
+    }
+.cd-secondary-nav {
+  position: relative;
+  z-index: 3;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.cd-secondary-nav ul {
+  /* mobile first - secondary navigation hidden by default, triggered by tap/click on .cd-secondary-nav-trigger*/
+  position: fixed;
+  width: 90%;
+  max-width: 400px;
+  right: 5%;
+  bottom: 20px;
+  border-radius: 0.25em;
+  background: rgba(3, 13, 24, 0.96);
+  visibility: hidden;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  -o-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  -webkit-transition: -webkit-transform 0.3s, visibility 0s 0.3s;
+  -moz-transition: -moz-transform 0.3s, visibility 0s 0.3s;
+  transition: transform 0.3s, visibility 0s 0.3s;
+}
+.cd-secondary-nav ul.is-visible {
+  visibility: visible;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: -webkit-transform 0.3s, visibility 0s 0s;
+  -moz-transition: -moz-transform 0.3s, visibility 0s 0s;
+  transition: transform 0.3s, visibility 0s 0s;
+}
+.cd-secondary-nav li a {
+  display: block;
+  padding: 1.6em;
+  border-bottom: 1px solid #092645;
+  color: #f0eee1;
+}
+.cd-secondary-nav li:last-child a {
+  border-bottom: none;
+}
+
+  .cd-secondary-nav {
+    z-index: 1;
+    height: 100px;
+    background-color: rgba(3, 13, 24, 0.96);
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    transition: height 0.3s;
+  }
+  .cd-secondary-nav nav, .cd-secondary-nav ul, .cd-secondary-nav li, .cd-secondary-nav a {
+    height: 100%;
+  }
+  .cd-secondary-nav ul {
+    /* reset navigation values */
+    position: static;
+    width: auto;
+    max-width: 100%;
+    visibility: visible;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    text-align: center;
+    background-color: transparent;
+  }
+  .cd-secondary-nav li {
+    display: inline-block;
+    margin-left: -4px;
+  }
+  .cd-secondary-nav li a {
+    position: relative;
+    text-align: center;
+    display: block;
+    padding: 58px 40px 0 40px;
+    border-bottom: none;
+    -webkit-transition: padding 0.2s;
+    -moz-transition: padding 0.2s;
+    transition: padding 0.2s;
+  }
+  .cd-secondary-nav li a b {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    color: rgba(240, 238, 225, 0.3);
+  }
+  .cd-secondary-nav li a span {
+    position: absolute;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    top: 18px;
+    left: 50%;
+    right: auto;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-repeat: no-repeat;
+    background-image: url(../img/cd-nav-icons.svg);
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+  }
+  .cd-secondary-nav li a:hover b, .cd-secondary-nav li a.active b {
+    color: #f0eee1;
+  }
+  .cd-secondary-nav li:nth-child(1) a span {
+    background-position: 0 0;
+  }
+  .cd-secondary-nav li:nth-child(2) a span {
+    background-position: -40px 0;
+  }
+  .cd-secondary-nav li:nth-child(3) a span {
+    background-position: -80px 0;
+  }
+  .cd-secondary-nav li:nth-child(4) a span {
+    background-position: -120px 0;
+  }
+  .cd-secondary-nav li:nth-child(5) a span {
+    background-position: -160px 0;
+  }
+  .cd-secondary-nav.is-fixed {
+    /* on Firefox CSS transition/animation fails when parent element changes position attribute*/
+    /* so we defined to diffent classes: .is-fixed to change the position value and .is-animated to change childrens' attributes (padding and opacity)*/
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 70px;
+    width: 100%;
+  }
+  .cd-secondary-nav.animate-children {
+    /* on Firefox CSS transition/animation fails when parent element changes position attribute*/
+    /* so we defined to diffent classes: .is-fixed to change the position value and .is-animated to change childrens' attributes (padding and opacity)*/
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  .cd-secondary-nav.animate-children li a {
+    padding: 26px 30px 0 30px;
+  }
+  .cd-secondary-nav.animate-children li a span {
+    opacity: 0;
+  }
+}
+
+.cd-secondary-nav-trigger {
+  position: fixed;
+  bottom: 20px;
+  right: 5%;
+  width: 44px;
+  height: 44px;
+  background: rgba(3, 13, 24, 0.96);
+  border-radius: 0.25em;
+  /* image replacement */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  z-index: 2;
+}
+.cd-secondary-nav-trigger span {
+  /* the span element is used to create the menu icon */
+  position: absolute;
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #f0eee1;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  transition: background 0.3s;
+}
+.cd-secondary-nav-trigger span::before, .cd-secondary-nav-trigger span::after {
+  content: '';
+  position: absolute;
+  background: inherit;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.cd-secondary-nav-trigger span::before {
+  right: -10px;
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -ms-transform: rotate(0);
+  -o-transform: rotate(0);
+  transform: rotate(0);
+}
+.cd-secondary-nav-trigger span::after {
+  left: -10px;
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -ms-transform: rotate(0);
+  -o-transform: rotate(0);
+  transform: rotate(0);
+}
+.cd-secondary-nav-trigger.menu-is-open {
+  background: transparent;
+}
+.cd-secondary-nav-trigger.menu-is-open span {
+  background: rgba(240, 238, 225, 0);
+  width: 20px;
+  height: 2px;
+}
+.cd-secondary-nav-trigger.menu-is-open span::before, .cd-secondary-nav-trigger.menu-is-open span::after {
+  background: #f0eee1;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  top: 0;
+  left: 0;
+}
+.cd-secondary-nav-trigger.menu-is-open span::before {
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.cd-secondary-nav-trigger.menu-is-open span::after {
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+.page-pictures{
+	position:relative;
+    top:60px;
+    left:1%;
+    right:1%;
+    width:98%;
+    margin-top:15px;
+    margin-bottom:65px;
+    font-size:18px;
+   line-height:1.2em;
+}
+.page-offers{
+	position:relative;
+    top:60px;
+    left:1%;
+    right:1%;
+    width:98%;
+    margin-top:15px;
+    margin-bottom:65px;
+    font-size:18px;
+   line-height:1.2em;
+}
+.page-offers h2{
+	text-align:center;
+}
+
+.page-pictures p{
+	color:gray;
+  opacity:1;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 25px;
+  position: relative;
+  top:50%;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  margin-bottom:20px;
+}
+
+}
+.page-pictures h3{
+		font-size:18px;
+		
+	}
+.attività-img{
+	width:100%;
+}
+.camere h3{
+	clear:both;
+}
+@media only screen and (min-width: 1170px) {
+  .cd-secondary-nav-trigger {
+    display: none;
+  }
+  .page-pictures{
+	position:relative;
+    top:100px;
+    left:19%;
+    right:5%;
+    width:76%;
+    
+    margin-top:15px;
+    }
+    .page-offers{
+	position:relative;
+    top:100px;
+    left:19%;
+    right:5%;
+    width:76%;
+    
+    margin-top:15px;
+    margin-bottom:55px;
+    }
+}
+
+/* -------------------------------- 
+
+Placeholder Sections
+
+-------------------------------- */
+
+.cd-section {
+  position:relative;
+  top:0;
+  padding: 0;
+  
+  height: 250px;
+  background-color: transparent;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
+  max-width: 100%;
+  max-height: 100%;
+}
+.cd-section h2 {
+  font-size: 20px;
+  font-size: 1.25rem;
+  margin-bottom: .6em;
+  font-weight: 700;
+}
+.cd-section p {
+  color:gray;
+  opacity:1;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 25px;
+  position: relative;
+  top:50%;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  margin: 0 auto;
+
+}
+.cd-section p span{
+   color: white; 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 5px; 
+
+}
+.cd-section p .smaller{
+   color: white; 
+   font: bold 24px/38px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 5px; 
+
+}
+#cd-placeholder-1, #cd-placeholder-2,#cd-placeholder-3,#cd-placeholder-4,#cd-placeholder-5,#cd-placeholder-6{
+  width: 100%;
+    height: 300px;
+  background-color: transparent;
+  background-repeat:no-repeat;
+  background-size: cover;  
+    
+}
+
+#hike-back{
+    margin-top:50px;
+	background-image:url('../img/hiking.jpg');
+}
+#hike-back2{
+    margin-top:30px;
+	background-image:url('../img/hiking.jpg');
+}
+
+#spawelness-back{
+   
+	background-image:url('../img/well.jpg');
+}
+#map-back{
+    margin-top:30px;
+	background-image:url('../img/map.png');
+}
+#fam-back{
+    
+	background-image:url('../img/famiglia.jpg');
+}
+#gourmet-back{
+	background-image:url('../img/gourmet.jpg');
+}
+#alpine-back{
+	background-image:url('../img/alpine-ski.jpeg');
+}
+#nordic-back{
+	background-image:url('../img/sci_nordico.jpg');
+}
+#notonly-back{
+	background-image:url('../img/non_solo_sci.jpg');
+}
+#scuola-back{
+	background-image:url('../img/sci_scuola.jpg');
+}
+#miniclub-back{
+	background-image:url('../img/miniclub.jpg');
+}
+#think-back{
+	background-image:url('../img/certificato.jpg');
+}
+#filosofia-back{
+	background-image:url('../img/energia.jpg');
+}
+#walk-back{
+    
+	background-image:url('../img/walking.JPG');
+}
+#room-back{
+	background-image:url('../img/camera.jpg');
+}
+
+#eventi-back{
+	background-image:url('../img/suoni.jpg');
+}
+#summer-back{
+	background-image:url('../img/summer1.jpg');
+}
+#offerta1-back{
+	background-image:url('../img/estate-2015.jpg');
+}
+#offerte-back{
+	background-image:url('../img/offerte.jpeg');
+}
+#offerta2-back{
+	background-image:url('../img/PRIMA-NEVE-BERGHOTEL.jpg');
+}
+#offerta3-back{
+	background-image:url('../img/NEVE-AL-TOP-BERGHOTEL.jpg');
+}
+#offerta4-back{
+	background-image:url('../img/supersun.jpg');
+}
+#offerta5-back{
+	background-image:url('../img/offerte.jpeg');
+}
+#offerta6-back{
+	background-image:url('../img/offerte.jpeg');
+}
+#winter-back{
+	background-image:url('../img/winter.jpg');
+}
+#family-back{
+   
+	background-image:url('../img/family.jpg');
+}
+#attività-back{
+    
+	background-image:url('../img/rafting.jpg');
+}
+#bici-back{
+   
+	background-image:url('../img/bici.jpg');
+}
+#well-back{
+	background-image:url('../img/well.jpg');
+}
+
+#spa-back{
+	background-image:url('../img/sauna.jpg');
+}
+#beauty-back{
+	background-image:url('../img/massaggi.jpg');
+}
+#acqua-back{
+	background-image:url('../img/acqua.jpeg');
+}
+#fitness-back{
+	background-image:url('../img/fitness.jpg');
+}
+.trentino-img{
+	width:170px;
+	
+}
+.link-img{
+	width:60%;
+	
+}
+@media only screen and (min-width: 768px) {
+  .link-img{
+	width:40%;
+	
+	
+}
+.trentino-img{
+	width:40%;
+	
+	
+}
+  #hike-back{
+    margin-top:51px;
+	
+}
+#hike-back2{
+    margin-top:51px;
+	
+}
+
+#spa-back{
+    margin-top:51px;
+	background-image:url('../img/sauna.jpg');
+}
+#alpine-back{
+    margin-top:51px;
+	}
+#nordic-back{
+	background-position: 50% 10%;
+	}
+#notonly-back{
+	background-image:url('../img/non_solo_sci.jpg');
+}
+
+.cd-section {
+  height: 300px;
+  
+}
+  
+}
+@media only screen and (min-width: 1170px) {
+.link-img{
+	width:19%;
+	
+	padding-right:5px;
+}
+.trentino-img{
+	width:19%;
+	
+	padding-right:5px;
+}
+  .cd-section {
+  display:inline-block;
+  vertical-align: top;
+  opacity:0.8;
+  -webkit-box-sizing: border-box ;
+     -moz-box-sizing: border-box ;
+          box-sizing: border-box ;
+  
+}
+.cd-section:hover{
+  opacity:1;	
+}
+.cd-section:active{
+  opacity:1;	
+}
+.right-bar{
+    position:absolute;
+    right:0;
+    top:0;
+	width:1%;
+	height:200%;
+	background-color:#3385FF;
+	z-index:1010;
+}
+.cd-section p span{
+   color: white; 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px; 
+
+}
+.cd-section h2 {
+  font-size: 20px;
+  font-size: 1.25rem;
+  margin-bottom: .6em;
+  font-weight: 700;
+}
+.cd-section p {
+  line-height: 1.6;
+}
+#alpine-back{
+    margin-top:98px;
+    margin-left:14%;
+    width: 43%;
+	}
+#nordic-back{
+	margin-top:98px;
+	margin-left:-3px;
+	width: 42.9%;
+	background-position: 50% 10%;
+	}
+#notonly-back{
+	margin-left:-3px;
+	width: 42.9%;
+}
+#scuola-back{
+	margin-left:14%;
+    width: 43%;
+}
+#hike-back{
+    margin-top:98px;
+    margin-left:14%;
+    width: 56%;
+	
+}
+#hike-back2{
+    margin-top:98px;
+    margin-left:14%;
+    width: 56%;
+	
+}
+#spa-back{
+    margin-top:98px;
+    margin-left:14%;
+    width: 43%;
+	background-image:url('../img/sauna.jpg');
+}
+#acqua-back{
+margin-left:14%;
+    width: 43%;
+	background-image:url('../img/acqua.jpeg');
+}
+#fitness-back{
+    margin-left:-3px;
+    width: 42.9%;
+	background-image:url('../img/fitness.jpg');
+}
+#spawelness-back{
+	background-image:url('../img/well.jpg');
+	margin-top:98px;
+    margin-left:-3px;
+    width: 29.9%;
+}
+#beauty-back{
+margin-top:98px;
+    margin-left:-3px;
+    width: 42.9%;
+	background-image:url('../img/massaggi.jpg');
+}
+#walk-back{
+    margin-top:98px;
+    margin-left:-3px;
+    width: 29.9%;
+	
+}
+#room-back{
+	background-image:url('../img/camera.jpg');
+}
+#summer-back{
+	background-image:url('../img/summer1.jpg');
+}
+#winter-back{
+	background-image:url('../img/winter.jpg');
+	margin-left:-3px;
+    width: 29.8%;
+}
+#offerta1-back{
+	width: 50%;
+}
+#offerta2-back{
+	margin-left:-3px;
+    width: 49.8%;
+}
+#offerta3-back{
+	width: 50%;
+}
+#offerta4-back{
+	margin-left:-3px;
+    width: 49.8%;
+}
+#offerta5-back{
+	width: 50%;
+}
+#offerta6-back{
+	margin-left:-3px;
+    width: 49.8%;
+}
+#eventi-back{
+margin-left:-3px;
+    width: 28%;
+	
+}
+#miniclub-back{
+margin-left:14%;
+    width: 28%;
+	background-position: 50% 10%;
+}
+#family-back{
+   margin-left:14%;
+    width: 28%;
+	
+}
+#attività-back{
+    margin-left:-3px;
+    width: 29.9%;
+	
+}
+#bici-back{
+   margin-left:-3px;
+    width: 28%;
+	
+}
+#offerte-back{
+   margin-left:-3px;
+    width: 28%;
+	
+}
+#map-back{
+    margin-top:0px;
+    margin-left:14%;
+    width: 28%;
+}
+#fam-back{
+    margin-left:14%;
+    margin-top:98px;
+	 width: 43%;
+}
+#gourmet-back{
+     margin-top: 98px;
+     margin-left:-3px;
+	 width: 42.9%;
+}
+#think-back{
+     margin-top:0px;
+	 width: 27.9%;
+	 margin-left:-3px;
+	 background-position: 50% 60%;
+}
+#filosofia-back{
+	 width: 30%;
+	 margin-left:-3px;
+}
+
+
+#cd-placeholder-1{
+    margin-top:120px;
+    margin-left:14%;
+    width: 56%;
+    height: 250px;
+    background-color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    position:relative;
+}
+#cd-placeholder-2{
+    margin-top:120px;
+    margin-left:-3px;
+    width: 30%;
+    height: 250px;
+    background-color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    position:relative;
+}
+#cd-placeholder-3{
+    margin-left:14%;
+    width: 28%;
+    height: 250px;
+    background-color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    
+    
+}
+#cd-placeholder-6{
+    margin-left:14%;
+    width: 86%;
+    height: 250px;
+    background-color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    
+    
+}
+
+#cd-placeholder-4{
+	margin-left:-3px;
+    width: 28%;
+    height: 250px;
+    background-color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    
+}
+#cd-placeholder-5{
+   margin-left:-3px;
+    width: 29%;
+    height: 250px;
+    background-color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    
+}
+
+
+}
+.footer-distributed{
+     background-color:#A9A9A9;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	text-align: left;
+	font: bold 16px sans-serif;
+    padding: 55px 50px;
+	clear:both;
+		
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+.footer-company-name a{
+	color:#5C5C3D;
+}
+.footer-company-name a:hover{
+	color:white;
+}
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+
+.footer-bottom{
+	width:100%;
+}
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #4791FF;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #5C5C3D;
+	font-size: 14px;
+	font-weight: normal;
+	
+}
+.footer-company-name{
+	position:relative;
+	bottom:0;
+}
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .icon-img{
+	background-color:#A9A9A9;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #4791FF;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	border-radius: 2px;
+    font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+.footer-social{
+    padding-top:20px;
+	width:250px;
+}
+.socialimg{
+	border-radius: 5px;
+	opacity:0.8;
+}
+.socialimg:hover{
+	opacity:1;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+	
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center .icon-img{
+		margin-left: 0;
+	}
+	.footer-social{
+		margin-left:auto;
+		margin-right:auto;
+	}
+	.footer-center div a{
+		opacity:0.8;
+		
+	}
+	.footer-center div a:hover{
+		opacity:1;
+		
+	}
+	.link-img, .trentino-img{
+		display:block;
+		margin:auto;
+		padding-top:25px;
+	}
+	
+
+}
+@media (min-width: 1140px) {
+
+	.footer-distributed{
+		margin-left:14%;
+	}
+	#more-margin{
+		margin-top:150px;
+	}
+	
+
+
+}
+

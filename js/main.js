@@ -1,9 +1,5 @@
 jQuery(document).ready(function($){
-  var userLang = navigator.language || navigator.userLanguage; 
-  if (userLang=="en-US") {
-  	window.location.replace("http://michste93.github.io/en/index.html");
-  }  
-
+  
 $('body').on('touchstart',function(e) {
   if (e.currentTarget.scrollTop === 0) {
     e.stopPropagation();
@@ -16,19 +12,20 @@ $('body').on('touchmove',function(e) {
   
   }
 });
-
+    
+    
    
    	$(window).load(function() {
 		// Animate loader off screen
 		$(".se-pre-con").fadeOut("slow");;
 	});
         
-  	$('.footer-distributed').load('footer-it.html',function(){
+//  	$('.footer-distributed').load('footer-it.html',function(){
   	
-  	});
-  	$('head').load('head-it.html',function(){
+//  	});
+//  	$('head').load('head-it.html',function(){
   	
-  	});
+//  	});
     
     
     $("#contact_l").click(function(){
