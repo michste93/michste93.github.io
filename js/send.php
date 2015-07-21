@@ -1,5 +1,4 @@
 <?php
-  echo "cityyyyyyyy";
   $arrivo = $_POST["arrivalDate"];
   $partenza = $_POST["departureDate"];
   $pensione = $_POST["board"];
@@ -23,7 +22,7 @@
   $newsletter = $_POST["news"];
   $data = "Arrivo: ".$arrivo."Partenza: ".$partenza."Pensione: ".$pensione."Camera: ".$camera."Adulti: ".$adulti."Bambino 1: ".$bimbo1."Bambino 2: ".$bimbo2."Bambino 3: ".$bimbo3."Messaggio: ".$messaggio."Titolo: ".$titolo."Nome: ".$nome."Cognome: ".$cognome."Email: ".$email."Indirizzo: ".$indirizzo."Zip: ".$zip."Città: ".$citta."Stato: ".$stato."Telefono: ".$telefono."Newsletter: ".$newsletter;
   
-	if (filter_var($email, FILTER_VALIDATE_EMAIL)) { // this line checks that we have a valid email address
+	(filter_var($email, FILTER_VALIDATE_EMAIL)) { // this line checks that we have a valid email address
 mail($email_to, $oggetto, $data); //This method sends the mail.
 echo "Your email was sent!"; // success message
 }else{

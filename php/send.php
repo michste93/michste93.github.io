@@ -1,5 +1,4 @@
 <?php
-    echo "what up man";
     $arrivo = $_POST["arrivalDate"];
     $partenza = $_POST["departureDate"];
     $pensione = $_POST["board"];
@@ -26,14 +25,13 @@
 "Pensione: ".$pensione."Camera: ".$camera."Adulti: ".$adulti."Bambino 1: ".$bimbo1."Bambino 2: ".$bimbo2."Bambino 3: ".$bimbo3."Messaggio: ".$messaggio."Titolo: ".$titolo."Nome: ".$nome."Cognome: ".$cognome."Email: ".$email."Indirizzo: ".$indirizzo."Zip: ".$zip."Città: ".$citta."Stato: ".$stato."Telefono: ".$telefono."Newsletter: ".$newsletter ;
 
 $val = mail($email_to, $oggetto, $data);
-
-if( $val == true )
+if($val)
 {
-	echo "1"; // success message
+	echo "Grazie, le risponderò il più presto possibile." . "\n" . "Thank you, I'll answer you as soon as possible."; // success message
 }
 else
 {
-	echo "0";
+	echo "There was an error, please try again.";
 }
 
 ?>

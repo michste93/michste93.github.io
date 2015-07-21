@@ -128,6 +128,10 @@ Modules - reusable parts of our design
     
   
   }
+  #request_l{
+  	position:relative;
+  	top:200px;
+  }
 .logo-img{
 	display: block;
     max-width: 100%;
@@ -202,7 +206,8 @@ Modules - reusable parts of our design
 }
 .title{
     position:relative;
-    top: 150px;}
+    top: 150px;
+    }
 .page-pictures h2{
 	font-size:25px;
 }
@@ -220,15 +225,13 @@ Modules - reusable parts of our design
 	text-align:left;
 	float:left;
 	margin-left:10px;
-	
-}
-  
-   .cd-main-content-intern{
+	}
+.cd-main-content-intern{
      margin-top:125px;
      margin-left:15%;
      width:75%;
      list-style-type:initial;
-     font-size:20px;
+     font-size:22px;
      line-height:1.2em;
   	 }
   	 .cd-main-content-intern li{
@@ -424,13 +427,44 @@ Navigation
 
 
   #request{
-  	margin-top:150px;
-  	margin-left:auto;
-  	margin-right:auto;
-  	width:90%;
-  	background-color:gray;
-  	color:white;
-  	border-radius:2px;
+    display:none;
+	z-index: 99999;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0.9;
+	text-align: center;
+	font-size: 32px;
+	color: #333;
+	background: #FAFBFA none repeat scroll 0% 0%;
+	overflow: scroll;
+	padding: 150px 10px 0px 10px;
+  }
+  #request1{
+    display:none;
+	z-index: 99999;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0.9;
+	text-align: center;
+	font-size: 32px;
+	color: #333;
+	background: #FAFBFA none repeat scroll 0% 0%;
+	overflow: scroll;
+	padding: 150px 10px 0px 10px;
+  }
+  #request1 fieldset{
+  	margin:10px;
+  	padding:5px;
+  }
+  #requestForm{
+  	margin:10px;
+  	padding:5px;
   }
   .price_table{
   	margin-top:90px;
@@ -497,23 +531,15 @@ Navigation
     margin: 0px;
     padding: 2px 0px;
 }
-  #request1{
-  	margin-top:20px;
-  	margin-left:auto;
-  	margin-right:auto;
-  	width:90%;
-  	background-color:gray;
-  	color:white;
-  	border-radius:2px;
-  }
-  #request1 fieldset{
-  	margin:10px;
-  	padding:5px;
-  }
-  #requestForm{
-  	margin:10px;
-  	padding:5px;
-  }
+
+.whole{
+	width: 100%;
+	text-align: center;
+    display: block;
+    height:300px;
+}	
+}
+  
   .large-field{
   	width:90%;
   	border-radius:4px;
@@ -2405,7 +2431,7 @@ Placeholder Sections
   position:relative;
   top:0;
   padding: 0;
-  opacity:0.8;
+  
   height: 250px;
   background-color: transparent;
   background-size: cover;
@@ -2460,12 +2486,7 @@ Placeholder Sections
   background-size: cover;  
     
 }
-.cd-section:hover{
-  opacity:1;	
-}
-.cd-section:active{
-  opacity:1;	
-}
+
 #hike-back{
     margin-top:50px;
 	background-image:url('../img/hiking.jpg');
@@ -2639,10 +2660,17 @@ Placeholder Sections
   .cd-section {
   display:inline-block;
   vertical-align: top;
+  opacity:0.8;
   -webkit-box-sizing: border-box ;
      -moz-box-sizing: border-box ;
           box-sizing: border-box ;
   
+}
+.cd-section:hover{
+  opacity:1;	
+}
+.cd-section:active{
+  opacity:1;	
 }
 .right-bar{
     position:absolute;

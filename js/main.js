@@ -17,41 +17,7 @@ $('body').on('touchmove',function(e) {
 
         
   	
-    $('#requestForm').on('submit', function(event){
-       alert("you are in");
-       var data= $('#requestForm').serialize();
-       alert(data);
- //      $.ajax({
- //       type: "POST",
- //       url: "../php/send.php",
- //       data: data,
- //       success: function(){
- //       alert("success")
- //      }
- //      });
-       $.post('../php/send.php',data,function(response) {
-         if (response == "1"){
-         	alert("win");
-         }
-         else{
-         	alert("no win");
-         }		
-       
-       
-       });
-       //,function(x){
- //      alert("in the function");
-       	//su php con echo ritorna x e poi da qui alert(x)
- //      	if(x=="1"){
-       		
- //      	}
- //      	else{
- //      		alert("nooooo");
- //      	}
- //      })
-       
-       
-    }); 
+    
     
     $("#contact_l").click(function(){
         $("#contact").show(300,function(){

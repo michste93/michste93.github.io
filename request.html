@@ -49,7 +49,9 @@
 			</ul>
 		</nav>
 		<!--header with flags and telephone--> 
-		<div id="contact">
+		
+
+<div id="contact">
     <form class="contact">
         <h2>Contatta Dolomites Labs se interessato a lavori di Web Design, Design grafico e sviluppo web. </h2><br>
         <label for="name">Name:</label><br>
@@ -69,7 +71,7 @@
 		<div class="logo"><a href="index.html"><img class="logo-img" src="img/logo3.jpg"/></a></div><div class="phone"><a href="tel:0462814177"></a></div>
 	<div class="center-header">	
 		<div class="header-desktop-top">
-		<div class="lang-switch"> <a href="eng/request.html">ENG</a> | <a class="not-active" href="#">ITA</a> | <a href="de/index.html">DE</a></div><div class="walking-logo"><a class="header-logo-a" href="dolomiti.html">
+		<div class="lang-switch"> <a href="eng/request.html">ENG</a> | <a class="not-active" href="#">ITA</a> | <a href="de/request.html">DE</a></div><div class="walking-logo"><a class="header-logo-a" href="dolomiti.html">
 		<img class="header-logo" alt="Dolomiti Walking Hotels" src="img/dwh-logo-reduced_I.png"></img>
 		</a>
 			</div>
@@ -99,13 +101,18 @@
   
 </div>
 </nav>
+
+<div class="whole">
+<a id="request_l">Compila modulo per inviare richiesta</a><br><br><br>
+
 <div id="request">
+    <div id="close"></div>
 	<h2>YOUR REQUEST</h2><br>
 	<h3>*Please fill out all required fields</h3>
-		<form id="requestForm" method="POST">
+		<form id="requestForm">
     <fieldset>
-        <div class="arrival-form"><label class="formLabel">ARRIVAL DATE*</label><input type="text" placeholder="Arrival Date" id="depart" class ="large-field" name="arrivalDate" required></div>
-          <div class="departure-form"><label class="formLabel">DEPARTURE*</label><input type="text" placeholder="Departure Date" id="return" class ="large-field" name="departureDate" required></div>
+        <div class="arrival-form"><label class="formLabel">ARRIVAL DATE*</label><input type="text" placeholder="Arrivo" id="depart" class ="large-field" name="arrivalDate" required></div>
+          <div class="departure-form"><label class="formLabel">DEPARTURE*</label><input type="text" placeholder="Partenza" id="return" class ="large-field" name="departureDate" required></div>
           <div class="board-form"><label class="formLabel">BOARD*</label><select name="board" class ="large-field" required>
            <option value="Pensione completa" default>Full Board</option>
            <option value="Mezza pensione" >Half Board</option>
@@ -141,11 +148,11 @@
            <option value="6-12"> 6-12 </option>
            </select></div>
         </fieldset>
-           <div class="textarea-form"><label class="formLabel">ADDITIONAL INFORMATION AND MESSAGE REGARDING YOUR REQUEST</label><textarea class="textarea" name="textarea"></textarea></div>
+           <div class="textarea-form"><label class="formLabel">ADDITIONAL INFORMATION AND MESSAGE REGARDING YOUR REQUEST</label><textarea class="textarea" name="textarea"></textarea>
         
 
 </div>	<br>
-<div id="request1">
+
 	<h2>PERSONAL DATA</h2><br>
 		
     <fieldset>
@@ -207,11 +214,13 @@ b) al trattamento di dati personali che lo riguardano a fini di invio di materia
 
 
 L'INTERESSATO, presa visione dell’informativa redatta ai sensi dell'art. 13 del D.Lgs. 30 giugno 2003 n. 196, rilascia espresso consenso al trattamento dei dati personali per le attività sopra descritte (si richiede di restituirci a mezzo fax  o posta (Berghotel Miramonti - Tesero 38038 - Località Stava - Telefono: 0462814177 - Fax: 0462814646).</textarea></div><br>
-        <button type="submit" class="submit-button" name="submit" >SUBMIT THE REQUEST</button><div id="success" style="color:red;"></div>
+        <button type="submit" class="submit-button" name="submit" >SUBMIT THE REQUEST</button>
     </fieldset>
 </form>
-</div>	
 	
+
+</div>	
+
 	
 	<!-- footer-->
 	<footer class="footer-distributed">
@@ -270,6 +279,8 @@ L'INTERESSATO, presa visione dell’informativa redatta ai sensi dell'art. 13 de
 		
 <script src="js/jquery-2.1.1.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="js/email.js"></script> <!-- Resource jQuery -->
+<script src="js/cal-it.js"></script>
 <script src="jquery/jquery-ui.js"></script> <!-- Resource jQuery -->
 </body>
 </html>

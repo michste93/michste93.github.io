@@ -1,0 +1,128 @@
+html, body{
+	height:100%;
+	width:100%;
+	-webkit-transform: translate3d(0,0,0);
+}
+body {
+  font-size: 100%;
+  font-family: "Lato", sans-serif;
+  color: #3D3D29;
+  
+  overflow-x: hidden;
+  
+}
+
+a {
+	cursor: pointer;
+  text-decoration: none;
+  color:#030d18;
+}
+
+img {
+  max-width: 100%;
+}
+h1{
+  	font-size: 27px;
+  	font-weight:900;
+  }
+h2{
+  	font-size: 24px;
+  	font-weight:800;
+  }
+h3{
+  	font-size: 21px;
+  	font-weight:600;
+  }
+header{
+	text-align: center;
+	display: block;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+
+}
+.container{
+	width:100%;
+}
+.way-box{
+    background-color:yellow;
+	width:90%;
+	
+	margin-left:5%;
+	height:250px;
+	margin-bottom:30px;
+	background-color: transparent;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
+  max-width: 100%;
+  max-height: 100%;
+  opacity:0.8;
+  border-radius:5px;
+}
+
+.way-box p {
+  color:gray;
+  opacity:1;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 25px;
+  position: relative;
+  top:40%;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  margin: 0 auto;
+
+}
+.way-box p span {
+    color: #FFF;
+    font: bold 18px/45px Helvetica,sans-serif;
+    letter-spacing: -1px;
+    background: rgba(0, 0, 0, 0.7) none repeat scroll 0% 0%;
+    padding: 5px;
+}
+
+#way1{
+    background-image:url('../img/hiking.jpg');
+}
+#way2{
+    background-image:url('../img/estate-2015.jpg');
+} 
+#way3{
+    background-image:url('../img/quoti.jpeg');
+}  
+.logo-center{
+	height: 200px;
+}
+
+
+@media only screen and (min-width: 1170px) {
+	.container{
+	position:relative;
+	width:80%;
+	left:10%;
+	
+}
+.way-box{
+    
+	width: 45%;
+	float: left;
+	height: 320px;
+	margin-bottom: 50px;
+	
+	
+}
+
+.way-box p span{
+   
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   
+
+}   
+}  
+  
+  
+  
+  
+  
