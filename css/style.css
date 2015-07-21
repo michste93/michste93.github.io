@@ -849,12 +849,7 @@ Navigation
   	width:100%;
   	height:100px;
   	}
-  	.logobox{
-  		opacity:0.9;
-  	}
-  	.logobox:hover{
-  		opacity:1;
-  	}
+  	
   .price_table table{
   	width:100%;
   }
@@ -960,7 +955,7 @@ Navigation
 	float:left;
 	display:inline;
 	font-size:1.1em;
-	font-weight:300;
+	
 	padding-left:8px;
 	padding-right:8px;
 	color: #030d18;
@@ -1029,7 +1024,7 @@ Navigation
   z-index: 1002 !important;
   height: 450px;
   -webkit-border-radius: 3px;
-  background-color:#A9A9A9;
+  
   /*#1975FF;*/
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -1065,7 +1060,7 @@ Navigation
  text-align: center;
  padding-top: 25px;
  font-size: 1.2em;
- 
+ background-color:#A9A9A9;
 	
 }
 .fixed-menu ul li{
@@ -1366,7 +1361,7 @@ Intro
 }
 .wint::after {
   content: "";
-  background: transparent url(../img/alpine-ski.jpeg) 50% 50% no-repeat;
+  background: transparent url(../img/winter.jpg) 50% 50% no-repeat;
   background-size: cover;
   top: 0;
   left: 0;
@@ -1379,7 +1374,7 @@ Intro
 }
 .alp::after {
   content: "";
-  background: transparent url(../img/sci_alpino.jpg) 50% 50% no-repeat;
+  background: transparent url(../img/alpine-ski.jpeg) 50% 50% no-repeat;
   background-size: cover;
   top: 0;
   left: 0;
