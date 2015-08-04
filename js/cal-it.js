@@ -12,7 +12,11 @@ jQuery(document).ready(function($){
    }
     sessionStorage.alreadyClicked = 1;
 }
-     
+     $(window).load(function() {
+		// Animate loader off screen
+		$(".load-it").fadeOut("slow");;
+	});
+	
      $(function() {
       
 $.datepicker.regional['it'] = {
