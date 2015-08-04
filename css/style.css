@@ -64,7 +64,7 @@ h3{
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: url(../img/preloader.gif) center no-repeat #fff;
+	background: url(../img/load-ita.png) center no-repeat #fff;
 }
 .load-de {
 	position: fixed;
@@ -73,7 +73,7 @@ h3{
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: url(../img/preloader.gif) center no-repeat #fff;
+	background: url(../img/load-de.png) center no-repeat #fff;
 }
 .load-eng {
 	position: fixed;
@@ -82,7 +82,7 @@ h3{
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: url(../img/preloader.gif) center no-repeat #fff;
+	background: url(../img/load-eng.png) center no-repeat #fff;
 }
 /* -------------------------------- 
 

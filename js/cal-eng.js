@@ -17,7 +17,7 @@ $.datepicker.regional['en'] = {
 	                isRTL: false,
 	                showMonthAfterYear: false,
 	                yearSuffix: ''};
-	        $.datepicker.setDefaults($.datepicker.regional['it']);
+	        $.datepicker.setDefaults($.datepicker.regional['en']);
         
         $("#depart").datepicker();
         $("#return").datepicker();

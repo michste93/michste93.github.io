@@ -3,19 +3,25 @@ jQuery(document).ready(function($){
      
     var userLang = navigator.language || navigator.userLanguage; 
    if(userLang=="it-IT" || "it"){
+   $(window).load(function() {
+   	 	$(".load-it").fadeOut("slow");
+	});
    }
    else if(userLang=="de-DE" || "de"){
+     $(window).load(function() {
+   	 	$(".load-de").fadeOut("slow");
+	});
      window.location="../de/index.html";
    }
    else{
+    $(window).load(function() {
+   	 	$(".load-eng").fadeOut("slow");
+	});
    	window.location="../eng/index.html";
    }
     sessionStorage.alreadyClicked = 1;
 }
-     $(window).load(function() {
-		// Animate loader off screen
-		$(".load-it").fadeOut("slow");;
-	});
+     
 	
      $(function() {
       
