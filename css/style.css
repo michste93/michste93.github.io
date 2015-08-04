@@ -18,9 +18,9 @@ html, body{
 }
 body {
   font-size: 100%;
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #3D3D29;
-  background-color: #f0eee1;
+  background-color: rgba(255,255,255);
   overflow-x: hidden;
   
 }
@@ -47,18 +47,7 @@ h3{
   	font-weight:600;
   }
 
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(http://fonts.gstatic.com/s/lato/v11/1YwB1sO8YE1Lyjf12WNiUA.woff2) format('woff2'), url(http://fonts.gstatic.com/s/lato/v11/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 900;
-  src: local('Lato Black'), local('Lato-Black'), url(http://fonts.gstatic.com/s/lato/v11/tI4j516nok_GrVf4dhunkg.woff2) format('woff2'), url(http://fonts.gstatic.com/s/lato/v11/BVtM30trf7q_jfqYeHfjtA.woff) format('woff');
-}
+
 .se-pre-con {
 	position: fixed;
 	left: 0px;
@@ -76,11 +65,13 @@ Modules - reusable parts of our design
 .cd-main-content{
 	
 }
+
 .cd-main-content-intern{
+    
      margin-top:45px;
      margin-left:8px;
      margin-right:5px;
-     margin-bottom:5px;
+     margin-bottom:45px;
      font-size:20px;
      
   	 }
@@ -88,7 +79,33 @@ Modules - reusable parts of our design
  	
  	padding-bottom:3px;
  	font-size:23px;
- }  
+ }
+ .page-pictures{
+ 	position:relative;
+ 	top:70px;
+ 	left:3%;
+ 	right:3%;
+ 	width:96%;
+ }
+ .page-pictures div p{
+ 	margin-bottom:10px;
+ }
+ .cd-main-content-intern1{
+     position: relative;
+	text-align: left;
+	margin-top: 60px;
+	margin-bottom: 20px;
+	width: 94%;
+	left: 3%;
+	right: 3%;
+	font-size:20px;
+    line-height: 1.1em;
+  	 }
+  	 .cd-main-content-intern1 h3{
+ 	
+ 	padding-bottom:3px;
+ 	font-size:23px;
+ }    
  #cd-intro {
   position: relative;
   top:50px;
@@ -96,21 +113,21 @@ Modules - reusable parts of our design
   height: 300px;
   z-index: 2;
 }
- .cd-main-content-intern li{
+ .cd-main-content-intern1 li{
  list-style-type:initial;
  list-style-position: inside;
  padding-top:2px;
  }
- .cd-main-content-intern h2{
+ .cd-main-content-intern1 h2{
  	color: #776A62;
  	padding-bottom:3px;
  	font-size:25px;
  }  	
-.title{
-    position:relative;
+.title {
+    position: relative;
     top: 80px;
-	width:100%;
-	
+    width: 100%;
+    text-align: center;
 }
 .logo-inside{
 	width:100%;
@@ -159,7 +176,7 @@ Modules - reusable parts of our design
 	display: block;
     max-width: 100%;
     height: auto;
-    border-radius:10px;
+    
 }
 #close{
 	width:100px;
@@ -215,12 +232,66 @@ Modules - reusable parts of our design
     
 	margin-bottom:25px;
 }
+
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	th { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	/*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: "PERIODO"; }
+	td:nth-of-type(2):before { content: "STANDARD"; }
+	td:nth-of-type(3):before { content: "STANDARD(WEEK)"; }
+	td:nth-of-type(4):before { content: "JUNIOR SUITE"; }
+	td:nth-of-type(5):before { content: "JUNIOR SUITE(WEEK)"; }
+	
+	
+}
 @media only screen and (min-width: 1170px) {
+
+
 #contact textarea{
 	width:650px;
 	padding: 45px;
 	
 }
+
 .logo-img{
 	border-radius:0px;
 }  
@@ -250,17 +321,29 @@ Modules - reusable parts of our design
 	margin-left:10px;
 	}
 .cd-main-content-intern{
-     margin-top:125px;
-     margin-left:15%;
-     width:75%;
-     list-style-type:initial;
-     font-size:22px;
-     line-height:1.2em;
+     margin:0;
+     display: inline-block;
+	 width: 100%;
+	 vertical-align: top;
   	 }
+  div.cd-main {
+    position: relative;
+    margin-left: 200px;
+    top: 100px;
+}
   	 .cd-main-content-intern li{
  
  padding-top:4px;
  }
+ div.clear {
+    clear: both;
+    line-height: 0px;
+    font-size: 0px;
+    height: 0px;
+    overflow: hidden;
+    text-indent: -100px;
+}
+
  .cd-main-content-intern h2{
  	color: #776A62;
  	padding-bottom:6px;
@@ -398,7 +481,6 @@ Navigation
   	color: #CACD32;
   	cursor: pointer;
   	display: block;
-  	font-family: "Lato",sans-serif;
   	font-size: 16px;
   	height: 50px;background
   	line-height: 22px;
@@ -431,7 +513,6 @@ Navigation
   	color: #CACD32;
   	cursor: pointer;
   	display: block;
-  	font-family: "Lato",sans-serif;
   	font-size: 16px;
   	height: 50px;background
   	line-height: 22px;
@@ -489,9 +570,8 @@ Navigation
   	margin-bottom:100px;
   	margin-left:3%;
   	margin-left:3%;
-  	
   	padding: 0px;
-    text-align: left;
+    text-align: center;
   	border-radius:5px;
   	color: #615F59;
     line-height: 25px;
@@ -507,9 +587,10 @@ Navigation
 }
 .price_table td {
     margin: 0px;
-    padding: 0px;
-    border: 1px solid white;
-    font-size:16px;
+	padding-top: 4px;
+	border: 1px solid #FFF;
+	font-size: 16px;
+	padding-bottom: 4px;
 }
 .price_table tr.rigachiara {
     background-color: #E3E3E3;
@@ -680,9 +761,11 @@ Navigation
 }
   	
 @media only screen and (min-width: 768px) {
-.logo-img{
-	border-radius:20px;
-} 
+.page-pictures{
+ 	position:relative;
+ 	top:140px;
+ 	margin-bottom:100px;
+ }
 .cd-primary-nav {
   
   float: right;
@@ -797,12 +880,13 @@ Navigation
   	width:50%;
   	}
   	.title{
-  	width:35%;
-  	padding-right:3%;
-  	margin-left:19%;
   	clear: none;
-    float: left;
-    display: inline;
+float: left;
+display: inline;
+margin-top: 20px;
+width: 86%;
+margin-left: 14%;
+
   	}
   	.name, .surname{
   	width:40%;
@@ -822,6 +906,14 @@ Navigation
 }
 } 	
 @media screen and (min-width: 1140px) {
+.cd-main-content-intern1{
+	margin-top: 105px;
+	font-size: 22px;
+	margin-right: 12px;
+	left: 210px;
+	width: 70%;
+	
+}
 .half-page{
 	width:60%;
 	float:left;
@@ -867,8 +959,8 @@ Navigation
 	font-size:0.9em;
 }
 .lang-switch a:hover{
-	font-size:1.1em;
-	font-weight:400;
+	
+	font-weight:500;
 }
 .logo{
 	display:none;
@@ -891,28 +983,7 @@ Navigation
   .header-logo-a::visited{
   	opacity:1;
   }
- /* .walking-logo a{
-  	background-clip: border-box;
-	background-color: transparent;
-	background-image: url("../img/dolomiti_walking_hotel2.jpg");
-	background-origin: padding-box;
-	background-position: 40%;
-	background-repeat: no-repeat;
-	background-size: auto auto;
-  	color: #CACD32;
-  	cursor: pointer;
-  	display: block;
-  	font-family: "Lato",sans-serif;
-  	font-size: 16px;
-  	height: 50px;background
-  	line-height: 22px;
-  	text-align: center;
-  	text-decoration: none;
-  	-moz-text-decoration-color: #CACD32;
-  	-moz-text-decoration-line: none;
-  	-moz-text-decoration-style: solid;
-  	opacity:0.8;
-  }*/
+ 
   .walking-logo a:hover{
   	opacity:1;
   }
@@ -936,12 +1007,7 @@ Navigation
 	height:35px;
   }
   .center-header{
-    position:absolute;
-  	top:0;
-  	left:14%;
-  	margin-left:2%;
-  	margin-right:2%;
-  	width:82%;
+   margin-left:200px;
   	
   }
   ul.header-desktop-list{
@@ -959,8 +1025,8 @@ Navigation
 	color: #030d18;
 }
 .header-desktop-list a:hover{
-	font-size:1.2em;
-	font-weight:500;
+	
+	font-weight:600;
 }
 .header-desktop-list li.third{
 	border-left: 1px solid #AAA;
@@ -1017,7 +1083,7 @@ Navigation
   .fixed-menu{
   display: block; 
   position:fixed;
-  width:14%;
+  width:198px;
   top:0;
   z-index: 1002 !important;
   height: 450px;
@@ -1031,10 +1097,9 @@ Navigation
 .menu-bottom{
 	position:relative;
 	width:100%;
-	top:1px;
 	height:150px;
 	background-color:#FFFFFF;
-	opacity:0.9;
+	opacity:0.93;
 }
 .menuFooter{
 	position:relative;
@@ -1055,15 +1120,17 @@ Navigation
 	display:none;
 }
 .fixed-menu ul{
- text-align: center;
- padding-top: 25px;
- font-size: 1.2em;
- background-color:#A9A9A9;
+ ext-align: center;
+padding-top: 15px;
+font-size: 1.4em;
+background-color: #A9A9A9;
+padding-bottom: 5px;
+text-align:center;
 	
 }
 .fixed-menu ul li{
-	opacity:0.6;
-	padding-top:10px;
+	
+	padding-top:7px;
 	border-bottom:1px solid white;
 	height:35px;
 	width:100%;
@@ -1076,7 +1143,8 @@ Navigation
 }
 .fixed-menu ul li:hover{
 	opacity:1;
-	color:#F5F5F0;
+	color:#A9A9A9;
+	background-color:#fff;
 }
   .cd-primary-nav {
     display:none;
@@ -1180,11 +1248,9 @@ Intro
   max-height: 100%;  
 }
 .cd-main-content-intern a{
-	opacity:0.8;
+	color:#fff;
 }
-.cd-main-content-intern a:hover{
-	opacity:1;
-}
+
 .beau::after {
   content: "";
   background: transparent url(../img/massaggi.jpg) 50% 50% no-repeat;
@@ -1515,21 +1581,25 @@ padding: 10px;
     z-index: 2;
 	background-color:#B8E62E;
 }
-.innerElement{
-	width:100%;
-	margin:20px 15px 20px 15px;
-	
-	color:white;
-}
-.innerElement h2{
-	font-size:2em;
-	font-weight:600;
-	text-align:center;
+
+.content h2{
+	text-align: center;
+font-size: 45px;
+
+margin-bottom: 15px;
 }
 .content{
-    padding-top:20px;
-	font-size:1.8em;
-	text-align:left;
+    position: relative;
+text-align: left;
+margin-top: 20px;
+margin-bottom: 20px;
+width: 94%;
+left: 3%;
+right: 3%;
+color: #FFF;
+font-size: 28px;
+padding-top: 14.9px;
+padding-bottom: 10px;
 }
 #cd-intro-fix::after {
     content: "";
@@ -1839,6 +1909,26 @@ padding: 10px;
 	color: #776A62;
 	
 }
+.cd-btn1{
+    position: relative;
+    top: 20px;
+	left: 10%;
+	width: 80%;
+	display: inline-block;
+	padding: 0.8em 1em;
+	text-align: center;
+	background-color: #B8E62E;
+	border-radius: 16em;
+	backface-visibility: hidden;
+	color: #FFF;
+	right: 10%;
+    
+    
+  
+  }
+  .logobox{
+  	height:100px;
+  }
 
 @media screen and (max-width: 1140px) { 
     .cb-slideshow li h3{
@@ -1850,6 +1940,10 @@ padding: 10px;
 }
 
 @media only screen and (min-width: 768px) {
+.fam::after {
+  background: transparent url(../img/famiglia.jpg) 30% 30% no-repeat;
+  background-size: cover;
+  }
 #cd-intro {
     position:relative;
     top:70px;
@@ -1920,7 +2014,9 @@ padding: 10px;
 }
   }
 @media only screen and (min-width: 1170px) {
-
+.title{
+	margin-top:0;
+}
 .form1{
     position:absolute;
     left:20%;
@@ -1957,7 +2053,7 @@ padding: 10px;
 	margin-right:5px;
 }
 .booking input[type=submit]{
-	width:185px;
+	width:195px;
 	
 	
 }
@@ -1966,7 +2062,7 @@ padding: 10px;
     background-color:#AAAAAA;;
 	width:85%
     position:relative;
-	top:670px;
+	top:650px;
 	z-index: 800 !important;
 	}
   .bookingForm{
@@ -2010,8 +2106,7 @@ padding: 10px;
   #cd-intro-fix-intern {
     position:relative;
     top:100px;
-    left:14%;
-    width:58%;
+    width:72%;
     height: 600px;
     display:inline-block;
   }
@@ -2048,66 +2143,12 @@ padding: 10px;
 
 
 
-@media only screen and (min-width: 1170px) {
-  .cd-btn.is-hidden {
-    /* assign a position fixed and move outside the viewport (on the right) */
-    opacity: 0;
-    position: fixed;
-    right: -20%;
-    top: 0;
-    padding: .8em 1.2em;
-    margin: 14px 0 0;
-    -webkit-transition: right 0.3s, opacity 0.3s;
-    -moz-transition: right 0.3s, opacity 0.3s;
-    transition: right 0.3s, opacity 0.3s;
-  }
-  .cd-btn.is-hidden.slide-in {
-    /* slide in when the secondary nav gets fixed */
-    right: 5%;
-    opacity: 1;
-  }
-  .cd-btn1{
-    position:relative;
-    top:20px;
-    left:20%;
-    width:65%;
-    display: inline-block;
-    padding: 0.5em 1em;
-    text-align:center;
-    background-color: #B8E62E;
-    border-radius: 16em;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: white;
-    
-    
-  
-  }
-  a.button1{
-  	margin-bottom:10px;
-  	margin-left:-5px;
-  }
-  
-.no-touch .cd-btn:hover {
-  background-color: #f5484a;
-}
-.cd-btn1:hover {
-  opacity:0.9;
-}
-}
+
 
 
 
 @media only screen and (min-width: 1140px) {
-  .cd-btn1{
-    position:relative;
-    top:5px;
-    left:30%;
-    width:40%;
-    border-radius:12em;}
-    }
+  
   
 .page-pictures{
 	position:relative;
@@ -2159,6 +2200,7 @@ padding: 10px;
 }
 .camere h3{
 	clear:both;
+	font-size:24px;
 }
 @media only screen and (min-width: 1170px) {
   .cd-secondary-nav-trigger {
@@ -2211,7 +2253,7 @@ Placeholder Sections
   font-weight: 700;
 }
 .cd-section p {
-  color:gray;
+  color:white;
   opacity:1;
   font-size: 20px;
   font-weight: 900;
@@ -2265,7 +2307,7 @@ Placeholder Sections
 	background-image:url('../img/well.jpg');
 }
 #map-back{
-    margin-top:30px;
+    
 	background-image:url('../img/map.png');
 }
 #fam-back{
@@ -2424,18 +2466,30 @@ Placeholder Sections
   .cd-section {
   display:inline-block;
   vertical-align: top;
-  opacity:0.8;
+  transition: 0.7s ease 0.1s;
   -webkit-box-sizing: border-box ;
      -moz-box-sizing: border-box ;
           box-sizing: border-box ;
-  
+   
 }
-.cd-section:hover{
-  opacity:1;	
+
+.cd-section:hover {
+  -webkit-transform: scale(0.9);
+-ms-transform: scale(0.9);
+transform: scale(0.9);
+transition: 0.7s ease 0.1s;
+	
 }
-.cd-section:active{
-  opacity:1;	
+.cd-section p{
+	transition: 0.7s ease 0.1s;
 }
+.cd-section:hover p {
+	-webkit-transform: scale(1.2);
+-ms-transform: scale(1.2);
+transform: scale(1.2);
+transition: 0.7s ease 0.1s;
+}
+
 .right-bar{
     position:absolute;
     right:0;
@@ -2447,11 +2501,11 @@ Placeholder Sections
 }
 .cd-section p span{
    color: white; 
-   font: bold 24px/45px Helvetica, Sans-Serif; 
+   font: 24px/45px; 
    letter-spacing: -1px;  
    background: rgb(0, 0, 0); /* fallback color */
    background: rgba(0, 0, 0, 0.7);
-   padding: 10px; 
+   padding: 5px; 
 
 }
 .cd-section h2 {
@@ -2464,68 +2518,64 @@ Placeholder Sections
   line-height: 1.6;
 }
 #alpine-back{
-    margin-top:98px;
-    margin-left:14%;
-    width: 43%;
+    margin-top:0px;
+    width: 50%;
 	}
 #nordic-back{
-	margin-top:98px;
+	
 	margin-left:-3px;
-	width: 42.9%;
+	width: 49.5%;
 	background-position: 50% 10%;
 	}
 #notonly-back{
+	margin-top:2px;
 	margin-left:-3px;
-	width: 42.9%;
+	width: 49.5%;
 }
 #scuola-back{
-	margin-left:14%;
-    width: 43%;
+	margin-top:2px;
+	width: 50%;
 }
 #hike-back{
-    margin-top:98px;
-    margin-left:14%;
-    width: 56%;
-	
-}
+    margin-top:2px;
+    width: 60%;
+	}
 #hike-back2{
-    margin-top:98px;
-    margin-left:14%;
-    width: 56%;
-	
-}
+    margin-top:0px;
+    width: 60%;
+	}
 #spa-back{
-    margin-top:98px;
-    margin-left:14%;
-    width: 43%;
-	background-image:url('../img/sauna.jpg');
+    margin-top:0px;
+    width: 50%;
+	
 }
 #acqua-back{
-margin-left:14%;
-    width: 43%;
-	background-image:url('../img/acqua.jpeg');
+margin-top:2px;
+    width: 50%;
+	
 }
 #fitness-back{
-    margin-left:-3px;
-    width: 42.9%;
-	background-image:url('../img/fitness.jpg');
+    margin-left:-2px;
+    margin-top:2px;
+    width: 49.5%;
+	
 }
 #spawelness-back{
-	background-image:url('../img/well.jpg');
-	margin-top:98px;
-    margin-left:-3px;
-    width: 29.9%;
+	
+	margin-top:2px;
+    margin-left:-4px;
+   width: 39.7%;
 }
 #beauty-back{
-margin-top:98px;
-    margin-left:-3px;
-    width: 42.9%;
-	background-image:url('../img/massaggi.jpg');
+
+    margin-left:-2px;
+    width: 49.5%;
+	
 }
 #walk-back{
-    margin-top:98px;
+    
     margin-left:-3px;
-    width: 29.9%;
+    width: 39.5%;
 	
 }
 #room-back{
@@ -2535,9 +2585,9 @@ margin-top:98px;
 	background-image:url('../img/summer1.jpg');
 }
 #winter-back{
-	background-image:url('../img/winter.jpg');
-	margin-left:-3px;
-    width: 29.8%;
+	margin-top:2px;
+	margin-left: -3px;
+	width: 32.4%;
 }
 #offerta1-back{
 	width: 50%;
@@ -2566,54 +2616,55 @@ margin-left:-3px;
 	
 }
 #miniclub-back{
-margin-left:14%;
-    width: 28%;
+    margin-top:2px;
+    width: 34%;
 	background-position: 50% 10%;
 }
 #family-back{
-   margin-left:14%;
-    width: 28%;
+    margin-top:2px;
+    width: 34%;
 	
 }
 #attività-back{
-    margin-left:-3px;
-    width: 29.9%;
+    margin-top:2px;
+    margin-left: -3px;
+width: 32.3%;
 	
 }
 #bici-back{
+   margin-top:2px;
    margin-left:-3px;
-    width: 28%;
+    width: 33%;
 	
 }
 #offerte-back{
+   margin-top:2px;
    margin-left:-3px;
-    width: 28%;
+    width: 33%;
 	
 }
 #map-back{
-    margin-top:0px;
-    margin-left:14%;
-    width: 28%;
+    margin-top:2px;
+    width: 34%;
 }
 #fam-back{
-    margin-left:14%;
-    margin-top:98px;
-	 width: 43%;
+     width: 50%;
 }
 #gourmet-back{
-     margin-top: 98px;
-     margin-left:-3px;
-	 width: 42.9%;
+     margin-left:-2px;
+	 width: 49.5%;
+	 
 }
 #think-back{
-     margin-top:0px;
-	 width: 27.9%;
-	 margin-left:-3px;
+     margin-top:2px;
+	 width: 32.3%;
+	 margin-left:-2px;
 	 background-position: 50% 60%;
 }
 #filosofia-back{
-	 width: 30%;
-	 margin-left:-3px;
+	 width: 33%;
+	 margin-left:-2px;
+	 margin-top:2px;
 }
 
 
@@ -2711,7 +2762,7 @@ margin-left:14%;
 /* Footer left */
 
 .footer-distributed .footer-left{
-	width: 40%;
+	width: 30%;
 }
 
 
@@ -2758,7 +2809,7 @@ margin-left:14%;
 /* Footer Center */
 
 .footer-distributed .footer-center{
-	width: 35%;
+	width: 40%;
 }
 
 .footer-distributed .icon-img{
@@ -2895,7 +2946,10 @@ margin-left:14%;
 @media (min-width: 1140px) {
 
 	.footer-distributed{
-		margin-left:14%;
+		margin-left: 200px;
+margin-right: 2px;
+margin-top: 102px;
+		
 	}
 	#more-margin{
 		margin-top:150px;

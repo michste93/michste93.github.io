@@ -2,9 +2,9 @@ jQuery(document).ready(function($){
      if (!sessionStorage.alreadyClicked) {
      
     var userLang = navigator.language || navigator.userLanguage; 
-   if(userLang=="it-IT"){
+   if(userLang=="it-IT" || "it"){
    }
-   else if(userLang=="de-DE"){
+   else if(userLang=="de-DE" || "de"){
      window.location="../de/index.html";
    }
    else{

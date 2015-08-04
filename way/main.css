@@ -91,7 +91,10 @@ header{
 } 
 #way3{
     background-image:url('../img/quoti.jpeg');
-}  
+}
+#way4{
+    background-image:url('../img/miniclub.jpg');
+}    
 .logo-center{
 	height: 200px;
 }
