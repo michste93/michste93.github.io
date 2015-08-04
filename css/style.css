@@ -57,7 +57,7 @@ h3{
 	z-index: 9999;
 	background: url(../img/preloader.gif) center no-repeat #fff;
 }
-.load-it {
+.load {
 	display:none;
 	position: fixed;
 	left: 0px;
@@ -65,26 +65,9 @@ h3{
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: url(../img/load-ita.png) center no-repeat #fff;
+	background: url(../img/logo4.jpg) center no-repeat #fff;
 }
-.load-de {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url(../img/load-de.png) center no-repeat #fff;
-}
-.load-eng {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url(../img/load-eng.png) center no-repeat #fff;
-}
+
 /* -------------------------------- 
 
 Modules - reusable parts of our design

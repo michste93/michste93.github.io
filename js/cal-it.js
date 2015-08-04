@@ -3,36 +3,19 @@ jQuery(document).ready(function($){
      var userLang = navigator.language;
      alert(userLang);
     if(userLang == "it-IT" || userLang == "it"){
-    $(".load-it").css('display','block');
-    $(window).load(function() {
-   	 	$(".load-it").fadeOut("slow");
-   	 	
-	});
+    
    }
    else if(userLang == "de-DE" || userLang == "de"){
-     $(".load-de").css('display','block');
      window.location="de/index.html";
-     $(window).load(function() {
-   	 	$(".load-de").fadeOut("slow");
-	});
-     
-   }
+     }
    else{
-   $(".load-eng").css('display','block');
     window.location="eng/index.html";
-    $(window).load(function() {
-   	 	$(".load-eng").fadeOut("slow");
-	});
-   	
+    
    }
     sessionStorage.alreadyClicked = "true";
 }
      
-	$(window).ready(function() {
-		$(".load-it").hide();
-		$(".load-eng").hide();
-		$(".load-de").hide();
-	});
+	
      $(function() {
       
 $.datepicker.regional['it'] = {
