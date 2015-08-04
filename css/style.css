@@ -58,6 +58,7 @@ h3{
 	background: url(../img/preloader.gif) center no-repeat #fff;
 }
 .load-it {
+	display:none;
 	position: fixed;
 	left: 0px;
 	top: 0px;
