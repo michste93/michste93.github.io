@@ -1,13 +1,7 @@
 jQuery(document).ready(function($){
-  
-
-    
-    
-   
-   	$(window).load(function() {
-   	 
-		// Animate loader off screen
-		$(".se-pre-con").fadeOut("slow");
+  	
+  	$(window).load(function() {
+       $(".se-pre-con").fadeOut("slow");
 	});
         
 //  	$('.footer-distributed').load('footer-it.html',function(){

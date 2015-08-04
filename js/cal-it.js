@@ -1,28 +1,37 @@
 jQuery(document).ready(function($){
      if (!sessionStorage.alreadyClicked) {
-     
-    var userLang = navigator.language || navigator.userLanguage; 
+     alert("ensoma dai");
+    var userLang = navigator.language || navigator.userLanguage;
+    alert(userLang); 
    if(userLang=="it-IT" || "it"){
    $(window).load(function() {
    	 	$(".load-it").fadeOut("slow");
+   	 	
+   	 	
 	});
    }
    else if(userLang=="de-DE" || "de"){
+     window.location="../de/index.html";
      $(window).load(function() {
    	 	$(".load-de").fadeOut("slow");
 	});
-     window.location="../de/index.html";
+     
    }
    else{
+    window.location="../eng/index.html";
     $(window).load(function() {
    	 	$(".load-eng").fadeOut("slow");
 	});
-   	window.location="../eng/index.html";
+   	
    }
-    sessionStorage.alreadyClicked = 1;
+    sessionStorage.alreadyClicked = "true";
 }
      
-	
+	$(window).ready(function() {
+		$(".load-it").hide();
+		$(".load-eng").hide();
+		$(".load-de").hide();
+	}
      $(function() {
       
 $.datepicker.regional['it'] = {
