@@ -8,7 +8,8 @@
 	<meta name="Keywords" content="val di fiemme, trentino, holidays, berghotel miramonti, miramonti, berghotel, tesero, stava,  hotel, trentino, alto adige, dolomiti, dolomites hike, ski, booking, hiking, winter in trentino, summer in trentino, trekking, fun, wellness, spa"/>
 	<link rel="shortcut icon" href="../img/fav/favicon-96x96.png">
     <link rel="stylesheet" href="../css/reset.css"> 
-	<link rel="stylesheet" href="../css/style.css"> 
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../jquery/jquery-ui.css">  
 	<title>Request - Berghotel Miramonti - Val di Fiemme Dolomiti</title>
 </head>
 <body>
@@ -38,21 +39,7 @@
 				
 			</ul>
 		</nav>
-		<div id="contact">
-    <form class="contact">
-        <h2>Contact Dolomites Labs for Web Design, Graphic Design and Web Development. </h2><br>
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name"><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br>
-        <label for="object">Object</label><br><br>
-        <input type="text" id="object" name="object" required><br><br>
-        <label for="message">Message</label><br><br>
-        <textarea required></textarea><br>
-        <input type="submit" name="submit" value="Submit request" id="submit">
-        <div id="close"></div>
-    </form>
-</div>
+		
 		<!--header with flags and telephone--> 
 		<div class="logo"><a href="index.html"><img class="logo-img" src="../img/logo3.jpg"/></a></div>
 		<div class="phone"><a href="tel:0462814177"></a></div>
@@ -84,20 +71,22 @@
   
   <div class="menuFooter1"></div>
   <a href="https://booking.ericsoft.com/BookingEngine/book.aspx?idh=980204DF7D786B42" class="cd-btn1 button1">BOOK NOW</a>
-  <!--<a href="request.html" class="cd-btn1 button2">REQUEST</a>-->
+  <a href="request.html" class="cd-btn1 button2">REQUEST</a>
   
 </div>
 </nav>
+<div id="request-container">
 <div id="request">
-	<h2>YOUR REQUEST</h2><br>
-	<h3>*Please fill out all required fields</h3>
-		<form id="requestForm" method="post">
+    
+	<h2>YOUR UNBINDING REQUEST</h2><br>
+	<h4>*Please fill out all required fields</h4>
+		<form id="requestForm">
     <fieldset>
-        <div class="arrival-form"><label class="formLabel">ARRIVAL DATE*</label><input type="text" placeholder="Arrival Date" id="depart" class ="large-field" name="arrivalDate" required></div>
-          <div class="departure-form"><label class="formLabel">DEPARTURE*</label><input type="text" placeholder="Departure Date" id="return" class ="large-field" name="departureDate" required></div>
+        <div class="arrival-form"><label class="formLabel">ARRIVAL DATE*</label><input type="text" placeholder="Arrivo" id="depart" class ="large-field" name="arrivalDate" required></div>
+          <div class="departure-form"><label class="formLabel">DEPARTURE DATE*</label><input type="text" placeholder="Partenza" id="return" class ="large-field" name="departureDate" required></div>
           <div class="board-form"><label class="formLabel">BOARD*</label><select name="board" class ="large-field" required>
-           <option value="Pensione completa" default>Full Board</option>
-           <option value="Mezza pensione" >Half Board</option>
+           <option value="Mezza pensione" default>Half Board</option>
+           <option value="Pensione completa">Full Board</option>
            <option value="B & B">Bed & Breakfast</option>
            </select></div>
            <div class="room-form"><label class="formLabel">ROOM TYPE*</label><select name="room" class="large-field" required>
@@ -123,22 +112,17 @@
            <option value="2-5"> 2-5 </option>
            <option value="6-12"> 6-12 </option>
            </select></div>
-           <div class="child1"><label class="formLabel">CHILDS AGE 3</label><select name="child3" class ="child-field">
-           <option value="no bambini"default>No child</option>
-           <option value="0-1"> 0-1 </option>
-           <option value="2-5"> 2-5 </option>
-           <option value="6-12"> 6-12 </option>
-           </select></div>
+           
         </fieldset>
-           <div class="textarea-form"><label class="formLabel">ADDITIONAL INFORMATION AND MESSAGE REGARDING YOUR REQUEST</label><textarea class="textarea" name="textarea"></textarea></div>
+           <div class="textarea-form"><label class="formLabel">ADDITIONAL INFORMATION AND MESSAGE REGARDING YOUR REQUEST</label><textarea class="textarea" name="textarea"></textarea>
         
 
 </div>	<br>
-<div id="request1">
-	<h2>PERSONAL DATA</h2><br>
+
+	<h2 class="second-title">PERSONAL DATA</h2><br>
 		
     <fieldset>
-        <div class="title"><label class="formLabel">TITLE*</label><select name="title" class ="large-field" required>
+        <div class="form-title"><label class="formLabel">TITLE*</label><select name="title" class ="large-field" required>
            <option value="Mr">Mr.</option>
            <option value="Mrs" >Mrs.</option>
            <option value="Family">Family</option>
@@ -146,13 +130,13 @@
            </select></div>
         <div class="name"><label class="formLabel">NAME*</label><input type="text" placeholder="Name" class ="large-field" name="name" required></div>
           <div class="surname"><label class="formLabel">SURNAME*</label><input type="text" placeholder="Surname" class ="large-field" name="surname" required></div>
-          <div class="surname"><label class="formLabel">EMAIL*</label><input type="text" placeholder="Email" class ="large-field" name="email" required></div>
-          <div class="address"><label class="formLabel">ADDRESS</label><input type="text" placeholder="Address" class ="large-field" name="address"></div>
-          <div class="child1"><label class="formLabel">ZIP</label><input type="text" placeholder="Zip" class ="child-field" name="zip"></div>
-          <div class="med-field"><label class="formLabel">CITY</label><input type="text" placeholder="City" class ="child-field" name="city"></div>
-          <div class="country"><label class="formLabel">COUNTRY</label><input type="text" placeholder="Country" class ="large-field" name="country"></div>
-          <div class="phone-form"><label class="formLabel">PHONE</label><input type="text" placeholder="Phone" class ="large-field" name="phone"></div>
-          <div class="check-boxes"><label>NEWSLETTER</label><input type="checkbox" class ="check-field" name="news"><label>SUBSCRIBE</label>
+          <div class="name"><label class="formLabel">EMAIL*</label><input type="text" placeholder="Email" class ="large-field" name="email" required></div>
+          <div class="surname"><label class="formLabel">ADDRESS</label><input type="text" placeholder="Address" class ="large-field" name="address"></div>
+          <div class="name"><label class="formLabel">ZIP</label><input type="text" placeholder="Zip" class ="large-field" name="zip"></div>
+          <div class="surname"><label class="formLabel">CITY</label><input type="text" placeholder="City" class ="large-field" name="city"></div>
+          <div class="name"><label class="formLabel">COUNTRY</label><input type="text" placeholder="Country" class ="large-field" name="country"></div>
+          <div class="surname"><label class="formLabel">PHONE</label><input type="text" placeholder="Phone" class ="large-field" name="phone"></div>
+          <div class="check-boxes"><!--<label>NEWSLETTER SUBSCRIBE</label><input type="checkbox" class ="check-field" name="news"><br>-->
           <label>PRIVACY*</label><input type="checkbox" class ="check-field" name="privacy" required></div>
           <div class="textarea"><textarea class ="textarea-form" cols="43" rows="8">INFORMATIVA RELATIVA AL TRATTAMENTO DEI DATI PERSONALI 
 (Art. 13 del D .Lgs.30 giugno 2003 n. 196) 
@@ -196,10 +180,12 @@ b) al trattamento di dati personali che lo riguardano a fini di invio di materia
 
 
 L'INTERESSATO, presa visione dell’informativa redatta ai sensi dell'art. 13 del D.Lgs. 30 giugno 2003 n. 196, rilascia espresso consenso al trattamento dei dati personali per le attività sopra descritte (si richiede di restituirci a mezzo fax  o posta (Berghotel Miramonti - Tesero 38038 - Località Stava - Telefono: 0462814177 - Fax: 0462814646).</textarea></div><br>
-        <button type="submit" class="submit-button" name="submit" >SUBMIT THE REQUEST</button><div id="success" style="color:red;"></div>
+        <button type="submit" class="submit-button" name="submit" >SUBMIT THE REQUEST</button>
     </fieldset>
 </form>
-</div>	
+	
+</div>
+</div>		
 	
 	
 	<!-- footer-->
@@ -259,6 +245,11 @@ L'INTERESSATO, presa visione dell’informativa redatta ai sensi dell'art. 13 de
 		
 <script src="../js/jquery-2.1.1.js"></script>
 <script src="../js/main.js"></script> <!-- Resource jQuery -->
+<script src="../js/email.js"></script> <!-- Resource jQuery -->
+<script src="../js/cal-eng.js"></script> <!-- Resource jQuery -->
 <script src="../jquery/jquery-ui.js"></script> <!-- Resource jQuery -->
+
+
+<script src="jquery/jquery-ui.js"></script> <!-- Resource jQuery -->
 </body>
 </html>

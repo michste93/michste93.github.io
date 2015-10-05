@@ -12,15 +12,7 @@ jQuery(document).ready(function($){
 //  	});
     
     
-    $("#contact_l").click(function(){
-        $("#contact").show(300,function(){
-           
-        });
-        $("#close").click(function(){
-            $("#contact").hide(300);
-        });
-    });
-    
+        
     $("#contact form").submit(function(){
         var name = $("#name").val();
         var email = $("#email").val();

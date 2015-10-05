@@ -1,7 +1,7 @@
 jQuery(document).ready(function($){
      if (!sessionStorage.alreadyClicked) {
      var userLang = navigator.language;
-     alert(userLang);
+     
     if(userLang == "it-IT" || userLang == "it"){
     
    }

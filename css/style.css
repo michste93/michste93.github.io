@@ -80,12 +80,13 @@ Modules - reusable parts of our design
 .cd-main-content-intern{
     
      margin-top:45px;
-     margin-left:8px;
-     margin-right:5px;
-     margin-bottom:45px;
      font-size:20px;
      
   	 }
+ .cd-main-content-intern section{
+ 	margin-left:0;
+ 	margin-right:0;
+ }
   	 .cd-main-content-intern h3{
  	
  	padding-bottom:3px;
@@ -122,7 +123,7 @@ Modules - reusable parts of our design
   top:50px;
   left:0;
   height: 300px;
-  z-index: 2;
+  z-index: 5;
 }
  .cd-main-content-intern1 li{
  list-style-type:initial;
@@ -136,10 +137,8 @@ Modules - reusable parts of our design
  }  	
 .title {
     position: relative;
-    top: 80px;
     width: 100%;
-    text-align: center;
-}
+    }
 .logo-inside{
 	width:100%;
 }
@@ -158,12 +157,63 @@ Modules - reusable parts of our design
 }
 .camere-text{
 	width:100%;
-	height:150px;
+	
 }
 .small-button{
     position:relative;
     top:135px;
-    left:30%;
+    left:0%;
+    width:45%;
+    display: inline-block;
+    padding: 0.7em 1em;
+    text-align:center;
+    background-color: #B8E62E;
+    border-radius: 16em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: white;
+     }
+.small-button-left{
+    position:relative;
+    top:135px;
+    left:1%;
+    width:48%;
+    display: inline-block;
+    padding: 0.7em 1em;
+    text-align:center;
+    background-color: #B8E62E;
+    border-radius: 16em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: white;
+     }
+     .small-button-right{
+    position:relative;
+    top:135px;
+    left:3%;
+    width:48%;
+    display: inline-block;
+    padding: 0.7em 1em;
+    text-align:center;
+    background-color: #B8E62E;
+    border-radius: 16em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: white;
+    
+    
+  
+  }
+  .small-button1{
+    position:relative;
+    top:135px;
+    left:0%;
     width:45%;
     display: inline-block;
     padding: 0.7em 1em;
@@ -244,7 +294,11 @@ Modules - reusable parts of our design
 	margin-bottom:25px;
 }
 
-
+div.cd-main {
+    position: relative;
+    
+    top: -15px;
+}
 @media 
 only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px)  {
@@ -306,12 +360,16 @@ only screen and (max-width: 760px),
 .logo-img{
 	border-radius:0px;
 }  
-.small-button{
+.small-button-left{
+	display:none;
+}
+.small-button-right{
 	display:none;
 }
 .title{
     position:relative;
     top: 150px;
+    text-align:center;
     }
 .page-pictures h2{
 	font-size:25px;
@@ -537,20 +595,21 @@ Navigation
 
 
   #request{
-    display:none;
-	z-index: 99999;
-	position: fixed;
+    position: relative;
 	top: 0px;
 	left: 0px;
 	width: 100%;
-	height: 100%;
-	opacity: 0.9;
 	text-align: center;
 	font-size: 32px;
-	color: #333;
-	background: #FAFBFA none repeat scroll 0% 0%;
-	overflow: scroll;
 	padding: 150px 10px 0px 10px;
+    color: #FFF;
+    background-color:#777;
+  }
+  form div{
+  	padding-bottom:35px;
+  }
+  .second-title{
+  	padding-top:80px;
   }
   #request1{
     display:none;
@@ -573,8 +632,8 @@ Navigation
   	padding:5px;
   }
   #requestForm{
-  	margin:10px;
-  	padding:5px;
+  	margin: 10px;
+	padding: 35px 5px;
   }
   .price_table{
   	margin-top:90px;
@@ -674,7 +733,7 @@ Navigation
   	font-weight:600;
   	}
   	#request h3{
-  	text-align:left;
+  	text-align:center;
   	font-size:1.5em;
   	font-weight:400;
   	}
@@ -695,7 +754,7 @@ Navigation
 	margin-top: 0px;
   	}
   	.child1{
-  	width:30%;
+  	width:50%;
   	padding-right:3%;
   	clear: none;
     float: left;
@@ -715,7 +774,7 @@ Navigation
   	}
   	.textarea-form{
   		width:100%;
-  		height:120px;
+  		height:180px;
   	}
   	.submit-button{
 	padding: 5px;
@@ -725,7 +784,7 @@ Navigation
 	color: white;
 	font-size:15px;
 	cursor:pointer;
-	margin-left:30%;
+	
   		
   	}
   	
@@ -770,7 +829,12 @@ Navigation
 	height:280px;
 	
 }
-  	
+#request input{
+ 	border-radius: 4px;
+	border: 1px solid #7AC9B7;
+	margin-bottom: 10px;
+	line-height: 2.5em;	
+ }
 @media only screen and (min-width: 768px) {
 .page-pictures{
  	position:relative;
@@ -788,8 +852,15 @@ Navigation
   z-index: 1019 !important;
   
 }
-.small-button{
+.small-button-left{
 	display:none;
+}
+.small-button-right{
+	position: relative;
+	top: -180px;
+	width: 20%;
+	left: 62%;
+	
 }
 .camere-img{
 	width:50%;
@@ -890,17 +961,22 @@ Navigation
   	clear:both;
   	width:50%;
   	}
-  	.title{
-  	clear: none;
-float: left;
-display: inline;
-margin-top: 20px;
-width: 86%;
-margin-left: 14%;
+  	.form-title{
+	  	clear: none;
+		margin-top: 20px;
+		float: left;
+		width: 36%;
 
   	}
-  	.name, .surname{
-  	width:40%;
+  	.name{
+  	width:50%;
+  	padding-right:3%;
+  	clear: both;
+    float: left;
+    display: inline;
+  	}
+  	.surname{
+  	width:50%;
   	padding-right:3%;
   	clear: none;
     float: left;
@@ -914,6 +990,7 @@ margin-left: 14%;
 }
 .check-boxes{
 	width:80%;
+	clear:both;
 }
 } 	
 @media screen and (min-width: 1140px) {
@@ -924,10 +1001,14 @@ margin-left: 14%;
 	left: 210px;
 	width: 70%;
 	
+	
 }
 .half-page{
 	width:60%;
 	float:left;
+}
+#request-container{
+	left:200px;
 }
 .half2-page{
 	width:35%;
@@ -977,9 +1058,9 @@ margin-left: 14%;
 	display:none;
 }
 #request{
-  	margin-left:22%;
-  	margin-right:6%;
-  	width:72%;
+  	margin-left: 25%;
+    width: 62%;
+    
   	
   }
   .walking-logo{
@@ -1065,7 +1146,7 @@ margin-left: 14%;
   	margin:50px;
   	 }
   	 .arrival-form, .departure-form, .board-form, .room-form{
-  	width:33%;
+  	width:50%;
   	padding-right:4%;
   	clear: none;
     float: left;
@@ -1109,8 +1190,8 @@ margin-left: 14%;
 	position:relative;
 	width:100%;
 	height:150px;
-	background-color:#FFFFFF;
-	opacity:0.93;
+	background-color:rgba(255,255,255,0.95);
+	
 }
 .menuFooter{
 	position:relative;
@@ -1921,21 +2002,33 @@ padding-bottom: 10px;
 	
 }
 .cd-btn1{
-    position: relative;
-    top: 20px;
-	left: 10%;
-	width: 80%;
+    width: 80%;
 	display: inline-block;
 	padding: 0.8em 1em;
 	text-align: center;
-	background-color: #B8E62E;
+	background-color: #BFE843;
 	border-radius: 16em;
 	backface-visibility: hidden;
 	color: #FFF;
+	
+   
+  }
+ .button1{
+ 	position: relative;
+    top: 20px;
+	left: 10%;
 	right: 10%;
-    
-    
-  
+	
+ }
+ .button2{
+ 	position: relative;
+    top: 30px;
+	left: 10%;
+	right: 10%;
+	
+ }
+  .cd-btn1:hover{
+  	background-color:#B8E62E;
   }
   .logobox{
   	height:100px;
@@ -1957,13 +2050,13 @@ padding-bottom: 10px;
   }
 #cd-intro {
     position:relative;
-    top:70px;
+    top:87px;
     left:0;
      height: 400px;
   }
   #internalRight {
     position: relative;
-    top:51px;
+    top:50px;
     left:0;
     height: 200px;
     z-index: 2;
@@ -2427,7 +2520,6 @@ Placeholder Sections
   .link-img{
 	width:40%;
 	
-	
 }
 .trentino-img{
 	width:40%;
@@ -2435,20 +2527,23 @@ Placeholder Sections
 	
 }
   #hike-back{
-    margin-top:51px;
-	
+    margin-top:50px;
+}
+#fam-back{
+     margin-top:50px;
+     
 }
 #hike-back2{
-    margin-top:51px;
+    margin-top:50px;
 	
 }
 
 #spa-back{
-    margin-top:51px;
-	background-image:url('../img/sauna.jpg');
+    margin-top:50px;
+	
 }
 #alpine-back{
-    margin-top:51px;
+    margin-top:50px;
 	}
 #nordic-back{
 	background-position: 50% 10%;
@@ -2589,12 +2684,7 @@ margin-top:2px;
     width: 39.5%;
 	
 }
-#room-back{
-	background-image:url('../img/camera.jpg');
-}
-#summer-back{
-	background-image:url('../img/summer1.jpg');
-}
+
 #winter-back{
 	margin-top:2px;
 	margin-left: -3px;
@@ -2659,6 +2749,7 @@ width: 32.3%;
     width: 34%;
 }
 #fam-back{
+     margin-top:0;
      width: 50%;
 }
 #gourmet-back{
@@ -2755,6 +2846,8 @@ width: 32.3%;
 	font: bold 16px sans-serif;
     padding: 55px 50px;
 	clear:both;
+	position:relative;
+	top:-15px;
 		
 }
 
@@ -2960,6 +3053,7 @@ width: 32.3%;
 		margin-left: 200px;
 margin-right: 2px;
 margin-top: 102px;
+position:relative
 		
 	}
 	#more-margin{
