@@ -1760,7 +1760,7 @@ padding-bottom: 10px;
     z-index: 999;
     position: absolute;
     top: 350px;
-    left: 0px;
+    left: 100px;
     width: 100%;
     text-align: center;
     opacity: 0;
@@ -2024,14 +2024,14 @@ padding-bottom: 10px;
   }
  .button1{
  	position: relative;
-    top: 20px;
+    top: 25px;
 	left: 10%;
 	right: 10%;
 	
  }
  .button2{
  	position: relative;
-    top: 30px;
+    top: 40px;
 	left: 10%;
 	right: 10%;
 	
@@ -2600,9 +2600,9 @@ Placeholder Sections
 }
 
 .cd-section:hover {
-  -webkit-transform: scale(0.9);
--ms-transform: scale(0.9);
-transform: scale(0.9);
+  -webkit-transform: scale(0.95);
+-ms-transform: scale(0.95);
+transform: scale(0.95);
 transition: 0.7s ease 0.1s;
 	
 }
@@ -2610,9 +2610,9 @@ transition: 0.7s ease 0.1s;
 	transition: 0.7s ease 0.1s;
 }
 .cd-section:hover p {
-	-webkit-transform: scale(1.2);
--ms-transform: scale(1.2);
-transform: scale(1.2);
+	-webkit-transform: scale(1.15);
+-ms-transform: scale(1.15);
+transform: scale(1.15);
 transition: 0.7s ease 0.1s;
 }
 
@@ -2872,7 +2872,7 @@ width: 32.3%;
 	box-sizing: border-box;
 	text-align: left;
 	font: bold 16px sans-serif;
-    padding: 20px 30px;
+    padding: 10px 15px;
 	clear:both;
 	position:relative;
 	top:-15px;
@@ -2930,7 +2930,7 @@ width: 32.3%;
 
 .footer-distributed .footer-company-name{
 	color:  #5C5C3D;
-	font-size: 12px;
+	font-size: 11px;
 	font-weight: normal;
 	
 }
@@ -3023,14 +3023,14 @@ width: 32.3%;
 	margin-bottom: 5px;
 }
 .footer-social{
-    padding-top:50px;
+    padding-top:80px;
 	width:250px;
-	padding-left: 37px;
+	padding-left: 57px;
 }
 .socialimg{
 	border-radius: 5px;
 	opacity:0.8;
-	width:70px;
+	width:50px;
 }
 .socialimg:hover{
 	opacity:1;
