@@ -38,7 +38,6 @@ jQuery(document).ready(function($){
        var data= $('newsletter').serialize();
        $.post('../php/newsletter.php',data,function(e) {
          	alert(e);
-         	}
          	
        });
        return false;

@@ -2909,6 +2909,7 @@ width: 32.3%;
 	margin: 0;
 }
 
+
 .footer-distributed h3 span{
 	color:  #4791FF;
 }
@@ -2936,7 +2937,8 @@ width: 32.3%;
 }
 .footer-company-name{
 	position:relative;
-	top:8px;
+	top:5px;
+	left:2px;
 }
 /* Footer Center */
 
@@ -2980,7 +2982,10 @@ width: 32.3%;
 	color:  #4791FF;
 	text-decoration: none;;
 }
-
+.footer-left h3{
+	
+font-size: 25px;
+}
 
 /* Footer Right */
 
@@ -3088,7 +3093,7 @@ width: 32.3%;
 		
 	}
 	.footer-center{
-		margin-top:40px;
+		margin-top:20px;
 	}
 	#more-margin{
 		margin-top:150px;
@@ -3096,13 +3101,23 @@ width: 32.3%;
 	.news{
 		position:relative;
 		text-align:center;
+		top:35px;
 	}
 	.news-button{
-		position:relative;
-		left:9px;
+	position: relative;
+	left: 12px;
+	top: 30px;
 	}
+	.footer-left h3{
+	position:relative;
+	top: 75px;
+font-size: 30px;
+}
+	.footer-company-name{
+	position:relative;
+	top:65px;
 	
-	
+}
 
 
 }
