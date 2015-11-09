@@ -57,6 +57,9 @@ h3{
 	z-index: 9999;
 	background: url(../img/preloader.gif) center no-repeat #fff;
 }
+b{
+	font-weight: bold;
+}
 .load {
 	display:none;
 	position: fixed;
@@ -76,7 +79,10 @@ Modules - reusable parts of our design
 .cd-main-content{
 	
 }
-
+.lang-img{
+	width: 30px;
+	height: 18px;
+}
 .cd-main-content-intern{
     
      margin-top:45px;
@@ -398,9 +404,9 @@ only screen and (max-width: 760px),
   	 }
   div.cd-main {
     position: relative;
-    margin-left: 222px;
-    top: 100px;
-}
+	margin-left: 22%;
+	margin-top: 13px;
+   }
   	 .cd-main-content-intern li{
  
  padding-top:4px;
@@ -1037,31 +1043,42 @@ Navigation
   	width:76%;
   }
   .logo-desktop{
-  	width:100%;
-  	height:100px;
+  	position:relative;
+  	top:20px;
+  	left:7.5%;
+  	width:85%;
+  	
   	}
   	
   .price_table table{
   	width:100%;
   }
 .lang-switch{
-    position:absolute;
-	left:20px;
-	top:0;
+    position: absolute;
+	left: 0px;
+	top: 170px;
 	z-index: 1005 !important;
-	padding-left:10px;
-	color: #808080;
+	padding-left: 5px;
+	
+	width: 50px;
+	height: 150px;
+
 }
 .lang-switch a{
-    
-    width:25px;
+    padding-bottom:10px;
+    width:50px;
 	height:50px;
-	color:#030d18;
-	font-size:0.9em;
+	color:#76919F;
+	font-size:0.8em;
+}
+.lang-switch div{
+	width:40px;
+	height:40px;
+	line-height: 40px;
 }
 .lang-switch a:hover{
+	color:#C2C38F;
 	
-	font-weight:500;
 }
 .logo{
 	display:none;
@@ -1140,9 +1157,11 @@ Navigation
 }
 
   .cd-header {
+    display:none;
     height: 100px;
     background-color: #fff;
     box-shadow: 0px 0px 10px 0px #999;
+    
     
   }
   #request1{
@@ -1180,14 +1199,18 @@ Navigation
 .not-active {
    pointer-events: none;
    cursor: default;
+   
+}
+ #current{
+	color:#C2C38F;
 }
   .fixed-menu{
   display: block; 
   position:fixed;
-  width:220px;
+  width:22%;
   top:0;
   z-index: 1002 !important;
-  height: 450px;
+  height: 100%;
   -webkit-border-radius: 3px;
   box-shadow: 0px 0px 10px 0px #999;
   /*#1975FF;*/
@@ -1196,10 +1219,9 @@ Navigation
 	
 }
 .menu-bottom{
-	position:relative;
+	position:absolute;
 	width:100%;
-	height:150px;
-	background-color:rgba(255,255,255,0.95);
+	top:68%;
 	
 }
 .menuFooter{
@@ -1221,31 +1243,30 @@ Navigation
 	display:none;
 }
 .fixed-menu ul{
-	padding-top: 15px;
-	font-size: 1.4em;
-	padding-bottom: 5px;
-
+    font-size: 1.4em;
+	position:relative;
+	left:15%;
+	width:70%;
 	
 }
 .fixed-menu ul li{
-	padding-top:20px;
-	border-bottom:1px solid #A9A9A9;
-	height:45px;
-	width:190px;
-	color: #808080;
+	padding-top: 20px;
+	height: 45px;
+	width: 190px;
+	color: #76919F;
 	position: relative;
-	left: 30px;
+	left: 20px;
+	font-family: "FrankRegular";
+	font-size: 19px;
 }
 .fixed-menu a{
-	color:#fff;
-	
 	vertical-align:center;
 	margin:0 auto;
 }
 .fixed-menu ul li:hover{
 	opacity:1;
-	color:#A9A9A9;
-	background-color:#fff;
+	color:#C2C38F;
+	
 }
   .cd-primary-nav {
     display:none;
@@ -1759,17 +1780,14 @@ padding-bottom: 10px;
 .cb-slideshow li div { 
     z-index: 999;
     position: absolute;
-    top: 350px;
-    left: 100px;
-    width: 100%;
+    top: 70%;
+    left: 22%;
+    width: 86%;
     text-align: center;
     opacity: 0;
     color: #fff;
-    -webkit-animation: titleAnimation 36s linear infinite 0s;
-    -moz-animation: titleAnimation 36s linear infinite 0s;
-    -o-animation: titleAnimation 36s linear infinite 0s;
-    -ms-animation: titleAnimation 36s linear infinite 0s;
-    animation: titleAnimation 36s linear infinite 0s; 
+    animation: titleAnimation 36s linear infinite 0s;
+    background-color:rgba(255, 255, 255, 0.2); 
 }
 .cb-slideshow li div h3 { 
     font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
@@ -1783,116 +1801,41 @@ padding-bottom: 10px;
 }
 .cb-slideshow li:nth-child(2) span { 
     background-image: url(../img/principali/berghotel_miramonti-2.jpg); 
-    -webkit-animation-delay: 6s;
-    -moz-animation-delay: 6s;
-    -o-animation-delay: 6s;
-    -ms-animation-delay: 6s;
     animation-delay: 6s; 
 }
 .cb-slideshow li:nth-child(3) span { 
     background-image: url(../img/principali/berghotel_miramonti-3.jpg); 
-    -webkit-animation-delay: 12s;
-    -moz-animation-delay: 12s;
-    -o-animation-delay: 12s;
-    -ms-animation-delay: 12s;
     animation-delay: 12s; 
 }
 .cb-slideshow li:nth-child(4) span { 
     background-image: url(../img/principali/berghotel_miramonti-4.jpg); 
-    -webkit-animation-delay: 18s;
-    -moz-animation-delay: 18s;
-    -o-animation-delay: 18s;
-    -ms-animation-delay: 18s;
     animation-delay: 18s; 
 }
 .cb-slideshow li:nth-child(5) span { 
     background-image: url(../img/principali/berghotel_miramonti-5.jpg); 
-    -webkit-animation-delay: 24s;
-    -moz-animation-delay: 24s;
-    -o-animation-delay: 24s;
-    -ms-animation-delay: 24s;
     animation-delay: 24s; 
 }
 .cb-slideshow li:nth-child(6) span { 
     background-image: url(../img/principali/berghotel_miramonti-6.jpg); 
-    -webkit-animation-delay: 30s;
-    -moz-animation-delay: 30s;
-    -o-animation-delay: 30s;
-    -ms-animation-delay: 30s;
     animation-delay: 30s; 
 }
 .cb-slideshow li:nth-child(2) div { 
-    -webkit-animation-delay: 6s;
-    -moz-animation-delay: 6s;
-    -o-animation-delay: 6s;
-    -ms-animation-delay: 6s;
     animation-delay: 6s; 
 }
 .cb-slideshow li:nth-child(3) div { 
-    -webkit-animation-delay: 12s;
-    -moz-animation-delay: 12s;
-    -o-animation-delay: 12s;
-    -ms-animation-delay: 12s;
     animation-delay: 12s; 
 }
 .cb-slideshow li:nth-child(4) div { 
-    -webkit-animation-delay: 18s;
-    -moz-animation-delay: 18s;
-    -o-animation-delay: 18s;
-    -ms-animation-delay: 18s;
     animation-delay: 18s; 
 }
 .cb-slideshow li:nth-child(5) div { 
-    -webkit-animation-delay: 24s;
-    -moz-animation-delay: 24s;
-    -o-animation-delay: 24s;
-    -ms-animation-delay: 24s;
     animation-delay: 24s; 
 }
 .cb-slideshow li:nth-child(6) div { 
-    -webkit-animation-delay: 30s;
-    -moz-animation-delay: 30s;
-    -o-animation-delay: 30s;
-    -ms-animation-delay: 30s;
     animation-delay: 30s; 
 }
 /* Animation for the slideshow images */
-@-webkit-keyframes imageAnimation { 
-    0% { opacity: 0;
-    -webkit-animation-timing-function: ease-in; }
-    8% { opacity: 1;
-         -webkit-animation-timing-function: ease-out; }
-    17% { opacity: 1 }
-    25% { opacity: 0 }
-    100% { opacity: 0 }
-}
-@-moz-keyframes imageAnimation { 
-    0% { opacity: 0;
-    -moz-animation-timing-function: ease-in; }
-    8% { opacity: 0.9;
-         -moz-animation-timing-function: ease-out; }
-    17% { opacity: 0.9 }
-    25% { opacity: 0 }
-    100% { opacity: 0 }
-}
-@-o-keyframes imageAnimation { 
-    0% { opacity: 0;
-    -o-animation-timing-function: ease-in; }
-    8% { opacity: 1;
-         -o-animation-timing-function: ease-out; }
-    17% { opacity: 1 }
-    25% { opacity: 0 }
-    100% { opacity: 0 }
-}
-@-ms-keyframes imageAnimation { 
-    0% { opacity: 0;
-    -ms-animation-timing-function: ease-in; }
-    8% { opacity: 1;
-         -ms-animation-timing-function: ease-out; }
-    17% { opacity: 1 }
-    25% { opacity: 0 }
-    100% { opacity: 0 }
-}
+
 @keyframes imageAnimation { 
     0% { opacity: 0;
     animation-timing-function: ease-in; }
@@ -1903,34 +1846,7 @@ padding-bottom: 10px;
     100% { opacity: 0 }
 }
 /* Animation for the title */
-@-webkit-keyframes titleAnimation { 
-    0% { opacity: 0 }
-    8% { opacity: 1 }
-    17% { opacity: 1 }
-    19% { opacity: 0 }
-    100% { opacity: 0 }
-}
-@-moz-keyframes titleAnimation { 
-    0% { opacity: 0 }
-    8% { opacity: 0.9 }
-    17% { opacity: 0.9 }
-    19% { opacity: 0 }
-    100% { opacity: 0 }
-}
-@-o-keyframes titleAnimation { 
-    0% { opacity: 0 }
-    8% { opacity: 1 }
-    17% { opacity: 1 }
-    19% { opacity: 0 }
-    100% { opacity: 0 }
-}
-@-ms-keyframes titleAnimation { 
-    0% { opacity: 0 }
-    8% { opacity: 1 }
-    17% { opacity: 1 }
-    19% { opacity: 0 }
-    100% { opacity: 0 }
-}
+
 @keyframes titleAnimation { 
     0% { opacity: 0 }
     8% { opacity: 1 }
@@ -2011,7 +1927,7 @@ padding-bottom: 10px;
 	
 }
 .cd-btn1{
-    width: 80%;
+    width: 60%;
 	display: inline-block;
 	padding: 0.8em 1em;
 	text-align: center;
@@ -2025,23 +1941,23 @@ padding-bottom: 10px;
  .button1{
  	position: relative;
     top: 25px;
-	left: 10%;
-	right: 10%;
+	left: 20%;
+	width: 60%;
 	
  }
  .button2{
  	position: relative;
     top: 40px;
-	left: 10%;
-	right: 10%;
+	left: 20%;
+	width: 60%;
 	
  }
   .cd-btn1:hover{
   	background-color:#B8E62E;
   }
   .logobox{
-  	height:100px;
-  	box-shadow: 0px 0px 10px 0px #999;
+  	height:150px;
+  	
   }
 
 @media screen and (max-width: 1140px) { 
@@ -2128,8 +2044,14 @@ padding-bottom: 10px;
   }
 @media only screen and (min-width: 1170px) {
 .cb-slideshow li span {
-	left:222px;
+	left:22%;
 }
+.lang-a{
+	position:relative;
+	width:50px;
+	height:50px;
+}
+
 .title{
 	margin-top:0;
 }
@@ -2149,16 +2071,16 @@ padding-bottom: 10px;
 }
 .cb-slideshow{
 	position:absolute;
-	top:100px;
+	top:0px;
 	left:0;
 	width:100%;
-	height:600px;
+	height:92%;
 }
   #cd-intro {
     position:relative;
     top:0;
     left:0;
-    height: 600px;
+    height: 100%;
   }
   
 
@@ -2178,8 +2100,8 @@ padding-bottom: 10px;
     background-color:#AAAAAA;;
 	width:85%
     position:relative;
-	top:650px;
-	left:222px;
+	top:92%;
+	left:22%;
 	z-index: 800 !important;
 	}
   .bookingForm{
@@ -2213,9 +2135,9 @@ padding-bottom: 10px;
   }
   #cd-intro-fix {
     position:relative;
-    top:100px;
+    top:0px;
     left:222px;
-    width:72%;
+    width:60%;
     height: 600px;
     margin-right:1%;
     display:inline-block;
@@ -2229,13 +2151,12 @@ padding-bottom: 10px;
   }
   
   #internalRight {
-    position:absolute;
-    top:100px;
-    left:72%;
-    margin-right:1%;
-    width:28%;
-    height: 600px;
-    display:inline-block;
+    position: absolute;
+	top: 0px;
+	left: 75%;
+	width: 25%;
+	height: 600px;
+	display: inline-block;
   }
   #cd-intro #cd-intro-tagline {
     padding-top: 160px;
@@ -2546,22 +2467,27 @@ Placeholder Sections
 	
 }
   #hike-back{
-    margin-top:50px;
+    margin-top:65px;
 }
 #fam-back{
-     margin-top:50px;
+     margin-top:65px;
      
 }
 #hike-back2{
-    margin-top:50px;
+    margin-top:65px;
 	
 }
 #alpine-back{
-	margin-top:50px;
+	margin-top:65px;
 }
 
 #spa-back{
-    margin-top:50px;
+    margin-top:65px;
+	
+}
+#winter-back{
+    margin-top:102px;
+    
 	
 }
 
@@ -2579,6 +2505,10 @@ Placeholder Sections
   
 }
 @media only screen and (min-width: 1170px) {
+.center-main{
+	position:relative;
+	left:222px;
+}
 .link-img{
 	width:19%;
 	
@@ -2592,17 +2522,14 @@ Placeholder Sections
   .cd-section {
   display:inline-block;
   vertical-align: top;
-  transition: 0.7s ease 0.1s;
-  -webkit-box-sizing: border-box ;
-     -moz-box-sizing: border-box ;
-          box-sizing: border-box ;
+  
+ box-sizing: border-box ;
    
 }
 
-.cd-section:hover {
-  -webkit-transform: scale(0.95);
--ms-transform: scale(0.95);
-transform: scale(0.95);
+#notonly-back:hover {
+  
+transform: scale(1.15);
 transition: 0.7s ease 0.1s;
 	
 }
@@ -2644,7 +2571,7 @@ transition: 0.7s ease 0.1s;
   line-height: 1.6;
 }
 #alpine-back{
-    margin-top:2px;
+    margin-top:0px;
     width: 50%;
 	}
 #nordic-back{
@@ -2653,6 +2580,7 @@ transition: 0.7s ease 0.1s;
 	background-position: 50% 10%;
 	}
 #notonly-back{
+    transition: 0.7s ease 0.1s;
 	margin-top:2px;
 	width: 33%;
 }
@@ -3029,9 +2957,10 @@ font-size: 25px;
 	margin-bottom: 5px;
 }
 .footer-social{
-    padding-top:80px;
-	width:250px;
-	padding-left: 57px;
+    position:relative;
+    top:60px;
+    left:32%;
+    width:40%;
 }
 .socialimg{
 	border-radius: 5px;
@@ -3087,9 +3016,9 @@ font-size: 25px;
 
 	.footer-distributed{
 	margin-left: 222px;
-	margin-top: 117px;
+	margin-top: 0px;
 	margin-right: 2px;
-	margin-bottom:-200px;
+	margin-bottom:0px;
 	position:relative
 		
 	}

@@ -1,8 +1,6 @@
 jQuery(document).ready(function($){
   	
-  	$(window).load(function() {
-       $(".se-pre-con").fadeOut("slow");
-	});
+  	$(".footer-distributed").load("footer.html"); 
         
 //  	$('.footer-distributed').load('footer-it.html',function(){
   	
@@ -40,6 +38,7 @@ jQuery(document).ready(function($){
          	alert(e);
          	
        });
+      
        return false;
        
               
