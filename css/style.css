@@ -1095,8 +1095,10 @@ Navigation
   	
   }
   .header-logo{
-  	height:60px;
-  	opacity:0.8;
+  	height: 50px;
+	opacity: 1;
+	margin-top: 60px;
+	margin-left: 23%;
   }
   .header-logo-a::visited{
   	opacity:1;
@@ -1219,9 +1221,9 @@ Navigation
 	
 }
 .menu-bottom{
-	position:absolute;
-	width:100%;
-	top:68%;
+	position: absolute;
+	width: 100%;
+	bottom: 0%;
 	
 }
 .menuFooter{
@@ -1778,23 +1780,26 @@ padding-bottom: 10px;
     animation: imageAnimation 36s linear infinite 0s; 
 }
 .cb-slideshow li div { 
-    z-index: 999;
-    position: absolute;
-    top: 70%;
-    left: 22%;
-    width: 86%;
-    text-align: center;
-    opacity: 0;
-    color: #fff;
-    animation: titleAnimation 36s linear infinite 0s;
-    background-color:rgba(255, 255, 255, 0.2); 
+   z-index: 999;
+	position: absolute;
+	top: 75%;
+	left: 22%;
+	width: 86%;
+	text-align: center;
+	opacity: 0;
+	color: #FFF;
+	animation: 36s linear 0s normal none infinite running titleAnimation;
+	background-color: rgba(255, 255, 255, 0.2);
+	height: 25%; 
 }
 .cb-slideshow li div h3 { 
-    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-    font-weight:400;
-    font-size: 170px;
-    padding: 0;
-    line-height: 200px; 
+   font-family: "BebasNeueRegular","Arial Narrow",Arial,sans-serif;
+	font-size: 140px;
+	padding: 0px;
+	line-height: 200px;
+	font-weight: 100;
+	position: relative;
+	top: -45px;
 }
 .cb-slideshow li:nth-child(1) span { 
     background-image: url(../img/principali/berghotel_miramonti-1.jpg); 
