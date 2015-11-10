@@ -1253,7 +1253,7 @@ Navigation
 	
 }
 .fixed-menu ul li{
-	padding-top: 20px;
+	padding-top: 15px;
 	height: 45px;
 	width: 190px;
 	color: #76919F;
@@ -1322,7 +1322,7 @@ Intro
 
 .summer::after {
   content: "";
-  background: transparent url(../img/summer1.JPG) 50% 50% no-repeat;
+  background: transparent url(../img/val-venegia-under-the-pale-di-san-martino-dolomites.jpg) 50% 50% no-repeat;
   background-size: cover;
   top: 0;
   left: 0;
@@ -1938,7 +1938,7 @@ padding-bottom: 10px;
 	padding: 0.8em 1em;
 	text-align: center;
 	background-color: #BFE843;
-	border-radius: 16em;
+	border-radius: 10px;
 	backface-visibility: hidden;
 	color: #FFF;
 	
@@ -2140,13 +2140,12 @@ padding-bottom: 10px;
   	top:170px;
   }
   #cd-intro-fix {
-    position:relative;
-    top:0px;
-    left:222px;
-    width:60%;
-    height: 600px;
-    margin-right:1%;
-    display:inline-block;
+    position: relative;
+	top: 0px;
+	left: 22%;
+	width: 60%;
+	height: 100%;
+	display: inline-block;
   }
   #cd-intro-fix-intern {
     display: inline-block;
@@ -2400,7 +2399,7 @@ Placeholder Sections
 	background-image:url('../img/suoni.jpg');
 }
 #summer-back{
-	background-image:url('../img/summer1.jpg');
+	background-image:url('../img/val-venegia-under-the-pale-di-san-martino-dolomites.jpg');
 }
 #offerta1-back{
 	background-image:url('../img/estate-2015.jpg');
@@ -2592,8 +2591,7 @@ Placeholder Sections
 	background-position: 50% 10%;
 	}
 #notonly-back{
-    transition: 0.7s ease 0.1s;
-	margin-top:2px;
+    margin-top:2px;
 	width: 33%;
 }
 #notonly1-back{
