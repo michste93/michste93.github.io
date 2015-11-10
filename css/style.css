@@ -182,6 +182,7 @@ Modules - reusable parts of our design
     color: white;
      }
 .small-button-left{
+    
     position:relative;
     top:10px;
     left:1%;
@@ -1549,7 +1550,7 @@ Intro
 }
 .wint::after {
   content: "";
-  background: transparent url(../img/winter.jpg) 50% 50% no-repeat;
+  background: transparent url(../img/trentino-dolomiti-latemar-neve.jpeg) 50% 50% no-repeat;
   background-size: cover;
   top: 0;
   left: 0;
@@ -1781,7 +1782,8 @@ padding-bottom: 10px;
     animation: imageAnimation 36s linear infinite 0s; 
 }
 .cb-slideshow li div { 
-   z-index: 999;
+    display:none;   
+    z-index: 999;
 	position: absolute;
 	top: 75%;
 	left: 22%;
@@ -1966,14 +1968,8 @@ padding-bottom: 10px;
   	
   }
 
-@media screen and (max-width: 1140px) { 
-    .cb-slideshow li h3{
-		display:none;
-	}
-}
-@media screen and (max-width: 600px) { 
-    .cb-slideshow li div h3 { font-size: 80px }
-}
+
+
 
 @media only screen and (min-width: 768px) {
 .fam::after {
@@ -2049,6 +2045,9 @@ padding-bottom: 10px;
 }
   }
 @media only screen and (min-width: 1170px) {
+.cb-slideshow li div {
+	display:block;
+}
 .cb-slideshow li span {
 	left:22%;
 }
@@ -2174,8 +2173,7 @@ padding-bottom: 10px;
     font-size: 32px;
     font-size: 2rem;
   }
-}
-@media only screen and (min-width: 1170px) {
+
   
   #cd-intro #cd-intro-tagline {
     padding-top: 250px;
@@ -2183,16 +2181,7 @@ padding-bottom: 10px;
   #cd-intro-fix #cd-intro-tagline {
     padding-top: 250px;
   }
-}
 
-
-
-
-
-
-
-@media only screen and (min-width: 1140px) {
-  
   
 .page-pictures{
 	position:relative;
@@ -2529,7 +2518,7 @@ Placeholder Sections
   .cd-section {
   display:inline-block;
   vertical-align: top;
-  transition: all 1s ease-in;
+  transition: all 1s ease-out;
  box-sizing: border-box ;
  background-size:100% 100%;
  
@@ -2537,19 +2526,19 @@ Placeholder Sections
 }
 
 .cd-section p span{
-	transition: all 1s ease;
+	transition: all 1s ease-out;
 	opacity:1;
 	
 }
 .cd-section:hover p span{
-	transition: all 1s ease;
+	transition: all 1s ease-out;
 	opacity:0;
 	
 }
 .cd-section:hover {
 	 background-size:120% 120%;
  
-    transition: all 1s ease-in;
+    transition: all 1s ease-out;
    /* filter: grayscale(0%);*/
 }
 
@@ -2980,6 +2969,10 @@ font-size: 25px;
 .socialimg:hover{
 	opacity:1;
 }
+.social{
+	position:relative;
+	top:20px;
+}
 
 /* If you don't want the footer to be responsive, remove these media queries */
 
@@ -3025,6 +3018,7 @@ font-size: 25px;
 @media (min-width: 1140px) {
 
 	.footer-distributed{
+	display:none;
 	margin-left: 222px;
 	margin-top: 0px;
 	margin-right: 2px;
