@@ -48,15 +48,7 @@ h3{
   }
 
 
-.se-pre-con {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url(../img/preloader.gif) center no-repeat #fff;
-}
+
 b{
 	font-weight: bold;
 }
@@ -78,6 +70,16 @@ Modules - reusable parts of our design
 -------------------------------- */
 .cd-main-content{
 	
+}
+
+.visible{
+	display:block;
+}
+.no-visible{
+	display:none;
+}
+.trans{
+	margin-top:50px;	
 }
 .lang-img{
 	width: 30px;
@@ -464,13 +466,19 @@ Navigation
 
 -------------------------------- */
 .lang-switch{
-    position: relative;
-	left: 210px;
-	z-index: 1005 !important;
-	padding-left: 8px;
-	width: 110px;
-	font-size: 14px;
-	top: 20px;
+ 
+ position: absolute;
+left: 20px;
+z-index: 1005 !important;
+width: 250px;
+font-size: 25px;
+top: 33px;
+
+	
+}
+.lang-switch a{
+	color: #76919F;
+	padding-right:25px;
 }
 
 
@@ -539,12 +547,13 @@ Navigation
 	display:none;
 }
 .phone{
-    width: 50px;
-height: 50px;
+    width: 74px;
+height: 74px;
 opacity: 0.8;
-position: absolute;
-left: 215px;
-top: 19px;
+
+float: right;
+margin-right: 0%;
+margin-top: -32px;
 }
 .phone a{
 	background-clip: border-box;
@@ -927,7 +936,7 @@ top: 19px;
   transform: translateY(87px);
 }
 	.cd-header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -935,33 +944,6 @@ top: 19px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   background-color: white;
   z-index: 5;
-}
-.lang-switch{
-    position:relative;
-	left: 300px;
-	top:-18px;
-	width:280px;
-	font-size:23px;
-	
-}
-.phone{
-    width:87px;
-    height:87px;
-	opacity:0.8;
-	position:absolute;
-	top:0;
-	left:210px;
-}
-.logo a{
-	
-  	height: 87px;
-  	width:200px;
- 
-}
-.phone a{
-	height: 87px;
-  	width: 87px;
- 
 }
 
 
@@ -1069,7 +1051,7 @@ top: 19px;
     padding-bottom:10px;
     width:50px;
 	height:50px;
-	color:#76919F;
+	color:#C2C38F;
 	font-size:0.8em;
 }
 .lang-switch div{
@@ -1202,7 +1184,7 @@ top: 19px;
 .not-active {
    pointer-events: none;
    cursor: default;
-   
+   color:#C2C38F;
 }
  #current{
 	color:#C2C38F;

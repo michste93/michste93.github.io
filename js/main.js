@@ -13,6 +13,9 @@ jQuery(document).ready(function($){
 	$('.cd-primary-nav').on('click', function(event){
 		if($(event.target).is('.cd-primary-nav')) 
 		   $(this).children('ul').toggleClass('is-visible');
+		   $(".logo").toggleClass('no-visible');
+		   $(".phone").toggleClass('no-visible');
+		   $(".lang-switch").toggleClass('no-visible');
 		   
 	});
 	 $('#newsletter').on('submit', function(event){
