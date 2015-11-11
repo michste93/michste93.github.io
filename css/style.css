@@ -548,10 +548,9 @@ top: 33px;
 }
 .phone{
     width: 74px;
-height: 74px;
-opacity: 0.8;
-margin-top: 18px;
-margin-left: 52%;
+    height: 74px;
+	margin-top: 18px;
+	margin-left: 52%;
 }
 .phone a{
 	background-clip: border-box;
