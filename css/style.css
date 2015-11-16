@@ -71,7 +71,14 @@ Modules - reusable parts of our design
 .cd-main-content{
 	
 }
-
+#current {
+    color: #C2C38F;
+}
+.not-active {
+    pointer-events: none;
+    cursor: default;
+    color: #C2C38F;
+}
 .visible{
 	display:block;
 }
@@ -102,7 +109,7 @@ Modules - reusable parts of our design
  }
  .page-pictures{
  	position:relative;
- 	top:70px;
+ 	top:100px;
  	left:3%;
  	right:3%;
  	width:96%;
@@ -113,7 +120,7 @@ Modules - reusable parts of our design
  .cd-main-content-intern1{
      position: relative;
 	text-align: left;
-	margin-top: 60px;
+	margin-top: 85px;
 	margin-bottom: 20px;
 	width: 94%;
 	left: 3%;
@@ -128,7 +135,7 @@ Modules - reusable parts of our design
  }    
  #cd-intro {
   position: relative;
-  top:50px;
+  top:87px;
   left:0;
   height: 300px;
   z-index: 4;
@@ -186,7 +193,7 @@ Modules - reusable parts of our design
 .small-button-left{
     
     position:relative;
-    top:10px;
+    top:47px;
     left:1%;
     width:48%;
     display: inline-block;
@@ -203,7 +210,7 @@ Modules - reusable parts of our design
      }
      .small-button-right{
     position:relative;
-    top:10px;
+    top:47px;
     left:3%;
     width:48%;
     display: inline-block;
@@ -408,7 +415,8 @@ only screen and (max-width: 760px),
   div.cd-main {
     position: relative;
 	margin-left: 22%;
-	margin-top: 13px;
+	margin-top: -2px;
+	margin-bottom: -12px;
    }
   	 .cd-main-content-intern li{
  
@@ -854,6 +862,12 @@ top: 33px;
 	margin-bottom: 10px;
 	line-height: 2.5em;	
  }
+ .header-logo{
+  	height: 31px;
+opacity: 1;
+position: relative;
+margin-top: 30px;
+  }
 @media only screen and (min-width: 768px) {
 .page-pictures{
  	position:relative;
@@ -1018,8 +1032,7 @@ top: 33px;
 }
 .price_table{
     margin-top:150px;
-  	margin-left:19%;
-  	margin-right:5%;
+  	margin-left:23%;
   	width:76%;
   }
   .logo-desktop{
@@ -1036,7 +1049,7 @@ top: 33px;
 .lang-switch{
     position: absolute;
 	left: 0px;
-	top: 170px;
+	top: 210px;
 	z-index: 1005 !important;
 	padding-left: 5px;
 	
@@ -1045,11 +1058,12 @@ top: 33px;
 
 }
 .lang-switch a{
-    padding-bottom:10px;
-    width:50px;
-	height:50px;
-	color:#C2C38F;
-	font-size:0.8em;
+    padding-bottom: 10px;
+	width: 50px;
+	height: 50px;
+	font-size: 0.6em;
+	font-family: "FrankRegular";
+	
 }
 .lang-switch div{
 	width:40px;
@@ -1064,9 +1078,8 @@ top: 33px;
 	display:none;
 }
 #request{
-  	margin-left: 25%;
-    width: 62%;
-    
+  	margin-left: 22%;
+width: 78%;
   	
   }
   .walking-logo{
@@ -1075,12 +1088,13 @@ top: 33px;
   	
   }
   .header-logo{
-  	height: 50px;
-	opacity: 1;
-	margin-top: 50px;
-	margin-left: 23%;
+  	height: 31px;
+	opacity: 0.8;
+	margin-top: 52px;
+	margin-left: 77px;
+	position: relative;
   }
-  .header-logo-a::visited{
+  .header-logo:hover{
   	opacity:1;
   }
  
@@ -1178,14 +1192,6 @@ top: 33px;
 .textarea{
 	width:60%;
 }
-.not-active {
-   pointer-events: none;
-   cursor: default;
-   color:#C2C38F;
-}
- #current{
-	color:#C2C38F;
-}
   .fixed-menu{
   display: block; 
   position:fixed;
@@ -1227,8 +1233,9 @@ top: 33px;
 .fixed-menu ul{
     font-size: 1.4em;
 	position:relative;
-	left:15%;
+	left:54px;
 	width:70%;
+	top:35px;
 	
 }
 .fixed-menu ul li{
@@ -1237,9 +1244,10 @@ top: 33px;
 	width: 190px;
 	color: #76919F;
 	position: relative;
-	left: 20px;
+	left: 0px;
 	font-family: "FrankRegular";
 	font-size: 19px;
+	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
 }
 .fixed-menu a{
 	vertical-align:center;
@@ -1665,21 +1673,21 @@ padding: 10px;
 
 #cd-intro-fix {
   position: relative;
-  top:50px;
+  top:87px;
   left:0;
   height: 400px;
   z-index: 2;
 }
 #cd-intro-fix-intern {
-  position: relative;
-  top:50px;
-  left:0;
-  height: 300px;
-  z-index: 2;
+    position: relative;
+	top: 87px;
+	left: 0px;
+	height: 400px;
+	z-index: 2;
 }
 #internalRight{
 	position: relative;
-    top:30px;
+    top:66px;
     left:0;
     z-index: 2;
 	background-color:#B8E62E;
@@ -1926,14 +1934,14 @@ padding-bottom: 10px;
  .button1{
  	position: relative;
     top: 25px;
-	left: 25%;
+	left: 54px;
 	width: 50%;
 	
  }
  .button2{
  	position: relative;
     top: 30px;
-	left: 25%;
+	left: 54px;
 	width: 50%;
 	
  }
@@ -1950,8 +1958,8 @@ padding-bottom: 10px;
 
 @media only screen and (min-width: 768px) {
 .fam::after {
-  background: transparent url(../img/famiglia.jpg) 30% 30% no-repeat;
-  background-size: cover;
+  background: transparent url(../img/famiglia.jpg) 100% 100% no-repeat center;
+  
   }
 #cd-intro {
     position:relative;
@@ -2229,7 +2237,7 @@ padding-bottom: 10px;
     .page-offers{
 	position:relative;
     top:100px;
-    left:19%;
+    left:23%;
     right:5%;
     width:76%;
     
@@ -2306,11 +2314,11 @@ Placeholder Sections
 }
 
 #hike-back{
-    margin-top:-18px;
+    margin-top:81px;
 	background-image:url('../img/hiking.jpg');
 }
 #hike-back2{
-    margin-top:-18px;
+    margin-top:81px;
 	background-image:url('../img/hiking.jpg');
 }
 
@@ -2323,6 +2331,7 @@ Placeholder Sections
 	background-image:url('../img/map.png');
 }
 #fam-back{
+    margin-top:81px;
     background-position: 50% 10%;
 	background-image:url('../img/famiglia.jpg');
 }
@@ -2330,7 +2339,7 @@ Placeholder Sections
 	background-image:url('../img/gourmet.jpg');
 }
 #alpine-back{
-	margin-top:-18px;
+	margin-top:96px;
 	background-image:url('../img/alpine-ski.jpeg');
 }
 #nordic-back{
@@ -2376,6 +2385,7 @@ Placeholder Sections
 }
 #offerta2-back{
 	background-image:url('../img/PRIMA-NEVE-BERGHOTEL.jpg');
+	margin-top: 48px;
 }
 #offerta3-back{
 	background-image:url('../img/NEVE-AL-TOP-BERGHOTEL.jpg');
@@ -2391,7 +2401,7 @@ Placeholder Sections
 	background-image:url('../img/offerte.jpeg');
 }
 #winter-back{
-	margin-top:-19px;
+	margin-top:64px;
 	background-image:url('../img/trentino-dolomiti-latemar-neve.jpeg');
 }
 #family-back{
@@ -2603,7 +2613,7 @@ margin-top:2px;
 #spawelness-back{
 	
 	margin-top:2px;
-    margin-left:-4px;
+    margin-left:-3px;
    width: 49.7%;
 }
 #beauty-back{
@@ -2628,6 +2638,7 @@ margin-top:2px;
 #offerta2-back{
 	margin-left:-3px;
     width: 49.8%;
+    margin-top: 0px;
 }
 #offerta3-back{
 	width: 50%;
@@ -2934,15 +2945,15 @@ font-size: 25px;
 	margin-bottom: 5px;
 }
 .footer-social{
-    position:relative;
-    top:50px;
-    left:32%;
-    width:40%;
+    position: relative;
+	top: 50px;
+	width: 40%;
+	left: 87px;
 }
 .socialimg{
 	border-radius: 5px;
 	opacity:0.8;
-	width:50px;
+	width:35px;
 }
 .socialimg:hover{
 	opacity:1;
@@ -2951,7 +2962,55 @@ font-size: 25px;
 	position:relative;
 	top:20px;
 }
+.center-content{
+	margin-top:87px;
+}
+.left-part, .right-part{
+	
+  position:relative;
+  top:0;
+  padding: 0;
+  
+  height: 250px;
+  background-color: transparent;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
+  max-width: 100%;
+  max-height: 100%;
+  
 
+}
+.left-part p, .right-part p {
+  color: #FFF;
+	opacity: 1;
+	font-size: 20px;
+	line-height: 25px;
+	position: absolute;
+	top: 45%;
+	text-align: center;
+	text-transform: uppercase;
+	vertical-align: middle;
+	margin: 0px auto;
+	left: 40%;
+
+}
+.left-part p span, .right-part p span{
+   color: white; 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgba(0, 0, 0, 0.6);
+   padding: 5px; 
+   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+   font-weight: 600;
+   
+}
+.left-part{
+	background-image:url(../img/bici.jpg);
+}
+.right-part{
+	background-image:url(../img/index.jpe);
+}
 /* If you don't want the footer to be responsive, remove these media queries */
 
 @media (max-width: 880px) {
@@ -2994,7 +3053,35 @@ font-size: 25px;
 
 }
 @media (min-width: 1140px) {
-
+   
+.left-part:hover, .right-part:hover {
+	 opacity:1;
+ 
+    transition: all 0.7s ease-out;
+   /* filter: grayscale(0%);*/
+}
+    .center-content{
+    	left: 22%;
+	height: 100%;
+	margin-top:0px;
+position: relative;
+    }
+    .left-part{
+    width: 39%;
+	position: relative;
+	height: 100%;
+	float: left;
+	opacity:0.7;
+	transition: all 0.7s ease-out;
+    }
+    .right-part{
+    	width: 39%;
+position: relative;
+height: 100%;
+       left:39%;
+       opacity:0.7;
+transition: all 1s ease-out;
+    }
 	.footer-distributed{
 	display:none;
 	margin-left: 222px;
