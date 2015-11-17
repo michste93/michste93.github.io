@@ -33,7 +33,7 @@
 		
 		hover				: true,	//true, false. Puase on state hover. Not available for mobile devices
 				
-		loader				: 'pie',	//pie, bar, none (even if you choose "pie", old browsers like IE8- can't display it... they will display always a loading bar)
+		loader				: 'none',	//pie, bar, none (even if you choose "pie", old browsers like IE8- can't display it... they will display always a loading bar)
 		
 		loaderColor			: '#eeeeee', 
 		
@@ -55,7 +55,7 @@
 		
 		opacityOnGrid		: false,	//true, false. Decide to apply a fade effect to blocks and slices: if your slideshow is fullscreen or simply big, I recommend to set it false to have a smoother effect 
 		
-		overlayer			: true,	//a layer on the images to prevent the users grab them simply by clicking the right button of their mouse (.camera_overlayer)
+		overlayer			: false,	//a layer on the images to prevent the users grab them simply by clicking the right button of their mouse (.camera_overlayer)
 		
 		pagination			: true,
 		
@@ -79,7 +79,7 @@
 		
 		thumbnails			: false,
 		
-		time				: 7000,	//milliseconds between the end of the sliding effect and the start of the nex one
+		time				: 5000,	//milliseconds between the end of the sliding effect and the start of the nex one
 		
 		transPeriod			: 1500,	//lenght of the sliding effect in milliseconds
 		

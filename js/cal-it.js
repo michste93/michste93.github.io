@@ -3,7 +3,7 @@ jQuery(document).ready(function($){
      var userLang = navigator.language;
      
     if(userLang == "it-IT" || userLang == "it"){
-    
+    break;
    }
    else if(userLang == "de-DE" || userLang == "de"){
      window.location="de/index.html";
