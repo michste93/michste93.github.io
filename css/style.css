@@ -19,7 +19,7 @@ html, body{
 body {
   font-size: 100%;
   font-family: "Roboto", sans-serif;
-  color: #3D3D29;
+  color: #00252E;
   background-color: rgba(255,255,255);
   overflow-x: hidden;
   
@@ -113,6 +113,7 @@ Modules - reusable parts of our design
  	left:3%;
  	right:3%;
  	width:96%;
+ 	margin-bottom:70px;
  }
  .page-pictures div p{
  	margin-bottom:10px;
@@ -126,7 +127,7 @@ Modules - reusable parts of our design
 	left: 3%;
 	right: 3%;
 	font-size:20px;
-    line-height: 1.1em;
+    line-height: 1.3em;
   	 }
   	 .cd-main-content-intern1 h3{
  	
@@ -315,6 +316,10 @@ div.cd-main {
     position: relative;
     
     top: -15px;
+}
+.link-color{
+	color:#76919F;
+	
 }
 @media 
 only screen and (max-width: 760px),
@@ -822,11 +827,13 @@ top: 33px;
     border:0;
 }
 .right-text{
-    font-size:18px;
-	width:100%; 
+    position: relative;
+	top: 50px;
+	left: 0%;
+	width: 100%;
+	height: 450px;
 	word-wrap: break-word;
-	padding-top:2px;
-	line-height:1.2em;
+	padding-top: 2px;
 	}
 	.right-text h3{
 		font-size:18px;
@@ -899,7 +906,7 @@ margin-top: 30px;
 }
 .camere-img{
 	width:50%;
-	height:280px;
+	height:auto;
 	float:left;
 	margin-bottom:55px;
 }
@@ -997,14 +1004,14 @@ margin-top: 30px;
 	width:75%;
 }
 .check-boxes{
-	width:80%;
+	width:100%;
 	clear:both;
 }
 } 	
 @media screen and (min-width: 1140px) {
 .cd-main-content-intern1{
 	margin-top: 105px;
-	font-size: 22px;
+	font-size: 17px;
 	margin-right: 12px;
 	
 	left: 24%;
@@ -1031,7 +1038,7 @@ margin-top: 30px;
 	z-index: 1000 !important;
 }
 .price_table{
-    margin-top:150px;
+    margin-top:65px;
   	margin-left:23%;
   	width:76%;
   }
@@ -1079,7 +1086,8 @@ margin-top: 30px;
 }
 #request{
   	margin-left: 22%;
-width: 78%;
+	width: 78%;
+	margin-top: -85px;
   	
   }
   .walking-logo{
@@ -1191,6 +1199,7 @@ width: 78%;
 
 .textarea{
 	width:60%;
+	margin-left:20%;
 }
   .fixed-menu{
   display: block; 
@@ -1380,6 +1389,7 @@ Intro
   content: "";
   background: transparent url(../img/non_solo_sci.jpg) no-repeat;
   background-size: cover;
+  
   top: 0;
   left: 0;
   bottom: 0;
@@ -1460,6 +1470,7 @@ Intro
   content: "";
   background: transparent url(../img/NEVE-AL-TOP-BERGHOTEL.jpg) no-repeat;
   background-size: cover;
+  background-position:50% 50%;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1537,7 +1548,7 @@ Intro
 }
 .fam::after {
   content: "";
-  background: transparent url(../img/famiglia.jpg) no-repeat;
+  background: transparent url(../img/famiglia.jpg) 50% 100% no-repeat;
   background-size: cover;
   top: 0;
   left: 0;
@@ -1648,7 +1659,7 @@ padding: 10px;
 }
 .mini::after {
   content: "";
-  background: transparent url(../img/miniclub.jpg) no-repeat;
+  background: transparent url(../img/miniclub.jpg) 50% 0% no-repeat;
   background-size: cover;
   top: 0;
   left: 0;
@@ -1715,22 +1726,20 @@ padding: 10px;
 	background-color:#B8E62E;
 }
 
+
 .content h2{
 	text-align: center;
 font-size: 45px;
 
-margin-bottom: 15px;
+margin-bottom: 12px;
 }
 .content{
     position: relative;
-text-align: left;
-margin-bottom: 20px;
-width: 94%;
-left: 3%;
-right: 3%;
-font-size: 28px;
-padding-top: 14.9px;
-padding-bottom: 10px;
+	text-align: left;
+	width: 94%;
+	left: 3%;
+	font-size: 28px;
+	padding-top: 10px;
 color: #FFF;
 }
 #cd-intro-fix::after {
@@ -2168,16 +2177,18 @@ color: #FFF;
   }
   
   #internalRight-out {
-        top: 70%;
+    top: 70%;
+	height: 30%;   
     width: 78%;
     display: inline-block;
     position: absolute;
     left: 22%;
-    height: 30%;
+    
     background-color: rgba(0, 0, 0, 0.3);
 
   }
-  #internalRight- {
+  
+  #internalRight {
         top: 0px;
     width: 78%;
     display: inline-block;
@@ -2267,12 +2278,12 @@ color: #FFF;
 	position: relative;
 	top: 70px;
 	left: 22%;
-	width: 78%;
-	margin-left:20px;
+	width: 75%;
+	margin-left: 20px;
 	}
     .page-offers{
 	position:relative;
-    top:100px;
+    top:50px;
     left:23%;
     right:5%;
     width:76%;
@@ -2355,6 +2366,7 @@ Placeholder Sections
 }
 #guest-back{
     background-image:url('../img/fiemme-dolomiti-trentino-fondo.jpeg');
+    background-position: 50% 100%;
 }
 #prezzi-back{
     
@@ -2419,6 +2431,7 @@ Placeholder Sections
 }
 #summer-back{
 	background-image:url('../img/val-venegia-under-the-pale-di-san-martino-dolomites.jpg');
+	background-position: 50% 0%;
 }
 #offerta1-back{
 	background-image:url('../img/estate-2015.jpg');
@@ -2446,6 +2459,7 @@ Placeholder Sections
 #winter-back{
 	margin-top:64px;
 	background-image:url('../img/trentino-dolomiti-latemar-neve.jpeg');
+	background-position: 50% 0%;
 }
 #family-back{
    

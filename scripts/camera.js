@@ -43,7 +43,7 @@
 		
 		loaderPadding		: 2,	//how many empty pixels you want to display between the loader and its background
 		
-		loaderStroke		: 7,	//the thickness both of the pie loader and of the bar loader. Remember: for the pie, the loader thickness must be less than a half of the pie diameter
+		loaderStroke		: 12,	//the thickness both of the pie loader and of the bar loader. Remember: for the pie, the loader thickness must be less than a half of the pie diameter
 				
 		minHeight			: '200px',	//you can also leave it blank
 		
@@ -79,9 +79,9 @@
 		
 		thumbnails			: false,
 		
-		time				: 5000,	//milliseconds between the end of the sliding effect and the start of the nex one
+		time				: 4000,	//milliseconds between the end of the sliding effect and the start of the nex one
 		
-		transPeriod			: 1500,	//lenght of the sliding effect in milliseconds
+		transPeriod			: 2500,	//lenght of the sliding effect in milliseconds
 		
 ////////callbacks
 
