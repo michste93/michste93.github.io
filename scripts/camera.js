@@ -33,7 +33,7 @@
 		
 		hover				: true,	//true, false. Puase on state hover. Not available for mobile devices
 				
-		loader				: 'none',	//pie, bar, none (even if you choose "pie", old browsers like IE8- can't display it... they will display always a loading bar)
+		loader				: 'none' ,	//pie, bar, none (even if you choose "pie", old browsers like IE8- can't display it... they will display always a loading bar)
 		
 		loaderColor			: '#eeeeee', 
 		

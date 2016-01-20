@@ -1,7 +1,6 @@
 jQuery(document).ready(function($){
     
-    
-       
+           
             
     $('#requestForm').on('submit', function(event){
        var data= $('#requestForm').serialize();

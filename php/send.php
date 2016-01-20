@@ -22,8 +22,11 @@
     $newsletter = $_POST["news"];
     $data = "Titolo: ".$titolo."\n"."Nome: ".$nome."\n"."Cognome: ".$cognome."\n"."Arrivo: ".$arrivo."\n".
     "Partenza: ".$partenza."\n"."Pensione: ".$pensione."\n"."Camera: ".$camera."\n"."Adulti: ".$adulti."\n"."Bambino 1: ".$bimbo1."\n"."Bambino 2: ".$bimbo2."\n"."Bambino 3: ".$bimbo3."\n"."Messaggio: ".$messaggio."\n"."Titolo: ".$titolo."\n"."Nome: ".$nome."\n"."Cognome: ".$cognome."\n"."Email: ".$email."\n"."Indirizzo: ".$indirizzo."\n"."Zip: ".$zip."\n"."Città: ".$citta."\n"."Stato: ".$stato."\n"."Telefono: ".$telefono."\n"."Newsletter: ".$newsletter ;
-
-
+$file = 'news.txt';
+$lang = $_POST["lang"];
+$news = $_POST["news"];
+$on="on";
+$person= "Nome: " . $nome . "Cognome: " . $cognome . " email: " .$email . "  lingua: " . $lang . "\n"; 
 
 ini_set("SMTP","smtp.berghotelmiramonti.it");
 ini_set("sendmail_from","postmaster@berghotelmiramonti.it");
@@ -31,6 +34,9 @@ ini_set("sendmail_from","postmaster@berghotelmiramonti.it");
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
   echo("L'email non è valida. Le preghiamo di controllare" . "\n" . "The email is not valid. Please enter a valid email");
   
+}
+if (strcmp($news, $on) == 0){
+	file_put_contents($file, $person, FILE_APPEND | LOCK_EX);
 }
 
 

@@ -1,6 +1,8 @@
 jQuery(document).ready(function($){
   	
   	$(".footer-distributed").load("footer.html"); 
+  	
+  	
         
 //  	$('.footer-distributed').load('footer-it.html',function(){
   	

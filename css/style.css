@@ -14,7 +14,7 @@ section{
 html, body{
 	height:100%;
 	width:100%;
-	-webkit-transform: translate3d(0,0,0);
+	
 }
 body {
   font-size: 100%;
@@ -416,6 +416,7 @@ only screen and (max-width: 760px),
      display: inline-block;
 	 width: 100%;
 	 vertical-align: top;
+	 margin-top: -11px;
   	 }
   div.cd-main {
     position: relative;
@@ -483,7 +484,7 @@ Navigation
  position: absolute;
 left: 20px;
 z-index: 1005 !important;
-width: 250px;
+width: 180px;
 font-size: 25px;
 top: 33px;
 
@@ -502,8 +503,8 @@ top: 33px;
   width: 100%;
   height: 87px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  background-color: white;
-  z-index: 5;
+  background-color:#fff;
+   z-index: 5;
 }
 .logo a{
 	width:200px;
@@ -577,13 +578,11 @@ top: 33px;
   	cursor: pointer;
   	display: block;
   	font-size: 16px;
-  	height: 50px;background
-  	line-height: 22px;
-  	text-align: center;
-  	text-decoration: none;
-  	-moz-text-decoration-color: #CACD32;
-  	-moz-text-decoration-line: none;
-  	-moz-text-decoration-style: solid;
+  	height: 87px;
+	text-align: center;
+	text-decoration: none #CACD32;
+	position: relative;
+	top: -18px;
  
 }
 .phone:hover{
@@ -1007,10 +1006,32 @@ margin-top: 30px;
 	width:100%;
 	clear:both;
 }
-} 	
+} 
+@media screen and (min-width: 1340px) {	
+.fixed-menu ul{
+    font-size: 1.4em;
+	position: relative;
+	top: 50px;
+	width: 100%;
+	text-align: center;
+	
+}
+.fixed-menu ul li{
+	padding-top: 0px;
+
+color: #76919F;
+position: relative;
+left: 0px;
+font-family: "FrankRegular";
+font-size: 19px;
+text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+width: 100%;
+padding-bottom: 23px;
+}
+}
 @media screen and (min-width: 1140px) {
 .cd-main-content-intern1{
-	margin-top: 105px;
+	margin-top: 50px;
 	font-size: 17px;
 	margin-right: 12px;
 	
@@ -1099,7 +1120,7 @@ margin-top: 30px;
   	height: 31px;
 	opacity: 0.8;
 	margin-top: 52px;
-	margin-left: 77px;
+	
 	position: relative;
   }
   .header-logo:hover{
@@ -1198,8 +1219,8 @@ margin-top: 30px;
   
 
 .textarea{
-	width:60%;
-	margin-left:20%;
+	width: 60%;
+	height: 150px;
 }
   .fixed-menu{
   display: block; 
@@ -1208,18 +1229,19 @@ margin-top: 30px;
   top:0;
   z-index: 1002 !important;
   height: 100%;
-  -webkit-border-radius: 3px;
+  margin:auto;
   box-shadow: 0px 0px 10px 0px #999;
   /*#1975FF;*/
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+   border-radius: 3px;
+  -webkit-backface-visibility: hidden; 
+   -webkit-transform: translateZ(0);
 	
 }
 .menu-bottom{
 	position: absolute;
 	width: 100%;
 	bottom: 0%;
-	
+	text-align: center;
 }
 .menuFooter{
 	position:relative;
@@ -1241,22 +1263,23 @@ margin-top: 30px;
 }
 .fixed-menu ul{
     font-size: 1.4em;
-	position:relative;
-	left:54px;
-	width:70%;
-	top:35px;
+	position: relative;
+	top: 40px;
+	width: 100%;
+	text-align: center;
 	
 }
 .fixed-menu ul li{
 	padding-top: 0px;
-	height: 40px;
-	width: 190px;
-	color: #76919F;
-	position: relative;
-	left: 0px;
-	font-family: "FrankRegular";
-	font-size: 19px;
-	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+
+color: #76919F;
+position: relative;
+left: 0px;
+font-family: "FrankRegular";
+font-size: 19px;
+text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+width: 100%;
+padding-bottom: 19px;
 }
 .fixed-menu a{
 	vertical-align:center;
@@ -1305,6 +1328,7 @@ Intro
   content: "";
   background: transparent url(../img/winter1.jpg) no-repeat;
   background-size: 100% 100%;
+  background-position:50% 50%;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1319,7 +1343,7 @@ Intro
   content: "";
   background: transparent url(../img/val-venegia-under-the-pale-di-san-martino-dolomites.jpg) no-repeat;
   background-size: 100% 100%;
-  
+  background-position:50% 50%;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1333,6 +1357,7 @@ Intro
   content: "";
   background: transparent url(../img/well.jpg) no-repeat;
   background-size: cover;
+  background-position:50% 50%;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1346,6 +1371,7 @@ Intro
   content: "";
   background: transparent url(../img/sauna.jpg) no-repeat;
   background-size: cover;
+  background-position:50% 50%;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1359,6 +1385,7 @@ Intro
   content: "";
   background: transparent url(../img/acqua.jpeg) no-repeat;
   background-size: cover;
+  background-position:50% 50%;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1376,6 +1403,7 @@ Intro
   content: "";
   background: transparent url(../img/massaggi.jpg) no-repeat;
   background-size: cover;
+  background-position:50% 50%;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1389,7 +1417,7 @@ Intro
   content: "";
   background: transparent url(../img/non_solo_sci.jpg) no-repeat;
   background-size: cover;
-  
+  background-position:50% 50%;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1404,6 +1432,7 @@ Intro
   content: "";
   background: transparent url(../img/principali/berghotel_miramonti-1.jpg) no-repeat;
   background-size: cover;
+  background-position:50% 50%;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1417,6 +1446,7 @@ Intro
   content: "";
   background: transparent url(../img/hiking.jpg) no-repeat;
   background-size: cover;
+  background-position:50% 50%;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1430,6 +1460,7 @@ Intro
   content: "";
   background: transparent url(../img/fiemme-dolomiti-trentino-fondo.jpeg) no-repeat;
   background-size: cover;
+  background-position:50% 50%;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1444,6 +1475,7 @@ Intro
   content: "";
   background: transparent url(../img/estate-2015.jpg) no-repeat;
   background-size: cover;
+  background-position:50% 50%;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1457,6 +1489,7 @@ Intro
   content: "";
   background: transparent url(../img/PRIMA-NEVE-BERGHOTEL.jpg) no-repeat;
   background-size: cover;
+  background-position:50% 50%;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1480,10 +1513,39 @@ Intro
   max-width: 100%;
   max-height: 100%;  
 }
+.offe-gioia-invernale::after {
+  content: "";
+  background: transparent url(../img/coppia-felice-inverno.jpg) no-repeat;
+  background-size: cover;
+  background-position:50% 50%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  max-width: 100%;
+  max-height: 100%;  
+}
 .offe4::after {
   content: "";
   background: transparent url(../img/supersun.jpg) no-repeat;
   background-size: cover;
+  background-position:50% 50%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  max-width: 100%;
+  max-height: 100%;  
+}
+.offe5::after {
+  content: "";
+  background: transparent url(../img/dolomiti-trentino-fiemme-powder.jpeg) no-repeat;
+  background-size: cover;
+  background-position:50% 50%;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1498,6 +1560,7 @@ Intro
   content: "";
   background: transparent url(../img/cielo.jpg) no-repeat;
   background-size: cover;
+  background-position:50% 50%;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1511,6 +1574,7 @@ Intro
   content: "";
   background: transparent url(../img/fitness.jpg) no-repeat;
   background-size: cover;
+  background-position:50% 50%;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1524,6 +1588,7 @@ Intro
   content: "";
   background: transparent url(../img/gourmet.jpg) no-repeat;
   background-size: cover;
+  background-position:50% 50%;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1537,6 +1602,21 @@ Intro
   content: "";
   background: transparent url(../img/certificato.jpg) no-repeat;
   background-size: cover;
+  background-position:50% 50%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  max-width: 100%;
+  max-height: 100%;  
+}
+.lunch::after {
+  content: "";
+  background: transparent url(../img/pranzonatale.jpg) no-repeat;
+  background-size: cover;
+  background-position:50% 50%;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1563,6 +1643,7 @@ Intro
   content: "";
   background: transparent url(../img/trentino-dolomiti-latemar-neve.jpeg) no-repeat;
   background-size: cover;
+  background-position:50% 50%;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1576,6 +1657,7 @@ Intro
   content: "";
   background: transparent url(../img/alpine-ski.jpeg) no-repeat;
   background-size: cover;
+  background-position:50% 50%;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1589,6 +1671,7 @@ Intro
   content: "";
   background: transparent url(../img/sci_nordico.jpg) no-repeat;
   background-size: cover;
+  background-position:50% 50%;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1602,6 +1685,7 @@ Intro
   content: "";
   background: transparent url(../img/sci_scuola.jpg) no-repeat;
   background-size: cover;
+  background-position:50% 50%;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1635,6 +1719,7 @@ padding: 10px;
   content: "";
   background: transparent url(../img/bici.jpg) no-repeat;
   background-size: cover;
+  background-position:50% 50%;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1648,6 +1733,7 @@ padding: 10px;
   content: "";
   background: transparent url(../img/family.jpg) no-repeat;
   background-size: cover;
+  background-position:50% 50%;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1661,6 +1747,7 @@ padding: 10px;
   content: "";
   background: transparent url(../img/miniclub.jpg) 50% 0% no-repeat;
   background-size: cover;
+  background-position:50% 50%;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1674,6 +1761,7 @@ padding: 10px;
   content: "";
   background: transparent url(../img/walking.JPG) no-repeat;
   background-size: cover;
+  background-position:50% 50%;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1687,6 +1775,7 @@ padding: 10px;
   content: "";
   background: transparent url(../img/energia.jpg) no-repeat;
   background-size: cover;
+  background-position:50% 50%;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1820,26 +1909,26 @@ color: #FFF;
 	top: -45px;
 }
 .cb-slideshow li:nth-child(1) span { 
-    background-image: url(../img/principali/berghotel_miramonti-1.jpg); 
+    background-image: url(../img/principali/berghotel_esterna_stelle.jpg); 
 }
 .cb-slideshow li:nth-child(2) span { 
     background-image: url(../img/principali/berghotel_miramonti-2.jpg); 
     animation-delay: 6s; 
 }
 .cb-slideshow li:nth-child(3) span { 
-    background-image: url(../img/principali/berghotel_miramonti-3.jpg); 
+    background-image: url(../img/principali/berghotel_miramonti_piscina.jpg); 
     animation-delay: 12s; 
 }
 .cb-slideshow li:nth-child(4) span { 
-    background-image: url(../img/principali/berghotel_miramonti-4.jpg); 
+    background-image: url(../img/principali/berghotel_miramonti_wellness.jpg); 
     animation-delay: 18s; 
 }
 .cb-slideshow li:nth-child(5) span { 
-    background-image: url(../img/principali/berghotel_miramonti-5.jpg); 
+    background-image: url(../img/principali/berghotel_miramonti_sala_giochi.jpg); 
     animation-delay: 24s; 
 }
 .cb-slideshow li:nth-child(6) span { 
-    background-image: url(../img/principali/berghotel_miramonti-6.jpg); 
+    background-image: url(../img/principali/berghotel_miramonti_camera.jpg); 
     animation-delay: 30s; 
 }
 .cb-slideshow li:nth-child(2) div { 
@@ -1869,7 +1958,9 @@ color: #FFF;
     100% { opacity: 0 }
 }
 /* Animation for the title */
-
+.dark{
+	background-color:#3C3C3C;
+}
 @keyframes titleAnimation { 
     0% { opacity: 0 }
     8% { opacity: 1 }
@@ -1964,14 +2055,14 @@ color: #FFF;
  .button1{
  	position: relative;
     top: 25px;
-	left: 54px;
+	
 	width: 50%;
 	
  }
  .button2{
  	position: relative;
     top: 30px;
-	left: 54px;
+	
 	width: 50%;
 	
  }
@@ -2066,6 +2157,9 @@ color: #FFF;
 }
   }
 @media only screen and (min-width: 1170px) {
+.cb-slideshow li span { 
+    width: 78%;
+    }
 .cb-slideshow li div {
 	display:block;
 }
@@ -2301,7 +2395,7 @@ Placeholder Sections
 
 .cd-section {
   position:relative;
-  top:0;
+  top:18px;
   padding: 0;
   
   height: 250px;
@@ -2364,6 +2458,9 @@ Placeholder Sections
     margin-top:81px;
 	background-image:url('../img/hiking.jpg');
 }
+#offerta-gioia-back{
+    background-image:url('../img/coppia-felice-inverno.jpg');
+}
 #guest-back{
     background-image:url('../img/fiemme-dolomiti-trentino-fondo.jpeg');
     background-position: 50% 100%;
@@ -2375,6 +2472,9 @@ Placeholder Sections
 #hike-back2{
     margin-top:81px;
 	background-image:url('../img/hiking.jpg');
+}
+#lastminute-back{
+    background-image:url('../img/dolomiti-trentino-fiemme-powder.jpeg');
 }
 
 #spawelness-back{
@@ -2394,7 +2494,7 @@ Placeholder Sections
 	background-image:url('../img/gourmet.jpg');
 }
 #alpine-back{
-	margin-top:96px;
+	margin-top:81px;
 	background-image:url('../img/alpine-ski.jpeg');
 }
 #nordic-back{
@@ -2436,6 +2536,9 @@ Placeholder Sections
 #offerta1-back{
 	background-image:url('../img/estate-2015.jpg');
 }
+#offerta7-back{
+	background-image:url('../img/dolomiti-trentino-fiemme-powder.jpeg');
+}
 #offerte-back{
 	background-image:url('../img/PRIMA-NEVE-BERGHOTEL.jpg');
 }
@@ -2457,9 +2560,14 @@ Placeholder Sections
 	background-image:url('../img/offerte.jpeg');
 }
 #winter-back{
-	margin-top:64px;
+	
 	background-image:url('../img/trentino-dolomiti-latemar-neve.jpeg');
 	background-position: 50% 0%;
+}
+#lunch-back{
+	margin-top:64px;
+	background-image:url('../img/pranzonatale.jpg');
+	
 }
 #family-back{
    
@@ -2482,6 +2590,7 @@ Placeholder Sections
 }
 
 #spa-back{
+margin-top:81px;
 	background-image:url('../img/sauna.jpg');
 }
 #beauty-back{
@@ -2530,7 +2639,7 @@ Placeholder Sections
     margin-top:65px;
 	
 }
-#winter-back{
+#lunch-back{
     margin-top:102px;
     
 	
@@ -2565,6 +2674,7 @@ Placeholder Sections
 	padding-right:5px;
 }
   .cd-section {
+  top:0px;
   display:inline-block;
   vertical-align: top;
   transition: all 1s ease-out;
@@ -2672,6 +2782,12 @@ margin-top:2px;
     width: 50%;
 	
 }
+#lastminute-back{
+margin-left:-2px;
+margin-top:2px;
+    width: 49.5%;
+
+}
 #fitness-back{
     margin-left:-2px;
     margin-top:2px;
@@ -2695,7 +2811,10 @@ margin-top:2px;
     width: 39.5%;
 	
 }
-
+#lunch-back{
+	margin-top:18px;
+	width: 100%;
+}
 #winter-back{
 	margin-top:2px;
 	width: 50%;
@@ -2704,9 +2823,15 @@ margin-top:2px;
 	width: 50%;
 }
 #offerta2-back{
-	margin-left:-3px;
+	margin-left:-2px;
     width: 49.8%;
     margin-top: 0px;
+}
+#offerta7-back{
+	
+    width: 49.8%;
+    margin-top: 0px;
+    margin-bottom: 2px;
 }
 #offerta3-back{
 	width: 50%;
@@ -2714,7 +2839,7 @@ margin-top:2px;
 }
 #offerta4-back{
 	margin-left:-3px;
-	margin-top:2px;
+	
     width: 49.8%;
 }
 #offerta5-back{
@@ -3021,8 +3146,7 @@ font-size: 25px;
 .footer-social{
     position: relative;
 	top: 50px;
-	width: 40%;
-	left: 87px;
+	
 }
 .socialimg{
 	border-radius: 5px;
@@ -3032,7 +3156,7 @@ font-size: 25px;
 .socialimg1{
 	border-radius: 5px;
 	opacity:1;
-	width:50px;
+	width:40px;
 }
 .socialimg:hover{
 	opacity:1;
@@ -3237,4 +3361,17 @@ top: -38px;
 .news{
 	margin-bottom:200px;
 	}
-
+@media screen and (min-width: 1540px) {	
+.fixed-menu ul{
+   
+	top: 100px;
+		
+}
+.fixed-menu ul li{
+	
+	padding-bottom: 28px;
+}
+.lang-switch {
+	top:300px;
+}
+}
