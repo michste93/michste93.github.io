@@ -1513,6 +1513,20 @@ Intro
   max-width: 100%;
   max-height: 100%;  
 }
+.regala-benessere::after {
+  content: "";
+  background: transparent url(../img/berghotel_zona_relax.jpg) no-repeat;
+  background-size: cover;
+  background-position:50% 50%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  max-width: 100%;
+  max-height: 100%;  
+}
 .offe-gioia-invernale::after {
   content: "";
   background: transparent url(../img/coppia-felice-inverno.jpg) no-repeat;
@@ -1558,7 +1572,7 @@ Intro
 
 .camere-intern::after {
   content: "";
-  background: transparent url(../img/cielo.jpg) no-repeat;
+  background: transparent url(../img/berghotel-camera-stelle.jpg) no-repeat;
   background-size: cover;
   background-position:50% 50%;
   top: 0;
@@ -1879,11 +1893,11 @@ color: #FFF;
     opacity: 0;
     z-index: 0;
 	-webkit-backface-visibility: hidden;
-    -webkit-animation: imageAnimation 36s linear infinite 0s;
-    -moz-animation: imageAnimation 36s linear infinite 0s;
-    -o-animation: imageAnimation 36s linear infinite 0s;
-    -ms-animation: imageAnimation 36s linear infinite 0s;
-    animation: imageAnimation 36s linear infinite 0s; 
+    -webkit-animation: imageAnimation 42s linear infinite 0s;
+    -moz-animation: imageAnimation 42s linear infinite 0s;
+    -o-animation: imageAnimation 42s linear infinite 0s;
+    -ms-animation: imageAnimation 42s linear infinite 0s;
+    animation: imageAnimation 42s linear infinite 0s; 
 }
 .cb-slideshow li div { 
     display:none;   
@@ -1895,7 +1909,7 @@ color: #FFF;
 	text-align: center;
 	opacity: 0;
 	color: #FFF;
-	animation: 36s linear 0s normal none infinite running titleAnimation;
+	animation: 42s linear 0s normal none infinite running titleAnimation;
 	background-color: rgba(255, 255, 255, 0.2);
 	height: 25%; 
 }
@@ -1931,6 +1945,10 @@ color: #FFF;
     background-image: url(../img/principali/berghotel-miramonti-camera.jpg); 
     animation-delay: 30s; 
 }
+.cb-slideshow li:nth-child(7) span { 
+    background-image: url(../img/principali/berghotel_miramonti-6.jpg); 
+    animation-delay: 36s; 
+}
 .cb-slideshow li:nth-child(2) div { 
     animation-delay: 6s; 
 }
@@ -1945,6 +1963,9 @@ color: #FFF;
 }
 .cb-slideshow li:nth-child(6) div { 
     animation-delay: 30s; 
+}
+.cb-slideshow li:nth-child(7) div { 
+    animation-delay: 36s; 
 }
 /* Animation for the slideshow images */
 
@@ -2460,9 +2481,16 @@ Placeholder Sections
 }
 #offerta-gioia-back{
     background-image:url('../img/coppia-felice-inverno.jpg');
+    
+}
+#offerta-meno-notti-back{
+	
 }
 #offerta-benessere-back{
     background-image:url('../img/berghotel_zona_relax.jpg');
+}
+#offerta-prenota-giugno{
+    background-image:url('../img/walking.JPG');
 }
 #guest-back{
     background-image:url('../img/fiemme-dolomiti-trentino-fondo.jpeg');
@@ -2522,6 +2550,10 @@ Placeholder Sections
 	background-image:url('../img/energia.jpg');
 }
 #walk-back{
+    
+	background-image:url('../img/walking.JPG');
+}
+#giugno-back{
     
 	background-image:url('../img/walking.JPG');
 }
@@ -2692,6 +2724,10 @@ margin-top:81px;
 	opacity:1;
 	
 }
+#giugno-back{
+	width:50%;
+	margin-left:-3px;
+}
 .cd-section:hover p span{
 	transition: all 1s ease-out;
 	opacity:0;
@@ -2736,10 +2772,19 @@ margin-top:81px;
     margin-top:0px;
     width: 50%;
 	}
+	#offerta-gioia-back{
+   
+    width: 50%;
+	margin-top: 2px;
+	margin-left: -3px;
+}
 	#offerta-benessere-back{
     width: 49.5%;
     margin-left:-3px;
     margin-top:2px;
+}
+#offerta-meno-notti-back{
+	width: 33%;
 }
 #nordic-back{
 	margin-left:-3px;
@@ -2848,7 +2893,7 @@ margin-top:2px;
 #offerta4-back{
 	margin-left:-3px;
 	
-    width: 49.8%;
+    width: 49.5%;
 }
 #offerta5-back{
 	width: 50%;
