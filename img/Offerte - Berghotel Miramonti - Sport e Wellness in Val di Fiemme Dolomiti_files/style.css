@@ -1572,7 +1572,7 @@ Intro
 
 .camere-intern::after {
   content: "";
-  background: transparent url(../img/_MG_4415-Modifica-2.jpg) no-repeat;
+  background: transparent url(../img/camera3.jpg) no-repeat;
   background-size: cover;
   background-position:50% 50%;
   top: 0;
@@ -1923,14 +1923,14 @@ color: #FFF;
 	top: -45px;
 }
 .cb-slideshow li:nth-child(1) span { 
-    background-image: url(../img/principali/berghotel_esterna_stelle.jpg); 
+    background-image: url(../img/principali/berghotel-esterna-stelle.jpg); 
 }
 .cb-slideshow li:nth-child(2) span { 
     background-image: url(../img/principali/berghotel_miramonti-2.jpg); 
     animation-delay: 6s; 
 }
 .cb-slideshow li:nth-child(3) span { 
-    background-image: url(../img/principali/berghotel_miramonti_piscina.jpg); 
+    background-image: url(../img/principali/berghotel-miramonti-piscina.jpg); 
     animation-delay: 12s; 
 }
 .cb-slideshow li:nth-child(4) span { 
@@ -1938,11 +1938,11 @@ color: #FFF;
     animation-delay: 18s; 
 }
 .cb-slideshow li:nth-child(5) span { 
-    background-image: url(../img/principali/berghotel_miramonti_sala_giochi.jpg); 
+    background-image: url(../img/principali/berghotel-miramonti-sala-giochi.jpg); 
     animation-delay: 24s; 
 }
 .cb-slideshow li:nth-child(6) span { 
-    background-image: url(../img/principali/berghotel_miramonti_camera.jpg); 
+    background-image: url(../img/principali/berghotel-miramonti-camera.jpg); 
     animation-delay: 30s; 
 }
 .cb-slideshow li:nth-child(7) span { 
@@ -2178,10 +2178,6 @@ color: #FFF;
 }
   }
 @media only screen and (min-width: 1170px) {
-.cb-slideshow li:nth-child(1) span { 
-    background-image: url(../img/principali/berghotel-esterna-stelle.jpg); 
-}
-
 .cb-slideshow li span { 
     width: 78%;
     }
